@@ -66,31 +66,31 @@ Avo+15. Effective: Dragon, Flying.
 
 ## Inheritable Skills
 
-- **Lv 1**：Defense +1
+- **Lv 1**：Defense +1 Cost 300
   - Grants Def+1.
-- **Lv 5**：Weapon Sync
+- **Lv 5**：Weapon Sync Cost 1000
   - Grants Atk +3 when synced with an Emblem 
 wielding the same weapon type.
-- **Lv 5**：Helm Splitter
+- **Lv 5**：Helm Splitter Cost 2000
   - Grant the unit "Helm Splitter".
 Cost 4 engage meter or 2 engage turn
 to attack with axes.
 Effective: Armored.
-- **Lv 10**：Charm
+- **Lv 10**：Charm Cost 1200
   - If unit's attack triggers a chain
 attack, increases chain attack
 Dmg by 20%.
-- **Lv 10**：Defense +2
+- **Lv 10**：Defense +2 Cost 600
   - Grants Def+2.
-- **Lv 10**：Knightkneeler
+- **Lv 10**：Knightkneeler Cost 2000
   - Grant the unit "Knightkneeler".
 Cost 4 engage meter or 2 engage turn
 to attack with lances.
 Effective: Cavalry.
-- **Lv 20**：Weapon Sync+
+- **Lv 20**：Weapon Sync+ Cost 2000
   - Grants Atk +5 when synced with an Emblem 
 wielding the same weapon type.
-- **Lv 20**：Monster Blast
+- **Lv 20**：Monster Blast Cost 2000
   - Grant the unit "Monster Crusher".
 Cost 3 engage meter or 1 engage turn.
 Effective: Corrupted.

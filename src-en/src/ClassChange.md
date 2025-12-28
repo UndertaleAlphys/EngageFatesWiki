@@ -18,7 +18,7 @@
 
 However:
 - **If the unit switches back to the original class**:
-  - All freely equipped inheritable skills are **removed**
+  - That class’s original class skill is **removed** from the pool
   - The unit will **immediately relearn** that class’s original class skill
 
 This behavior is part of the game’s intended mechanics and is **not a bug**.

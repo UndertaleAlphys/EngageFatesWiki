@@ -1,0 +1,8 @@
+Louis
+
+Personal Skill
+- Admiration
+  If two female allies/two male allies
+are adjacent within 3 spaces,
+this unit takes 3 less damage during combat.
+

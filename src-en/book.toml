@@ -8,4 +8,4 @@ src = "src"
 default-theme = "dark"
 
 [build]
-build-dir = "book"
+build-dir = "../docs/en"

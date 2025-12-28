@@ -3,7 +3,7 @@
 ## Personal Skill
 
 - **Alabaster Duty**
-  - If unit is adjacent to the Divine
-Dragon, grants Divine
-Dragon Dmg+3, Hit+15.
+  - If adjacent to Alear, 
+grants Alear 
+Hit+15, Dmg+3.
 

@@ -31,9 +31,9 @@ Several aspects of the class change system are handled explicitly in code:
 A consistent rule is enforced for class skills:
 
 - After learning a class skill, switching out of the class makes it available as a freely equippable inherited skill
-- Switching back to the original class:
-  - Clears inherited skills
-  - Immediately restores the class skill
+- **Switch back to the original class**:
+  - That class’s original class skill is **removed** from the pool
+  - The unit will **immediately relearn** that class’s original class skill
 - Situations where a unit cannot level further are handled gracefully
 
 This approach was chosen to make skill behavior more predictable and transparent to the player.

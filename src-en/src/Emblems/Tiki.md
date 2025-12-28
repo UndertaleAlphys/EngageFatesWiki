@@ -85,38 +85,38 @@ Effective: Dragon
 
 ## Inheritable Skills
 
-- **Lv 1**：Geosphere
+- **Lv 1**：Geosphere Cost 1800
   - After unit ends their turn, 
 terrain within 2 radius get
 effect "Divine Domain"
-- **Lv 1**：OddShaped
+- **Lv 1**：OddShaped Cost 1000
   - During odd-numbered 
 Turns, damage+4.
-- **Lv 1**：Evenhanded
+- **Lv 1**：Evenhanded Cost 1000
   - During even-numbered 
 Turns, damage+4.
-- **Lv 5**：Lightsphere
+- **Lv 5**：Lightsphere Cost 2500
   - Can use "Rally" command, allies
 within 2 radius get an effect:
 In this turn, in each battle,
 non-first received dmg reduce 50%
 non-first inflict dmg increase 50%
-- **Lv 5**：Dexterity +1
+- **Lv 5**：Dexterity +1 Cost 150
   - Grants Dex+1.
-- **Lv 10**：Starsphere
+- **Lv 10**：Starsphere Cost 1500
   - Each turn, get stats bonus in turn:
 Str/Def → Mag/Res → Dex/Spd/Luck
 (The increased stats = Level/10,
 round up, maximum at 4.)
-- **Lv 10**：Dexterity +2
+- **Lv 10**：Dexterity +2 Cost 300
   - Grants Dex+2.
-- **Lv 10**：Better Odds
+- **Lv 10**：Better Odds Cost 1000
   - Recover 40% HP at the start 
 of odd-numbered player phase.
-- **Lv 10**：Even Better
+- **Lv 10**：Even Better Cost 1000
   - Recover 40% HP at the start 
 of even-numbered player phase.
-- **Lv 20**：Geosphere
+- **Lv 20**：Geosphere Cost 2700
   - After unit ends their turn, 
 terrain within 3 radius get
 effect "Divine Domain"

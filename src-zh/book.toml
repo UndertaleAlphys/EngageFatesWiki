@@ -1,5 +1,5 @@
 [book]
-title = "Engage Fates Wiki"
+title = "结合命运维基"
 authors = ["Mercedes"]
 language = "zh"
 src = "src"
@@ -8,4 +8,4 @@ src = "src"
 default-theme = "dark"
 
 [build]
-build-dir = "book"
+build-dir = "../docs/zh"

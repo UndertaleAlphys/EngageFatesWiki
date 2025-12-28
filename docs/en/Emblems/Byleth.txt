@@ -1,0 +1,155 @@
+Byleth ×7
+
+Stat Bonuses
+- Lv 1: Str+1  Mag+1  Spd+1
+- Lv 5: Str+2  Mag+1  Spd+1
+- Lv 10: Str+2  Mag+2  Spd+2
+- Lv 20: Str+3  Mag+3  Spd+3
+
+Sync Skills
+- Lv 1: Mentorship
+  Grants the unit "Rally" command,
+the effect is decided by battlestyle.
+- Lv 1: Mentorship (Cavalry)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Cavalry] Get Rally Skill
+- Lv 1: Mentorship (Flying)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Flying] Get Rally Resistance
+- Lv 1: Mentorship (Covert)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Covert] Get Rally Speed
+- Lv 1: Mentorship (Armored)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Armored] Get Rally Defense
+- Lv 1: Mentorship (Mystical)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Mystical] Get Rally Magic
+- Lv 1: Mentorship (Qi Adept)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Qi Adept] Get Rally Luck
+- Lv 1: Mentorship (Dragon)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Dragon] Get Rally Movement
+- Lv 1: Mentorship (Backup)
+  Grant this unit "Rally" command,
+the type of Rally depends on battlestyle.
+[Backup] Get Rally Strength
+- Lv 5: Divine Pulse
+  When miss an attack, use another
+random number to decide the outcome.
+- Lv 5: Combat Arts
+  Grant the unit "Fierce Iron Fist".
+"Fierce Iron Fist"
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.
+- Lv 10: Latter Hit Faster
+  The non-first attacks
+during battle get Dmg+5.
+- Lv 10: Combat Arts
+  Grant the unit "Fierce Iron Fist"
+and "Meditation"
+"Fierce Iron Fist"
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.
+"Meditation"
+Restore 50% max HP 
+and 1 engage meter.
+- Lv 20: Divine Pulse+
+  When miss an attack, use another
+random number to decide the outcome.
+When an enemy's hit lands, use another
+random number to decide the outcome.
+- Lv 20: Combat Arts
+  Grant the unit "Fierce Iron Fist",
+"Meditation" and "Monster Crusher"
+"Fierce Iron Fist"
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.
+"Meditation"
+Restore 50% max HP 
+and 1 engage meter.
+"Monster Crusher"
+Cost 4 engage meter or 2 engage
+turns to strike 2 consecutive hits,
+effective against corrupted, and 
+ignore half of their Def.
+
+Engage Skills
+- Lv 1: Sensei
+  Unit will "Rally"
+automatically after
+ending their turn.
+
+Engage Attack
+- Goddess Dance
+  Use to grant another action to
+all adjacent allies.
+Once per chapter.
+
+Engage Weapons
+- Lv 1: Blutgang: Range 1, Mt 8, Hit 80 / Magical sword wielded by Emblem
+Byleth. Effective: Dragon, Cavalry.
+- Lv 10: Vajra-Mushti: Range 1, Mt 5, Hit 90, Crit 10 / Gauntlets wielded by Emblem Byleth.
+If user initiates combat, attacks
+twice. Uses lowest of foe's Def/Res.
+- Lv 20: Sword of the Creator: Range 1~2, Mt 11, Hit 90, Crit 10 / Sword of Emblem Byleth. Raises
+damage with user's Mag. Can strike
+close or at range. Effective: Dragon
+Once per Engage, can use combat art
+Ruptured Heaven: Effective against
+Dragon, +10 Mt/Hit, +20 Crit
+
+Inheritable Skills
+- Lv 1: Martial Prowess Lv.1 Cost 100
+  Grants Hit+5
+when using martials,
+fails at weapon disadvantage.
+- Lv 1: Martial Prowess Lv.2 Cost 300
+  Grants Hit+10
+when using martials,
+fails at weapon disadvantage.
+- Lv 5: Divine Pulse Cost 800
+  When miss an attack, use another
+random number to decide the outcome.
+- Lv 5: Fierce Iron Fist Cost 1000
+  Grant the unit "Fierce Iron Fist".
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.
+- Lv 5: Martial Prowess Lv.3 Cost 750
+  Grants Atk+1 and Hit+10
+when using martials,
+fails at weapon disadvantage.
+- Lv 10: Latter Hit Faster Cost 2000
+  The non-first attacks
+during battle get Dmg+5.
+- Lv 10: Meditation Cost 1000
+  Grants the unit "Meditaion"
+command, use to restore 50%
+max HP and 1 engage meter.
+- Lv 10: Martial Prowess Lv.4 Cost 1500
+  Grants Atk+2 and Hit+15
+when using martials,
+fails at weapon disadvantage.
+- Lv 20: Monster Crusher Cost 2000
+  Grant the unit "Monster Crusher".
+Cost 4 engage meter or 2 engage
+turns to strike 2 consecutive hits,
+effective against corrupted, and 
+ignore half of their Def.
+- Lv 20: Martial Prowess Lv.5 Cost 3500
+  Grants Atk+2 and Hit+15
+when using martials,
+fails at weapon disadvantage.
+[Martialfaire]Grants Atk+5
+
+Proficiency
+- Lv 10: Fist
+

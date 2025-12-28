@@ -1,0 +1,95 @@
+Corrin ×7
+
+Stat Bonuses
+- Lv 1: Mag+1  Dex-2  Spd+1  Def+1
+- Lv 5: Mag+2  Dex-2  Spd+1  Def+2
+- Lv 10: Mag+2  Dex-2  Spd+2  Def+3
+- Lv 20: Mag+3  Dex-2  Spd+3  Def+4
+
+Sync Skills
+- Lv 1: Heartseeker
+  Adjacent enemies lose 20 Avo.
+- Lv 1: Heartseeker (Dragon)
+  Adjacent enemies lose 20 Avo.
+[Dragon] Enemies lose 10 extra Avo.
+- Lv 5: Draconic Hex
+  After battle, inflicts -4 to all
+of foe's basic stats after combat.
+(Penalties shrink by 1 each turn.)
+- Lv 10: Pair Up
+  Prevents damage from foes' chain
+attacks and "Pair Up Attack" against unit.
+- Lv 20: Inevitable End
+  If the user inflicts a stat debuff on 
+the target, stacks the stat debuffs 
+with those already applied on the target.
+
+Engage Skills
+- Lv 1: Pair Up Attack
+  Pair Up Attack
+If exist adjacent ally, when this
+unit initiate attack, perform a
+follow up attack with half Hit/Dmg.
+Hit and Dmg will increase based
+on the support level of adjacent allies.
+
+Engage Attack
+- Torrential Roar
+  Use to adjacent foe,
+turning 5 spaces into water
+terrain.
+- Torrential Roar (Dragon)
+  Use to adjacent foe,
+turning 5 spaces into water
+terrain.
+[Dragon] Attack Range +1.
+
+Engage Weapons
+- Lv 1: Calamity Gate: Range 1~2, Mt 7, Hit 70, Crit 5 / A scroll used by Emblem Corrin.
+Reverse the weapon triangle
+and double its effect.
+- Lv 10: Dragonstone+: Range 1, Mt 25, Hit 75, Avo -10, Ddg 10 / The dragon stone owned by
+Emblem Corrin, magic weapon.
+Cannot follow up
+-5 Dex/-4 Spd/+9 Def/+7 Res
+- Lv 20: Yato: Range 1, Mt 16, Hit 85, Crit 10, Avo 10, Ddg 10 / Sacred sword wielded by Emblem
+Corrin.
++4 Str/Spd/Def/Res when owned
+
+Inheritable Skills
+- Lv 1: Heartseeker Cost 500
+  Adjacent enemies lose 20 Avo.
+- Lv 1: Heartseeker (Dragon)
+  Adjacent enemies lose 20 Avo.
+[Dragon] Enemies lose 10 extra Avo.
+- Lv 5: Seal Strength Cost 1800
+  Inflicts Str-6 on foe 
+after combat. (Penalty
+shrinks by 1 each turn.)
+- Lv 5: Seal Magic Cost 1800
+  Inflicts Mag-6 on foe 
+after combat. (Penalty
+shrinks by 1 each turn.)
+- Lv 5: Seal Defense Cost 1800
+  Inflicts Def-6 on foe 
+after combat. (Penalty
+shrinks by 1 each turn.)
+- Lv 5: Seal Speed Cost 1800
+  Inflicts Spd-6 on foe 
+after combat. (Penalty
+shrinks by 1 each turn.)
+- Lv 5: Seal Resistance Cost 900
+  Inflicts Res-6 on foe 
+after combat. (Penalty
+shrinks by 1 each turn.)
+- Lv 10: Pair Up Cost 2000
+  Prevents damage from foes' chain
+attacks and "Pair Up Attack" against unit.
+- Lv 20: Inevitable End Cost 2000
+  If the user inflicts a stat debuff on 
+the target, stacks the stat debuffs 
+with those already applied on the target.
+
+Proficiency
+- Lv 10: Magic
+

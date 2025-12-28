@@ -55,24 +55,24 @@ Female only / Grants Str/Res+2
 
 ## Inheritable Skills
 
-- **Lv 1**：Air Superiority
+- **Lv 1**：Air Superiority Cost 1000
   - When fighting against a
 flying unit, grants Hit/Avo+15.
-- **Lv 1**：Lunge
+- **Lv 1**：Lunge Cost 250
   - Grants the unit "Lunge" command,
 use to swap places with an enemy after battle.
-- **Lv 5**：Savage Blow
+- **Lv 5**：Savage Blow Cost 2000
   - If unit initiates combat, deals damage
 to foes within 2 spaces equal to 20%
 of their max HP after combat.
-- **Lv 5**：Strength +1
+- **Lv 5**：Strength +1 Cost 300
   - Grants Str+1.
-- **Lv 10**：Trample
+- **Lv 10**：Trample Cost 2000
   - Unless enemy is on a mount,
 damage+5.
-- **Lv 10**：Strength +2
+- **Lv 10**：Strength +2 Cost 600
   - Grants Str+2.
-- **Lv 20**：Air Superiority+
+- **Lv 20**：Air Superiority+ Cost 2000
   - When fighting against a
 flying unit, grants Hit/Avo+30.
 

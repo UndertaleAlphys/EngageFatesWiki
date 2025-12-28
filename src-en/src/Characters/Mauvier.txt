@@ -1,0 +1,8 @@
+Mauvier
+
+Personal Skill
+- Vow of Friendship
+  When Veyre is under half HP, 
+this unit get Dmg+3 and
+taken Dmg -3
+

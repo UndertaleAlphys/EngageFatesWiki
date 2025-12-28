@@ -1,0 +1,135 @@
+Lyn ×7
+
+Stat Bonuses
+- Lv 1: Dex+2  Spd+2
+- Lv 5: Dex+4  Spd+3
+- Lv 10: Dex+6  Spd+4
+- Lv 20: Dex+8  Spd+5
+
+Sync Skills
+- Lv 1: Alacrity
+  If unit initiates combat with an ability
+to follow up of 7 or more, unit's
+follow-up (if possible) occurs before
+foe can counterattack.
+- Lv 5: Curved Shot
+  Grant this unit "Curved Shot",
+cost 4 engage meter or 2 engage turns
+to increase the attack range
+of bow or shuriken by 1,
+but Hit is reduced by 
+20×(Distance of attack -2).
+- Lv 5: Quick Draw
+  When user triggers the battle,
+Dmg+4.
+- Lv 10: Alacrity+
+  If unit initiates combat with an ability
+to follow up of 6 or more, unit's
+follow-up (if possible) occurs before
+foe can counterattack.
+- Lv 10: Speedtaker
+  Grants a stacking Spd+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn't combat last turn,
+lose 2 Spd when phase starts.
+- Lv 20: Alacrity++
+  If unit initiates combat with an ability
+to follow up of 5 or more, unit's
+follow-up (if possible) occurs before
+foe can counterattack.
+
+Engage Skills
+- Lv 1: Swift Strike
+  When weapon's Mt<10,
+grants Spd+5.
+When this unit initiate battle,
+and if this unit's Spd is faster,
+add 30% of the Spd difference
+to the damage dealt.
+
+Engage Attack
+- Astra Storm
+  Use to launch 5 bow attacks at 50%
+damage, bow only.
+- Astra Storm (Covert)
+  Use to launch 5 bow attacks at 50%
+damage, bow only.
+[Covert] Range +1.
+- Astra Storm (Qi Adept)
+  Use to launch 5 bow attacks at 50%
+damage, bow only.
+[Qi Adept] Breaks the target.
+- Astra Storm (Dragon)
+  Use to launch 5 bow attacks at 50%
+damage, bow only.
+[Dragon] Range +1.
+
+Engage Weapons
+- Lv 1: Falcon Bow: Range 2, Mt 6, Hit 125 / Emblem Lyn's yumi
+Effective: Flying (5x).
+- Lv 10: Wind Chaser: Range 3, Mt 7, Hit 70, Avo -20 / Emblem Lyn's long range yumi
+Cannot follow up
+When unit initiate a battle and hit,
+reduce foe's Mov by half, last one turn.
+- Lv 20: Mulagir: Range 2, Mt 5, Hit 90 / Mighty yumi wielded by Emblem Lyn.
+If user initiates combat, attacks twice.
+Grants Spd+2. Effective: Flying,
+Dragon.
+
+Inheritable Skills
+- Lv 1: Alacrity Cost 500
+  If unit initiates combat with an ability
+to follow up of 7 or more, unit's
+follow-up (if possible) occurs before
+foe can counterattack.
+- Lv 1: Bow Prowess Lv.1 Cost 100
+  Grants Atk+1
+when using bows,
+fails at weapon disadvantage.
+- Lv 1: Bow Prowess Lv.2 Cost 300
+  Grants Atk+1 and Hit+5
+when using bows,
+fails at weapon disadvantage.
+- Lv 5: Curved Shot Cost 1500
+  Grant this unit "Curved Shot",
+cost 4 engage meter or 2 engage turns
+to increase the attack range
+of bow or shuriken by 1,
+but Hit is reduced by 
+20×(Distance of attack -2).
+- Lv 5: Quick Draw Cost 1000
+  When user triggers the battle,
+Dmg+4.
+- Lv 5: Bow Prowess Lv.3 Cost 750
+  Grants Atk+2 and Hit+5
+when using bows,
+fails at weapon disadvantage.
+- Lv 10: Alacrity+ Cost 1500
+  If unit initiates combat with an ability
+to follow up of 6 or more, unit's
+follow-up (if possible) occurs before
+foe can counterattack.
+- Lv 10: Speedtaker Cost 1500
+  Grants a stacking Spd+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn't combat last turn,
+lose 2 Spd when phase starts.
+- Lv 10: Bow Prowess Lv.4 Cost 1500
+  Grants Atk+3 and Hit+10
+when using bows,
+fails at weapon disadvantage.
+- Lv 10: Rally Speed Cost 1000
+  Grants the unit "Rally" command,
+use to +4 Spd to all allies in 2 radius,
+last for 1 turn.
+- Lv 20: Bow Prowess Lv.5 Cost 3500
+  Grants Atk+3 and Hit+10
+when using bows,
+fails at weapon disadvantage.
+[Bow Prowess]Grants Atk+5
+
+Proficiency
+- Lv 10: Bow
+

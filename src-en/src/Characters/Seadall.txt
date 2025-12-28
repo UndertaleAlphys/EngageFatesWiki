@@ -1,0 +1,8 @@
+Seadall
+
+Personal Skill
+- Curious Dance
+  At start of turn, allies within 2
+spaces of unit recover 10% of
+their max HP.
+

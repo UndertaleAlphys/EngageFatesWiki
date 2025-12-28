@@ -91,7 +91,7 @@ Celica.
 
 ## Inheritable Skills
 
-- **Lv 1**：Echo
+- **Lv 1**：Echo Cost 1500
   - Grant this unit "Echo" command,
 use to perform magical attack with
 50% damage, but can attack twice.
@@ -105,45 +105,45 @@ use to perform magical attack with
 use to perform magical attack with
 50% damage, but can attack twice.
 [Dragon] Damage increase to 60%
-- **Lv 1**：Resonance
+- **Lv 1**：Resonance Cost 1200
   - When fighting with a tome, grants
 Dmg+3. If the foe survives after battle,
 the unit suffers Def/Res-1.
 (The debuff lasts for 1 turn.)
-- **Lv 1**：Tome Prowess Lv.1
+- **Lv 1**：Tome Prowess Lv.1 Cost 100
   - Grants Atk+1
 when using tomes,
 fails at weapon disadvantage.
-- **Lv 1**：Tome Prowess Lv.2
+- **Lv 1**：Tome Prowess Lv.2 Cost 300
   - Grants Atk+1 and Hit+5
 when using tomes,
 fails at weapon disadvantage.
-- **Lv 5**：Counter
+- **Lv 5**：Counter Cost 800
   - When an adjacent enemy initiate and
 hit this unit, deals the same damage
 taken by this unit to the foe.
-- **Lv 5**：Tome Prowess Lv.3
+- **Lv 5**：Tome Prowess Lv.3 Cost 750
   - Grants Atk+2 and Hit+5
 when using tomes,
 fails at weapon disadvantage.
-- **Lv 10**：Countermagic
+- **Lv 10**：Countermagic Cost 800
   - When hit by a magical attack,
 deals the same damage taken by
 the user to the foe.
-- **Lv 10**：Resonance+
+- **Lv 10**：Resonance+ Cost 1800
   - When fighting with a tome, grants
 Dmg+5. If the foe survives after battle,
 the unit suffers Def/Res-1.
 (The debuff lasts for 1 turn.)
-- **Lv 10**：Rally Magic
+- **Lv 10**：Rally Magic Cost 1000
   - Grants the unit "Rally" command,
 use to +4 Mag to all allies in 2 radius,
 last for 1 turn.
-- **Lv 10**：Tome Prowess Lv.4
+- **Lv 10**：Tome Prowess Lv.4 Cost 1500
   - Grants Atk+3 and Hit+10
 when using tomes,
 fails at weapon disadvantage.
-- **Lv 20**：Tome Prowess Lv.5
+- **Lv 20**：Tome Prowess Lv.5 Cost 3500
   - Grants Atk+3 and Hit+10
 when using tomes,
 fails at weapon disadvantage.

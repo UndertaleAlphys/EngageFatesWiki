@@ -2,4 +2,7 @@
 
 ## Personal Skill
 
+- **Fell Protection**
+  - Grant adjacent allies Dmg+1,
+taken Dmg -3, Avo+15
 
