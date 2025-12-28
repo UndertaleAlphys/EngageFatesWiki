@@ -1,0 +1,4139 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="dark sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Engage Fates Wiki</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "dark";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-2eb795a1.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-76d44d90.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('dark')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Engage Fates Wiki</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <p>欢迎来到 EngageIFmod Wiki！</p>
+<h1 id="这个-mod-做了什么"><a class="header" href="#这个-mod-做了什么">这个 Mod 做了什么？</a></h1>
+<p>本 Mod 旨在对《Fire Emblem Engage》的<strong>整体游戏体验进行全面重制</strong>，内容包括但不限于：</p>
+<ul>
+<li>对<strong>核心系统</strong>的全面重构</li>
+<li>重新设计的<strong>武器与道具</strong></li>
+<li>深度调整的<strong>技能与纹章士</strong></li>
+<li>重新构想的<strong>地图与关卡设计</strong></li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>注意：</strong> 本 Mod 目前仍处于积极开发阶段。</p>
+</blockquote>
+<p>👉 你可以通过侧边栏查看更为详细的内容说明。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="mod-安装教程"><a class="header" href="#mod-安装教程">Mod 安装教程</a></h1>
+<p>本文将介绍 结合命运 mod 的安装方法与常见问题说明。</p>
+<hr>
+<h2 id="一运行环境要求"><a class="header" href="#一运行环境要求">一、运行环境要求</a></h2>
+<ul>
+<li><strong>Ryujinx Emulator</strong>
+<ul>
+<li>游戏：<em>Fire Emblem Engage</em></li>
+<li>版本：<strong>v2.0.0</strong></li>
+<li>请确保游戏本体可以在 Ryujinx 上正常启动并运行。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="二依赖组件"><a class="header" href="#二依赖组件">二、依赖组件</a></h2>
+<ul>
+<li><strong>Cobalt</strong>
+<ul>
+<li>推荐版本：<strong>v1.25.4 或更高</strong></li>
+<li>本 Mod 基于 Cobalt 框架运行，低版本可能导致功能缺失或启动失败。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="三文件结构与安装路径"><a class="header" href="#三文件结构与安装路径">三、文件结构与安装路径</a></h2>
+<p>本 Mod 由以下两个部分组成，<strong>二者缺一不可</strong>：</p>
+<ol>
+<li>
+<p><strong>IF mod (Cobalt)</strong></p>
+<ul>
+<li>Mod 本体</li>
+</ul>
+</li>
+<li>
+<p><strong>IFmodSoundBank</strong></p>
+<ul>
+<li>音乐与音效资源包</li>
+</ul>
+</li>
+</ol>
+<h3 id="安装路径"><a class="header" href="#安装路径">安装路径</a></h3>
+<p>请将以上两个文件夹<strong>完整放入</strong>以下路径：
+sd:/engage/mods/<br>├─ IF mod (Cobalt)/<br>└─ IFmodSoundBank/</p>
+<hr>
+<h2 id="四常见错误与注意事项"><a class="header" href="#四常见错误与注意事项">四、常见错误与注意事项</a></h2>
+<h3 id="1-启动时报错--plugin-panic"><a class="header" href="#1-启动时报错--plugin-panic">1. 启动时报错 / Plugin panic</a></h3>
+<p>请依次检查：</p>
+<ul>
+<li>Mod 是否安装在 <strong>正确的路径</strong></li>
+<li>文件夹名称是否被修改</li>
+<li>是否遗漏 <strong>IFmodSoundBank</strong></li>
+</ul>
+<p>⚠️ <strong>重要提示</strong><br>请不要修改 <code>IF mod (Cobalt)</code> 文件夹内的任何内容。<br>插件在启动时会进行<strong>完整性检查</strong>，擅自修改可能导致 Mod 直接报错。</p>
+<hr>
+<h3 id="2-与其他-mod-的兼容性"><a class="header" href="#2-与其他-mod-的兼容性">2. 与其他 Mod 的兼容性</a></h3>
+<ul>
+<li>不建议与 <strong>修改 romfs 的 Mod</strong> 同时使用</li>
+<li>若需要使用其他插件：
+<ul>
+<li>请新建 <strong>独立的 Mod 文件夹</strong></li>
+<li>不要将文件混合放入 <code>IF mod (Cobalt)</code> 中</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-关于实机nintendo-switch运行"><a class="header" href="#3-关于实机nintendo-switch运行">3. 关于实机（Nintendo Switch）运行</a></h3>
+<ul>
+<li>Switch 系统 <strong>不接受包含非英文字符的路径</strong></li>
+<li>若在实机上使用：
+<ul>
+<li>需要使用 <strong>特制的 Converter</strong></li>
+<li>将路径转换为 <strong>仅包含英文与数字</strong></li>
+</ul>
+</li>
+</ul>
+<p>否则系统将无法识别该 Mod。</p>
+<hr>
+<p>如仍遇到问题，请再次确认安装路径与依赖版本是否正确。</p>
+<hr>
+<h2 id="五关于压缩包格式的说明"><a class="header" href="#五关于压缩包格式的说明">五、关于压缩包格式的说明</a></h2>
+<ul>
+<li>本 Mod <strong>必须在解压后才能正常运行</strong></li>
+<li>请不要直接将 <code>.zip</code> / <code>.7z</code> 等压缩包放入 <code>mods</code> 目录</li>
+</ul>
+<p>尽管部分 Mod 在保持压缩包格式的情况下仍可能被加载，但 <strong>结合命运 不支持以压缩包形式运行</strong>。</p>
+<p>请务必在安装前<strong>完整解压</strong>，并确认实际的文件夹结构如下：
+sd:/engage/mods/<br>├─ IF mod (Cobalt)/<br>└─ IFmodSoundBank/</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="计算公式"><a class="header" href="#计算公式">计算公式</a></h1>
+<ul>
+<li>
+<p><strong>命中（Hit）</strong><br><code>技 × 1.5 + 幸运 × 0.5 + 武器命中 + 支援命中</code></p>
+</li>
+<li>
+<p><strong>回避（Avo）</strong><br><code>速度 × 1.5 + 幸运 × 0.5 + 武器回避 + 支援回避 + 地形回避</code></p>
+</li>
+<li>
+<p><strong>必杀（Crit）</strong><br><code>(技 - 4) × 0.5 + 武器必杀 + 支援必杀</code></p>
+</li>
+<li>
+<p><strong>必杀回避（Ddg / Dodge）</strong><br><code>幸运 × 0.5 + 武器必杀回避 + 支援必杀回避</code></p>
+</li>
+<li>
+<p><strong>杖命中（Rod Hit）</strong><br><code>魔力 + 技 + 武器命中</code></p>
+</li>
+<li>
+<p><strong>杖回避（Rod Avo）</strong><br><code>魔防 × 1.5 + 幸运 × 0.5 + 地形回避</code></p>
+</li>
+<li>
+<p><strong>连携攻击伤害（Chain Attack Damage）</strong><br><code>敌方最大 HP 的 10%</code></p>
+</li>
+<li>
+<p><strong>连携攻击命中率（Chain Attack Hit Rate）</strong><br><code>100</code></p>
+</li>
+<li>
+<p><strong>武器相克（Weapon Advantage）</strong><br>若单位在武器相克中占优势，则：</p>
+<ul>
+<li>命中 +20</li>
+<li>回避 +20</li>
+<li>造成伤害 +2</li>
+<li>所受伤害 -2</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="追击机制follow-up-mechanics"><a class="header" href="#追击机制follow-up-mechanics">追击机制（Follow-Up Mechanics）</a></h1>
+<ul>
+<li>
+<p><strong>追击系数（Follow-Up Coefficient）</strong><br>默认为单位与敌方之间的<strong>速度差</strong>。<br>（部分武器可能会对该数值进行修正。）</p>
+</li>
+<li>
+<p><strong>追击条件（Follow-Up Condition）</strong><br>当追击系数 <strong>≥ 5</strong> 时，单位可以进行追击。</p>
+</li>
+</ul>
+<hr>
+<h1 id="结合气engage-count"><a class="header" href="#结合气engage-count">结合气（Engage Count）</a></h1>
+<ul>
+<li>
+<p>若单位<strong>主动发起战斗</strong>或<strong>击败敌人</strong>：<br>→ <code>结合气 +1</code></p>
+</li>
+<li>
+<p>若在同一次行动中<strong>同时满足以上两项</strong>：<br>→ <code>结合气 +2</code></p>
+</li>
+</ul>
+<hr>
+<h1 id="sp-系统"><a class="header" href="#sp-系统">SP 系统</a></h1>
+<ul>
+<li>单位获得的 <strong>SP = 获得的 EXP</strong></li>
+<li>是否装备纹章士戒指<strong>不影响</strong> SP 的获取</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="转职"><a href="#转职" class="header">转职</a></h1>
+<h2 id="职业转换系统概述"><a class="header" href="#职业转换系统概述">职业转换系统概述</a></h2>
+<h3 id="职业等级上限"><a class="header" href="#职业等级上限">职业等级上限</a></h3>
+<ul>
+<li><strong>基础职业</strong>：等级上限 <strong>20</strong></li>
+<li><strong>高级职业 / 特殊职业</strong>：等级上限 <strong>40</strong></li>
+</ul>
+<hr>
+<h3 id="职业技能"><a class="header" href="#职业技能">职业技能</a></h3>
+<ul>
+<li><strong>基础职业</strong>：<br>若该职业拥有职业技能，角色在升级时即可习得。</li>
+<li><strong>高级职业 / 特殊职业</strong>：<br>角色在达到 <strong>21 级</strong> 时习得该职业技能。</li>
+</ul>
+<h4 id="职业技能与继承技能池的关系"><a class="header" href="#职业技能与继承技能池的关系">职业技能与继承技能池的关系</a></h4>
+<ul>
+<li>当角色在某一职业中<strong>习得该职业的职业技能</strong>后：
+<ul>
+<li><strong>一旦转出该职业</strong>，该职业技能将进入<br><strong>可自由装备的继承技能池</strong></li>
+<li>可像其他继承技能一样自由装备</li>
+</ul>
+</li>
+</ul>
+<p>但需要注意：</p>
+<ul>
+<li><strong>当角色转回原职业时</strong>：
+<ul>
+<li>继承技能池中的自由技能将会<strong>全部消失</strong></li>
+<li>角色会<strong>立刻重新学会</strong>该职业的职业技能</li>
+</ul>
+</li>
+</ul>
+<p>该行为属于游戏机制设计的一部分，<strong>并非 Bug</strong>。</p>
+<hr>
+<h3 id="大师之证master-seal"><a class="header" href="#大师之证master-seal">大师之证（Master Seal）</a></h3>
+<ul>
+<li>当<strong>基础职业</strong>角色达到 <strong>10 级</strong>时，可使用 <strong>大师之证</strong>。</li>
+<li>将角色转职为对应的 <strong>高级职业</strong>。</li>
+<li>转职后，角色等级将直接变为 <strong>20 级</strong>，即使原等级更低。</li>
+<li>转职过程中<strong>不会获得任何升级带来的能力成长</strong>。</li>
+</ul>
+<hr>
+<h3 id="平行之证second-seal"><a class="header" href="#平行之证second-seal">平行之证（Second Seal）</a></h3>
+<ul>
+<li>转职时，<strong>角色等级保持不变</strong>。</li>
+</ul>
+<h4 id="基础职业角色"><a class="header" href="#基础职业角色">基础职业角色：</a></h4>
+<ul>
+<li>可转职为其他 <strong>基础职业</strong> 或 <strong>特殊职业</strong>。</li>
+</ul>
+<h4 id="高级职业角色"><a class="header" href="#高级职业角色">高级职业角色：</a></h4>
+<ul>
+<li>可转职为其他 <strong>高级职业</strong> 或 <strong>特殊职业</strong>。</li>
+</ul>
+<h4 id="特殊职业角色"><a class="header" href="#特殊职业角色">特殊职业角色：</a></h4>
+<ul>
+<li>若 <strong>等级 &lt; 20</strong>：<br>可转职为 <strong>基础职业</strong> 或 <strong>特殊职业</strong>。</li>
+<li>若 <strong>等级 ≥ 20</strong>：<br>可转职为 <strong>高级职业</strong> 或 <strong>特殊职业</strong>。</li>
+</ul>
+<hr>
+<h3 id="其他说明"><a class="header" href="#其他说明">其他说明</a></h3>
+<ul>
+<li>角色<strong>无法转职为当前所处的同一职业</strong>。</li>
+<li>若角色在转职后已达到该职业的<strong>等级上限</strong>，<br>将会<strong>立刻习得</strong>该职业的职业技能。
+<ul>
+<li><em>(用于防止因无法继续升级而错过技能的情况。)</em></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="纹章士"><a class="header" href="#纹章士">纹章士</a></h1>
+<p>本章节汇总各纹章士的能力与技能信息。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="马尔斯-5"><a class="header" href="#马尔斯-5">马尔斯 ×5</a></h1>
+<h2 id="属性加成"><a class="header" href="#属性加成">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：力+1  技+1  速度+1</li>
+<li><strong>牵绊 5</strong>：力+1  技+2  速度+2</li>
+<li><strong>牵绊 10</strong>：力+2  技+3  速度+3</li>
+<li><strong>牵绊 20</strong>：力+3  技+4  速度+4</li>
+</ul>
+<h2 id="同步技能"><a class="header" href="#同步技能">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：接二连三
+<ul>
+<li>使对方陷入打破状态时，
+会发动所造成伤害50%的追击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：运输队
+<ul>
+<li>可使用“运输队”指令
+来保管或取出武器和道具</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：先驱
+<ul>
+<li>可使用“先驱“指令
+消耗3结合计量条或1结合回合
+于本场战斗中视为拥有
+“守备封“和“魔防封”
+若目标死亡，上述技能
+改为对其两格内敌人发动</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：不屈
+<ul>
+<li>受到敌人攻击后
+若自身HP不大于最大HP的50%
+移动+1且自身发起战斗时，威力+5
+每回合结束时，若未主动发起攻击
+失去此效果</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：不屈+
+<ul>
+<li>受到敌人攻击后
+若自身HP不大于最大HP的70%
+移动+1且自身发起战斗时，威力+7
+每回合结束时，若未主动发起攻击
+失去此效果</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技"><a class="header" href="#结合特技">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：神速
+<ul>
+<li>攻击时会发动所造成伤害50%的追击
+（可与其他会发动追击的特技同时发动）</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：神速（龙族）
+<ul>
+<li>攻击时会发动所造成伤害50%的追击
+（可与其他会发动追击的特技同时发动）
+【龙族】自身将回复HP
+数值等同此特技的追击伤害</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击"><a class="header" href="#结合攻击">结合攻击</a></h2>
+<ul>
+<li><strong>星之突击</strong>
+<ul>
+<li>连续施展7次伤害为30%的攻击
+仅限持剑且相邻时</li>
+</ul>
+</li>
+<li><strong>星之突击（魔道）</strong>
+<ul>
+<li>连续施展7次伤害为30%的攻击
+仅限持剑且相邻时
+【魔道】计算伤害时以魔力为基准</li>
+</ul>
+</li>
+<li><strong>星之突击（龙族）</strong>
+<ul>
+<li>连续施展7次伤害为30%的攻击
+仅限持剑且相邻时
+【龙族】攻击次数+2</li>
+</ul>
+</li>
+<li><strong>星之突击（连携）</strong>
+<ul>
+<li>连续施展7次伤害为30%的攻击
+仅限持剑且相邻时
+【连携】攻击次数+1</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器"><a class="header" href="#结合武器">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：刺剑：射程 1, 威力 6, 命中 95, 回避 20 / 纹章士马尔斯的刺剑。
+克制骑马/克制重装。</li>
+<li><strong>牵绊 10</strong>：格拉迪乌斯：射程 1~2, 威力 13, 命中 70 / 纹章士马尔斯的圣宝之枪
+可攻击远处敌人
+无必杀/无奥义/不可追击
+/容易被追击（-5）/
+食用可回复30HP</li>
+<li><strong>牵绊 20</strong>：法尔西昂：射程 1, 威力 10, 命中 100, 回避 20 / 纹章士马尔斯的传说神剑。
+克制龙。</li>
+</ul>
+<h2 id="继承技能"><a class="header" href="#继承技能">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：识破
+<ul>
+<li>三相克制有利时速度+2</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：速度+1
+<ul>
+<li>速度提升1</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：死线
+<ul>
+<li>造成伤害+10
+所受伤害+10</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：不屈
+<ul>
+<li>受到敌人攻击后
+若自身HP不大于最大HP的50%
+移动+1且自身发起战斗时，威力+5
+每回合结束时，若未主动发起攻击
+失去此效果</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：技之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的技+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：先驱
+<ul>
+<li>可使用“先驱“指令
+消耗3结合计量条或1结合回合
+于本场战斗中视为拥有
+“守备封“和“魔防封”
+若目标死亡，上述技能
+改为对其两格内敌人发动</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：速度+2
+<ul>
+<li>速度提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：不屈+
+<ul>
+<li>受到敌人攻击后
+若自身HP不大于最大HP的70%
+移动+1且自身发起战斗时，威力+7
+每回合结束时，若未主动发起攻击
+失去此效果</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：识破+
+<ul>
+<li>三相克制有利时速度+3</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质"><a class="header" href="#武器资质">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：剑</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="赛莉卡-5"><a class="header" href="#赛莉卡-5">赛莉卡 ×5</a></h1>
+<h2 id="属性加成-1"><a class="header" href="#属性加成-1">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：HP+2  魔力+2  技+1</li>
+<li><strong>牵绊 5</strong>：HP+3  魔力+3  技+2</li>
+<li><strong>牵绊 10</strong>：HP+5  魔力+4  技+3</li>
+<li><strong>牵绊 20</strong>：HP+5  魔力+5  技+4</li>
+</ul>
+<h2 id="同步技能-1"><a class="header" href="#同步技能-1">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：重唱
+<ul>
+<li>可使用“重唱”指令
+能以50%伤害的魔法发动2次攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：重唱（魔道）
+<ul>
+<li>可使用“重唱”指令
+能以50%伤害的魔法发动2次攻击
+【魔道】
+伤害增为60%</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：重唱（龙族）
+<ul>
+<li>可使用“重唱”指令
+能以50%伤害的魔法发动2次攻击
+【龙族】
+伤害增为60%</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：共鸣之黑魔法
+<ul>
+<li>使用魔道书攻击时，伤害+3。
+战斗后若敌方存活，自身守备、魔防-1。
+（效果持续到下个回合开始）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：反击
+<ul>
+<li>受到邻接敌人攻击时，
+将所受伤害反击给对方</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔法反击
+<ul>
+<li>受到魔法伤害时，
+将所受伤害反击给对方</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：共鸣之黑魔法+
+<ul>
+<li>使用魔道书攻击时，伤害+5。
+战斗后若敌方存活，自身守备、魔防-1。
+（效果持续到下个回合开始）</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：反击+
+<ul>
+<li>将所受邻接敌人伤害
+反击给对方</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：魔法反击+
+<ul>
+<li>将所受魔法伤害反击给对方</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-1"><a class="header" href="#结合特技-1">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：背理之法
+<ul>
+<li>增加攻击伤害并回复HP
+若为物理攻击，幅度为对方魔力的20%
+若为魔法攻击，幅度为对方力的20%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-1"><a class="header" href="#结合攻击-1">结合攻击</a></h2>
+<ul>
+<li><strong>传送末世烈焰</strong>
+<ul>
+<li>传送至10格范围内的可攻击位置
+对敌人发动强劲的魔法攻击</li>
+</ul>
+</li>
+<li><strong>传送末世烈焰（骑马）</strong>
+<ul>
+<li>传送至10格范围内的可攻击位置
+对敌人发动强劲的魔法攻击
+【骑马】可传送距离+2</li>
+</ul>
+</li>
+<li><strong>传送末世烈焰（飞行）</strong>
+<ul>
+<li>传送至10格范围内的可攻击位置
+对敌人发动强劲的魔法攻击
+【飞行】可传送距离+5</li>
+</ul>
+</li>
+<li><strong>传送末世烈焰（魔道）</strong>
+<ul>
+<li>传送至10格范围内的可攻击位置
+对敌人发动强劲的魔法攻击
+【魔道】伤害为120%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-1"><a class="header" href="#结合武器-1">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：天使：射程 1~2, 威力 5, 命中 90 / 纹章士赛莉卡的神圣魔法。
+克制异形。</li>
+<li><strong>牵绊 10</strong>：回响圣剑：射程 1~2, 威力 10, 命中 85 / 纹章士赛莉卡的圣剑
+克制异形/属性随距离变化
+回合开始时
+令3格内异形单位失去10点HP</li>
+<li><strong>牵绊 20</strong>：末世烈焰：射程 1~2, 威力 15, 命中 95, 必杀 10 / 纹章士赛莉卡的终极炎魔法。</li>
+</ul>
+<h2 id="继承技能-1"><a class="header" href="#继承技能-1">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：重唱
+<ul>
+<li>可使用“重唱”指令
+能以50%伤害的魔法发动2次攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：重唱（魔道）
+<ul>
+<li>可使用“重唱”指令
+能以50%伤害的魔法发动2次攻击
+【魔道】
+伤害增为60%</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：重唱（龙族）
+<ul>
+<li>可使用“重唱”指令
+能以50%伤害的魔法发动2次攻击
+【龙族】
+伤害增为60%</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：共鸣之黑魔法
+<ul>
+<li>使用魔道书攻击时，伤害+3。
+战斗后若敌方存活，自身守备、魔防-1。
+（效果持续到下个回合开始）</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：魔道Lv.1
+<ul>
+<li>装备魔法时，
+攻击力+1，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：魔道Lv.2
+<ul>
+<li>装备魔法时，
+攻击力+1，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：反击
+<ul>
+<li>受到邻接敌人攻击时，
+将所受伤害反击给对方</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：魔道Lv.3
+<ul>
+<li>装备魔法时，
+攻击力+2，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔法反击
+<ul>
+<li>受到魔法伤害时，
+将所受伤害反击给对方</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：共鸣之黑魔法+
+<ul>
+<li>使用魔道书攻击时，伤害+5。
+战斗后若敌方存活，自身守备、魔防-1。
+（效果持续到下个回合开始）</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔力之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的魔力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔道Lv.4
+<ul>
+<li>装备魔法时，
+攻击力+3，命中+10，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：魔道Lv.5
+<ul>
+<li>装备魔法时，
+攻击力+3，命中+10，
+三相克制不利时失效。
+【达人】攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-1"><a class="header" href="#武器资质-1">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：魔法</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="西格尔特-5"><a class="header" href="#西格尔特-5">西格尔特 ×5</a></h1>
+<h2 id="属性加成-2"><a class="header" href="#属性加成-2">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：技+1  速度+1  幸运-2  守备+1  移动+1</li>
+<li><strong>牵绊 5</strong>：技+2  速度+1  幸运-2  守备+2  移动+1</li>
+<li><strong>牵绊 10</strong>：技+3  速度+1  幸运-2  守备+3  移动+1</li>
+<li><strong>牵绊 20</strong>：技+4  速度+2  幸运-2  守备+4  移动+1</li>
+</ul>
+<h2 id="同步技能-2"><a class="header" href="#同步技能-2">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：再移动
+<ul>
+<li>行动后可额外移动2格</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：助跑
+<ul>
+<li>移动后发起战斗时，每消耗1移动力
+首次攻击攻击力提升1（至多增加9）</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：猛进
+<ul>
+<li>可使用“猛进”指令
+战斗结束后穿越敌人</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：骑士对策
+<ul>
+<li>对方为骑乘兵种时
+命中+10, 伤害+2</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：再移动+
+<ul>
+<li>行动后可额外移动3格</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：骑士对策+
+<ul>
+<li>对方为骑乘兵种时
+命中+15, 伤害+3</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：助跑+
+<ul>
+<li>移动后发起战斗时，每消耗1移动力
+首次攻击攻击力提升1
+若消耗的移动力不少于9
+首次攻击命中时将打破对方</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-2"><a class="header" href="#结合特技-2">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：快跑
+<ul>
+<li>移动提升5</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：快跑（骑马）
+<ul>
+<li>移动提升5
+【骑马】移动额外提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：快跑（隐密）
+<ul>
+<li>移动提升5
+【隐密】视所有地形的移动消耗为1</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：快跑（龙族）
+<ul>
+<li>移动提升5
+【龙族】移动额外提升1</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-2"><a class="header" href="#结合攻击-2">结合攻击</a></h2>
+<ul>
+<li><strong>破阵星驰</strong>
+<ul>
+<li>攻击敌人并移动至其身后
+仅限持剑、枪且相邻时</li>
+</ul>
+</li>
+<li><strong>破阵星驰（龙族）</strong>
+<ul>
+<li>攻击敌人并移动至其身后
+仅限持剑、枪且相邻时
+【龙族】伤害为120%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-2"><a class="header" href="#结合武器-2">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：骑士杀手：射程 1, 威力 7, 命中 75 / 纹章士西格尔特的枪。
+克制骑马。</li>
+<li><strong>牵绊 10</strong>：骑士之剑：射程 1, 威力 12, 命中 90 / 纹章士西格尔特的骑士剑。
+骑乘兵种装备时守备+5。</li>
+<li><strong>牵绊 20</strong>：圣剑提尔芬古：射程 1, 威力 15, 命中 85 / 纹章士西格尔特的传说圣剑。
+魔防+5。</li>
+</ul>
+<h2 id="继承技能-2"><a class="header" href="#继承技能-2">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：再移动
+<ul>
+<li>行动后可额外移动2格</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：枪术Lv.1
+<ul>
+<li>装备枪时，
+攻击力+1，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：枪术Lv.2
+<ul>
+<li>装备枪时，
+攻击力+1，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：助跑
+<ul>
+<li>移动后发起战斗时，每消耗1移动力
+首次攻击攻击力提升1（至多增加9）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：枪术Lv.3
+<ul>
+<li>装备枪时，
+攻击力+2，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：猛进
+<ul>
+<li>可使用“猛进”指令
+战斗结束后穿越敌人</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：骑士对策
+<ul>
+<li>对方为骑乘兵种时
+命中+10, 伤害+2</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：枪术Lv.4
+<ul>
+<li>装备枪时，
+攻击力+3，命中+10，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：移动之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的移动+1</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：骑士对策+
+<ul>
+<li>对方为骑乘兵种时
+命中+15, 伤害+3</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：枪术Lv.5
+<ul>
+<li>装备枪时，
+攻击力+3，命中+10，
+三相克制不利时失效。
+【达人】攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-2"><a class="header" href="#武器资质-2">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：枪</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="米卡雅-5"><a class="header" href="#米卡雅-5">米卡雅 ×5</a></h1>
+<h2 id="属性加成-3"><a class="header" href="#属性加成-3">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：魔力+1  幸运+2  魔防+2</li>
+<li><strong>牵绊 5</strong>：魔力+2  幸运+2  魔防+3</li>
+<li><strong>牵绊 10</strong>：魔力+3  幸运+4  魔防+4</li>
+<li><strong>牵绊 20</strong>：魔力+4  幸运+6  魔防+5</li>
+</ul>
+<h2 id="同步技能-3"><a class="header" href="#同步技能-3">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：操杖
+<ul>
+<li>可使用等级C以下的杖</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：治愈之声
+<ul>
+<li>对友方单位使用杖后，
+将自身HP回复至与其相同。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：和之心
+<ul>
+<li>使用杖指定唯一友方单位后，
+使其最大HP+10直到其主动发起战斗。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：弑杖
+<ul>
+<li>对方装备杖时回避+50</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：操杖+
+<ul>
+<li>可使用等级B以下的杖</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：操杖++
+<ul>
+<li>可使用等级A以下的杖</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-3"><a class="header" href="#结合特技-3">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：增幅
+<ul>
+<li>杖的射程及传送等距离改为10。
+回合开始时, 回复10格以内友方10HP。
+回复效果随魔力÷3提高，随距离衰减。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：增幅（气功）
+<ul>
+<li>杖的射程及传送等距离改为10。
+回合开始时, 回复10格以内友方10HP。
+回复效果随魔力提高，随距离衰减。
+【气功】使用HP回复杖时，回复量为120%</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：增幅（龙族）
+<ul>
+<li>杖的射程及传送等距离改为10。
+回合开始时, 回复10格以内友方10HP。
+回复效果随魔力÷3提高，随距离衰减。
+【龙族】治愈杖的射程（距离）改为11
+回合开始时回复量及范围改为11</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-3"><a class="header" href="#结合攻击-3">结合攻击</a></h2>
+<ul>
+<li><strong>大治愈之手</strong>
+<ul>
+<li>完全回复10格内我军与友军的HP
+使用后，自身的HP变为1</li>
+</ul>
+</li>
+<li><strong>大治愈之手（重装）</strong>
+<ul>
+<li>完全回复10格内我军与友军的HP
+使用后，自身的HP变为1
+【重装】10格内我方于下次战斗时守备+1</li>
+</ul>
+</li>
+<li><strong>大治愈之手（龙族）</strong>
+<ul>
+<li>完全回复10格内我军与友军的HP
+使用后，自身的HP变为1
+【龙族】完全回复11格内我军与友军的HP
+使用后，HP变为30%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-3"><a class="header" href="#结合武器-3">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：闪光：射程 1~2, 威力 7, 命中 90, 必杀 10 / 纹章士米卡雅的光魔法。
+命中后对方本局游戏命中-20</li>
+<li><strong>牵绊 10</strong>：圣吸：射程 1~2, 威力 4, 命中 85 / 纹章士米卡雅的光魔法。
+HP吸收/不可追击</li>
+<li><strong>牵绊 20</strong>：赛尼：射程 1~2, 威力 9, 命中 100 / 纹章士米卡雅的高级光魔法。
+克制骑马/克制重装。</li>
+</ul>
+<h2 id="继承技能-3"><a class="header" href="#继承技能-3">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：杖术Lv.1
+<ul>
+<li>HP回复量+1</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：杖术Lv.2
+<ul>
+<li>HP回复量+1、杖的命中+5</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：治愈之声
+<ul>
+<li>对友方单位使用杖后，
+将自身HP回复至与其相同。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：杖术Lv.3
+<ul>
+<li>HP回复量+2、杖的命中+5</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：和之心
+<ul>
+<li>使用杖指定唯一友方单位后，
+使其最大HP+10直到其主动发起战斗。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：弑杖
+<ul>
+<li>对方装备杖时回避+50</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔防之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的魔防+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：杖术Lv.4
+<ul>
+<li>HP回复量+3、杖的命中+10</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：杖术Lv.5
+<ul>
+<li>HP回复量+3、杖的命中+30</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-3"><a class="header" href="#武器资质-3">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：杖</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="罗伊-5"><a class="header" href="#罗伊-5">罗伊 ×5</a></h1>
+<h2 id="属性加成-4"><a class="header" href="#属性加成-4">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：HP+3  力+2</li>
+<li><strong>牵绊 5</strong>：HP+5  力+3</li>
+<li><strong>牵绊 10</strong>：HP+7  力+4</li>
+<li><strong>牵绊 20</strong>：HP+10  力+5</li>
+</ul>
+<h2 id="同步技能-4"><a class="header" href="#同步技能-4">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：坚持
+<ul>
+<li>若战斗开始时HP为30%以上
+受到超过HP的伤害时
+防止额外的伤害
+然后本回合坚持失效</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：地形耐性
+<ul>
+<li>使地形伤害无效
+不受地形回避和防御的负面影响
+不受地形额外移动消耗的影响</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：四通八达
+<ul>
+<li>可使用“四通八达”指令
+朝合计4个方向的8个可选位置的敌人
+前进至多2格并发动攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：坚持+
+<ul>
+<li>若战斗开始时HP为20%以上
+受到超过HP的伤害时
+防止额外的伤害
+然后本回合坚持失效</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：乘胜追击
+<ul>
+<li>对方处于不利地形时，
+造成伤害+5。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：坚持++
+<ul>
+<li>若战斗开始时HP为10%以上
+受到超过HP的伤害时
+防止额外的伤害
+然后本回合坚持失效</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：乘胜追击+
+<ul>
+<li>对方处于不利地形时，
+造成伤害+7。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：坚持+++
+<ul>
+<li>若战斗开始时HP为2以上
+受到超过HP的伤害时
+防止额外的伤害
+然后本回合坚持失效</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-4"><a class="header" href="#结合特技-4">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：超越
+<ul>
+<li>单位等级+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-4"><a class="header" href="#结合攻击-4">结合攻击</a></h2>
+<ul>
+<li><strong>狮子红莲焰舞</strong>
+<ul>
+<li>使用炎之剑攻击前方
+目标格与其后2格会陷入燃烧状态
+仅限持剑且相邻时</li>
+</ul>
+</li>
+<li><strong>狮子红莲焰舞（龙族）</strong>
+<ul>
+<li>使用炎之剑攻击前方
+目标格与其后2格会陷入燃烧状态
+仅限持剑且相邻时，【龙族】扩大燃烧范围</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-4"><a class="header" href="#结合武器-4">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：破枪剑：射程 1, 威力 7, 命中 80, 必杀 5 / 纹章士罗伊的剑。
+对枪有利、对斧不利。</li>
+<li><strong>牵绊 10</strong>：屠龙剑：射程 1, 威力 6, 命中 70 / 纹章士罗伊的剑。
+克制龙。</li>
+<li><strong>牵绊 20</strong>：封印之剑：射程 1~2, 威力 11, 命中 95, 必杀 10 / 纹章士罗伊的英雄之剑。
+守备、魔防+2/能攻击远方敌人
+龙特效</li>
+</ul>
+<h2 id="继承技能-4"><a class="header" href="#继承技能-4">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：地形耐性
+<ul>
+<li>使地形伤害无效
+不受地形回避和防御的负面影响
+不受地形额外移动消耗的影响</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：剑术Lv.1
+<ul>
+<li>装备剑时，
+攻击力+1，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：剑术Lv.2
+<ul>
+<li>装备剑时，
+攻击力+2，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：四通八达
+<ul>
+<li>可使用“四通八达”指令
+朝合计4个方向的8个可选位置的敌人
+前进至多2格并发动攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：剑术Lv.3
+<ul>
+<li>装备剑时，
+攻击力+3，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：乘胜追击
+<ul>
+<li>对方处于不利地形时，
+造成伤害+5。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：力之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：剑术Lv.4
+<ul>
+<li>装备剑时，
+攻击力+4，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：乘胜追击+
+<ul>
+<li>对方处于不利地形时，
+造成伤害+7。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：剑术Lv.5
+<ul>
+<li>装备剑时，
+攻击力+4，命中+5，
+三相克制不利时失效。
+【达人】攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-4"><a class="header" href="#武器资质-4">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：剑</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="里弗-5"><a class="header" href="#里弗-5">里弗 ×5</a></h1>
+<h2 id="属性加成-5"><a class="header" href="#属性加成-5">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：HP+3  技+1  守备+1  魔防+1</li>
+<li><strong>牵绊 5</strong>：HP+3  技+2  守备+2  魔防+1</li>
+<li><strong>牵绊 10</strong>：HP+3  技+3  守备+3  魔防+2</li>
+<li><strong>牵绊 20</strong>：HP+5  技+4  守备+4  魔防+2</li>
+</ul>
+<h2 id="同步技能-5"><a class="header" href="#同步技能-5">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：武器大师
+<ul>
+<li>可使用等级C以下的剑、枪与斧</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：埋伏
+<ul>
+<li>受到敌人攻击时
+若自身的HP为25%以下，可抢先攻击对方</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：战斗准备
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方
+命中+20/武器威力+20%</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：三相激化+
+<ul>
+<li>若上场战斗中使用的武器三相
+（红·绿·蓝·其他）与本场战斗不同
+伤害+5</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：埋伏+
+<ul>
+<li>受到敌人攻击时
+若自身的HP为50%以下，可抢先攻击对方</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：三相激化
+<ul>
+<li>若上场战斗中使用的武器三相
+（红·绿·蓝·其他）与本场战斗不同
+伤害+3</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：武器大师+
+<ul>
+<li>可使用等级B以下的剑、枪与斧</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：三相激化+
+<ul>
+<li>若上场战斗中使用的武器三相
+（红·绿·蓝·其他）与本场战斗不同
+伤害+5</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：武器大师++
+<ul>
+<li>可使用等级A以下的剑、枪与斧</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-5"><a class="header" href="#结合特技-5">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：瞬应
+<ul>
+<li>受到敌人攻击时
+若持有于射程、互克、克制上占优势的武器
+将自动更换为该武器</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-5"><a class="header" href="#结合攻击-5">结合攻击</a></h2>
+<ul>
+<li><strong>四重巧击</strong>
+<ul>
+<li>使用剑、枪、斧、弓施展连续攻击</li>
+</ul>
+</li>
+<li><strong>四重巧击（气功）</strong>
+<ul>
+<li>使用剑、枪、斧、弓施展连续攻击
+【气功】必定打破</li>
+</ul>
+</li>
+<li><strong>四重巧击（龙族）</strong>
+<ul>
+<li>使用剑、枪、斧、弓施展连续攻击
+【龙族】伤害为120%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-5"><a class="header" href="#结合武器-5">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：S药水：纹章士里弗的抗疲劳药水
+全能力+3/逐回合衰减</li>
+<li><strong>牵绊 10</strong>：远程圣疗+：射程 1~10, 威力 2, 命中 100 / 纹章士里弗的长距离杖。
+可以治疗远处的友方。</li>
+</ul>
+<h2 id="继承技能-5"><a class="header" href="#继承技能-5">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：避开要害
+<ul>
+<li>于武器互克上占优势时，所受伤害-3</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：埋伏
+<ul>
+<li>受到敌人攻击时
+若自身的HP为25%以下，可抢先攻击对方</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：暗器术Lv.1
+<ul>
+<li>装备暗器时，
+攻击力+1，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：暗器术Lv.2
+<ul>
+<li>装备暗器时，
+攻击力+2，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：战斗准备
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方
+命中+20/武器威力+20%</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：暗器术Lv.3
+<ul>
+<li>装备暗器时，
+攻击力+3，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：避开要害+
+<ul>
+<li>于武器互克上占优势时，所受伤害-4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：埋伏+
+<ul>
+<li>受到敌人攻击时
+若自身的HP为50%以下，可抢先攻击对方</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：暗器术Lv.4
+<ul>
+<li>装备暗器时，
+攻击力+4，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：避开要害++
+<ul>
+<li>于武器互克上占优势时，所受伤害-5</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：暗器术Lv.5
+<ul>
+<li>装备暗器时，
+攻击力+4，命中+5，
+三相克制不利时失效。
+【达人】攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-5"><a class="header" href="#武器资质-5">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：暗器</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="露琪娜-7"><a class="header" href="#露琪娜-7">露琪娜 ×7</a></h1>
+<h2 id="属性加成-6"><a class="header" href="#属性加成-6">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：技+2  速度+1  幸运+2</li>
+<li><strong>牵绊 5</strong>：技+3  速度+2  幸运+2</li>
+<li><strong>牵绊 10</strong>：技+4  速度+3  幸运+4</li>
+<li><strong>牵绊 20</strong>：技+5  速度+4  幸运+6</li>
+</ul>
+<h2 id="同步技能-6"><a class="header" href="#同步技能-6">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：双重攻击
+<ul>
+<li>即使自身的战斗类型并非“连携”
+也能参与连锁攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：双重协助
+<ul>
+<li>我方单位发起战斗时，
+若敌人位于自身射程内，
+且自身可参与连锁攻击，
+则参与之。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：双重支援
+<ul>
+<li>战斗时若有我方单位相邻，
+减少所受伤害
+（减少幅度为相邻我方单位的合计支援值）</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：穿梭
+<ul>
+<li>可使用“穿梭”指令，
+与5格内友军互换位置。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：穿梭（龙族）
+<ul>
+<li>可使用“穿梭”指令，
+与5格内友军互换位置。
+【龙族】范围+2</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：双重协助+
+<ul>
+<li>我方单位发起战斗时，若敌人位于自身射程内
+且自身可参与连锁攻击，则参与之
+参与连锁攻击时，若自身的HP为最大值，
+造成的伤害翻倍。</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-6"><a class="header" href="#结合特技-6">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：牵绊
+<ul>
+<li>给予周围2格友军“双重攻击”
+场上友军计算“双重支援”时
+其2格内的每名友军单位
+也能提供1支援值</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-6"><a class="header" href="#结合攻击-6">结合攻击</a></h2>
+<ul>
+<li><strong>人人为我</strong>
+<ul>
+<li>自身周围2格内的我方单位将参与连锁攻击
+仅限持剑时</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-6"><a class="header" href="#结合武器-6">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：王室贵族之剑：射程 1, 威力 6, 命中 85, 必杀 10 / 纹章士露琪娜的宝剑。
+王族装备时，伤害+5。</li>
+<li><strong>牵绊 10</strong>：帕提亚：射程 2, 威力 16, 命中 70, 必避 -5 / 纹章士露琪娜威力强大的和弓。
+克制飞行/食用可回复30HP</li>
+<li><strong>牵绊 20</strong>：里剑法尔西昂：射程 1~2, 威力 9, 命中 80, 必杀 5 / 纹章士露琪娜的传说神剑。
+龙特效/幸运+20/攻击属性随距离变化</li>
+</ul>
+<h2 id="继承技能-6"><a class="header" href="#继承技能-6">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：下克上
+<ul>
+<li>自身等级低于对方时，
+命中·回避+15</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：大盾
+<ul>
+<li>对方装备剑、枪、斧、拳时
+一定几率使所受伤害减半
+（几率为“技”%）</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：圣盾
+<ul>
+<li>对方装备魔道书、弓、暗器、特殊武器时
+一定几率使所受伤害减半
+（几率为“技”%）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：幸运+2
+<ul>
+<li>幸运提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：双重支援
+<ul>
+<li>战斗时若有我方单位相邻，
+减少所受伤害
+（减少幅度为相邻我方单位的合计支援值）</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：幸运之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的幸运+8</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：幸运+4
+<ul>
+<li>幸运提升4</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-6"><a class="header" href="#武器资质-6">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：剑</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="琳-7"><a class="header" href="#琳-7">琳 ×7</a></h1>
+<h2 id="属性加成-7"><a class="header" href="#属性加成-7">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：技+2  速度+2</li>
+<li><strong>牵绊 5</strong>：技+4  速度+3</li>
+<li><strong>牵绊 10</strong>：技+6  速度+4</li>
+<li><strong>牵绊 20</strong>：技+8  速度+5</li>
+</ul>
+<h2 id="同步技能-7"><a class="header" href="#同步技能-7">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：强攻
+<ul>
+<li>自身发动攻击时
+若可追击且追击系数&gt;=7
+会抢先在敌人反击前施展追击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：曲射
+<ul>
+<li>可使用【曲射】指令
+消耗4结合计量条或2结合回合
+使弓或手里剑的射程+1
+但命中减少20×(战斗距离-2)</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：先手必胜
+<ul>
+<li>自身发动攻击时，
+攻击力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：强攻+
+<ul>
+<li>自身发动攻击时
+若可追击且追击系数&gt;=6
+会抢先在敌人反击前施展追击</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：速之吸收
+<ul>
+<li>自身发动攻击时，每打倒1个敌人，速度+2
+（至多叠加5层效果）
+每回合开始时，若上回合没有参与战斗，
+此效果减少1层</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：强攻++
+<ul>
+<li>自身发动攻击时
+若可追击且追击系数&gt;=5
+会抢先在敌人反击前施展追击</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-7"><a class="header" href="#结合特技-7">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：巧刃
+<ul>
+<li>武器威力&lt;10时, 速度+5
+主动攻击时伤害增加
+自身与对方速度差的30%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-7"><a class="header" href="#结合攻击-7">结合攻击</a></h2>
+<ul>
+<li><strong>流星群</strong>
+<ul>
+<li>连续施展5次伤害为50%的攻击
+仅限持弓</li>
+</ul>
+</li>
+<li><strong>流星群（隐密）</strong>
+<ul>
+<li>连续施展5次伤害为50%的攻击
+仅限持弓
+【隐密】射程+1</li>
+</ul>
+</li>
+<li><strong>流星群（气功）</strong>
+<ul>
+<li>连续施展5次伤害为50%的攻击
+仅限持弓
+【气功】必定打破</li>
+</ul>
+</li>
+<li><strong>流星群（龙族）</strong>
+<ul>
+<li>连续施展5次伤害为50%的攻击
+仅限持弓
+【龙族】射程+1</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-7"><a class="header" href="#结合武器-7">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：游隼弓：射程 2, 威力 6, 命中 125 / 纹章士琳的必中之和弓
+对飞行敌人5倍克制</li>
+<li><strong>牵绊 10</strong>：西风：射程 3, 威力 7, 命中 70, 回避 -20 / 纹章士琳的远击之和弓
+不可追击/
+主动攻击命中后使对方移动减半
+持续一回合</li>
+<li><strong>牵绊 20</strong>：妙尔葛雷：射程 2, 威力 5, 命中 90 / 纹章士琳的疾风之和弓。
+由自身发动攻击时，连续攻击两次/
+速度+2/克制龙/克制飞行</li>
+</ul>
+<h2 id="继承技能-7"><a class="header" href="#继承技能-7">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：强攻
+<ul>
+<li>自身发动攻击时
+若可追击且追击系数&gt;=7
+会抢先在敌人反击前施展追击</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：弓术Lv.1
+<ul>
+<li>装备弓时，
+攻击力+1，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：弓术Lv.2
+<ul>
+<li>装备弓时，
+攻击力+1，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：曲射
+<ul>
+<li>可使用【曲射】指令
+消耗4结合计量条或2结合回合
+使弓或手里剑的射程+1
+但命中减少20×(战斗距离-2)</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：先手必胜
+<ul>
+<li>自身发动攻击时，
+攻击力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：弓术Lv.3
+<ul>
+<li>装备弓时，
+攻击力+2，命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：强攻+
+<ul>
+<li>自身发动攻击时
+若可追击且追击系数&gt;=6
+会抢先在敌人反击前施展追击</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：速之吸收
+<ul>
+<li>自身发动攻击时，每打倒1个敌人，速度+2
+（至多叠加5层效果）
+每回合开始时，若上回合没有参与战斗，
+此效果减少1层</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：弓术Lv.4
+<ul>
+<li>装备弓时，
+攻击力+3，命中+10，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：速之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的速+4</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：弓术Lv.5
+<ul>
+<li>装备弓时，
+攻击力+3，命中+10，
+三相克制不利时失效。
+【达人】攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-7"><a class="header" href="#武器资质-7">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：弓</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="琪姬-7"><a class="header" href="#琪姬-7">琪姬 ×7</a></h1>
+<h2 id="属性加成-8"><a class="header" href="#属性加成-8">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：魔力+1  守备+1</li>
+<li><strong>牵绊 5</strong>：力+1  魔力+1  守备+1  魔防+1</li>
+<li><strong>牵绊 10</strong>：力+1  魔力+2  技+1  幸运+2  守备+2  魔防+1</li>
+<li><strong>牵绊 20</strong>：力+2  魔力+2  技+1  幸运+2  守备+3  魔防+1</li>
+</ul>
+<h2 id="同步技能-8"><a class="header" href="#同步技能-8">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：生物节律
+<ul>
+<li>奇数回合，3格内友方命中、必杀+10。
+偶数回合，3格内友方回避、必杀回避+10。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：生物节律（骑马）
+<ul>
+<li>奇数回合，3格内友方命中、必杀+10。
+偶数回合，3格内友方回避、必杀回避+10。
+【骑马】偶数回合必杀回避额外+10</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：生物节律（龙族）
+<ul>
+<li>奇数回合，3格内友方命中、必杀+10。
+偶数回合，3格内友方回避、必杀回避+10。
+【龙族】奇数回合命中额外+10</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：地玉加护
+<ul>
+<li>行动结束时
+对自身周围2格的地形赋予“神龙领域”效果</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：光玉加护
+<ul>
+<li>可使用“支援”指令，
+使周围2格友方获得效果：
+本回合每场战斗中，
+非首次受到伤害减少50%，
+非首次造成伤害增加50%。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：星玉加护
+<ul>
+<li>每回合依次获得下列能力组合的强化：
+力・守备 → 魔力・魔防 → 技・速・幸运
+（增加幅度为等级÷10，向上取整且至多增加4）</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：地玉加护+
+<ul>
+<li>行动结束时
+对自身周围3格的地形赋予“神龙领域”效果</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-8"><a class="header" href="#结合特技-8">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：龙化
+<ul>
+<li>结合时化成龙战斗
+力·魔力+3，守备·魔防+4
+技·幸运+8，速-4</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：龙化（龙族）
+<ul>
+<li>结合时化成龙战斗
+力·魔力+3，守备·魔防+4
+技·幸运+8，速-4
+【龙族】技·幸运额外+2
+力·魔力·守备·魔防额外+1</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-8"><a class="header" href="#结合攻击-8">结合攻击</a></h2>
+<ul>
+<li><strong>神龙的祝福</strong>
+<ul>
+<li>使一名友方单位的HP和结合计量条回复至上限</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-8"><a class="header" href="#结合武器-8">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：龙尾猛击：射程 1, 威力 16, 命中 85, 回避 -10, 必避 10 / 纹章士琪姬龙化后的强大攻击。
+不可追击/龙特效/
+由自身主动攻击时必为后攻，
+但会发动猛击且所受物理伤害-10</li>
+<li><strong>牵绊 10</strong>：神龙吐息：射程 1, 威力 20, 命中 75, 回避 -10, 必避 10 / 纹章士琪姬龙化后的魔法吐息。
+不可追击/龙特效
+由自身主动攻击时，造成伤害+10</li>
+<li><strong>牵绊 20</strong>：永恒之爪：射程 1, 威力 5, 命中 90, 必杀 10, 回避 -10, 必避 10 / 纹章士琪姬龙化后的攻击。
+由自身发动攻击时，连续攻击两次，
+且交替造成物理·魔法伤害/龙特效</li>
+</ul>
+<h2 id="继承技能-8"><a class="header" href="#继承技能-8">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：地玉加护
+<ul>
+<li>行动结束时
+对自身周围2格的地形赋予“神龙领域”效果</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：奇袭之牙
+<ul>
+<li>奇数回合，伤害+4</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：偶像之幻
+<ul>
+<li>偶数回合，伤害+4</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：光玉加护
+<ul>
+<li>可使用“支援”指令，
+使周围2格友方获得效果：
+本回合每场战斗中，
+非首次受到伤害减少50%，
+非首次造成伤害增加50%。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：技+1
+<ul>
+<li>技提升1</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：星玉加护
+<ul>
+<li>每回合依次获得下列能力组合的强化：
+力・守备 → 魔力・魔防 → 技・速・幸运
+（增加幅度为等级÷10，向上取整且至多增加4）</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：技+2
+<ul>
+<li>技提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：奇妙的鸣声
+<ul>
+<li>奇数回合，回复40%HP。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：偶然的小憩
+<ul>
+<li>偶数回合，回复40%HP。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：地玉加护+
+<ul>
+<li>行动结束时
+对自身周围3格的地形赋予“神龙领域”效果</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-8"><a class="header" href="#武器资质-8">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：拳</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="海克托尔-7"><a class="header" href="#海克托尔-7">海克托尔 ×7</a></h1>
+<h2 id="属性加成-9"><a class="header" href="#属性加成-9">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：HP+5  力+1  魔防-2</li>
+<li><strong>牵绊 5</strong>：HP+10  力+1  魔防-2</li>
+<li><strong>牵绊 10</strong>：HP+15  力+2  魔防-2</li>
+<li><strong>牵绊 20</strong>：HP+20  力+2  魔防-2</li>
+</ul>
+<h2 id="同步技能-9"><a class="header" href="#同步技能-9">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：回击
+<ul>
+<li>受到敌人攻击时
+若自身的HP为75%以上将发动追击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：铁壁态势
+<ul>
+<li>可使用“铁壁态势”指令，
+消耗3结合计量条或1结合回合，
+使自身于本回合免疫break。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：铁壁态势（龙族）
+<ul>
+<li>可使用“铁壁态势”指令，
+消耗3结合计量条或1结合回合，
+使自身于本回合免疫break。
+【龙族】-1结合计量条消耗</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：后手不败
+<ul>
+<li>受到敌人攻击时，
+攻击力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：力之吸收
+<ul>
+<li>自身发动攻击时，每打倒1个敌人，力+2
+（至多叠加5层效果）
+每回合开始时，若上回合没有参与战斗，
+此效果减少1层</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：回击+
+<ul>
+<li>受到敌人攻击时
+若自身的HP为50%以上将发动追击</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-9"><a class="header" href="#结合特技-9">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：重击
+<ul>
+<li>武器威力&gt;=10时，力+5
+受到攻击时伤害增加
+自身与对方力差的30%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-9"><a class="header" href="#结合攻击-9">结合攻击</a></h2>
+<ul>
+<li><strong>轰雷</strong>
+<ul>
+<li>发动武器威力翻倍的攻击
+仅限持剑、斧</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-9"><a class="header" href="#结合武器-9">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：群狼之灾：射程 1, 威力 10, 命中 75, 必杀 5 / 纹章士海克托尔的斧。
+克制骑马/克制重装。</li>
+<li><strong>牵绊 10</strong>：卢恩剑：射程 1~2, 威力 14, 命中 80 / 纹章士海克托尔的远击剑。
+难以追击(-3)/攻击属性随距离变化</li>
+<li><strong>牵绊 20</strong>：阿尔玛兹：射程 1, 威力 18, 命中 85 / 纹章士海克托尔的天雷之斧。
+防守+5/克制龙。</li>
+</ul>
+<h2 id="继承技能-9"><a class="header" href="#继承技能-9">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：回击
+<ul>
+<li>受到敌人攻击时
+若自身的HP为75%以上将发动追击</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：HP+3
+<ul>
+<li>HP提升3</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：铁壁态势
+<ul>
+<li>可使用“铁壁态势”指令，
+消耗3结合计量条或1结合回合，
+使自身于本回合免疫break。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：铁壁态势（龙族）
+<ul>
+<li>可使用“铁壁态势”指令，
+消耗3结合计量条或1结合回合，
+使自身于本回合免疫break。
+【龙族】-1结合计量条消耗</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：后手不败
+<ul>
+<li>受到敌人攻击时，
+攻击力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：力之吸收
+<ul>
+<li>自身发动攻击时，每打倒1个敌人，力+2
+（至多叠加5层效果）
+每回合开始时，若上回合没有参与战斗，
+此效果减少1层</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：HP+5
+<ul>
+<li>HP提升5</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：回击+
+<ul>
+<li>受到敌人攻击时
+若自身的HP为50%以上将发动追击</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-9"><a class="header" href="#武器资质-9">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：斧</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="艾克-6"><a class="header" href="#艾克-6">艾克 ×6</a></h1>
+<h2 id="属性加成-10"><a class="header" href="#属性加成-10">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：力+1  守备+2</li>
+<li><strong>牵绊 5</strong>：力+2  守备+3</li>
+<li><strong>牵绊 10</strong>：力+3  守备+4</li>
+<li><strong>牵绊 20</strong>：力+4  守备+5</li>
+</ul>
+<h2 id="同步技能-10"><a class="header" href="#同步技能-10">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：勇将
+<ul>
+<li>HP为75%及以下时
+技、运+6</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：援护封
+<ul>
+<li>被连携攻击命中时
+对方于本章内
+不能再使用连携攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：里投
+<ul>
+<li>可使用“里投”指令，
+战斗后将对手移动到身后</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：怒
+<ul>
+<li>HP为50%及以下时，
+必杀+20</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：勇将+
+<ul>
+<li>HP为75%及以下时
+技、运+8</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：里投+
+<ul>
+<li>可使用“里投+”指令，
+消耗3结合计量条或1结合回合
+战斗后将对手移动到身后，
+然后对其造成20%最大HP的伤害
+并令其进入break状态</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-10"><a class="header" href="#结合特技-10">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：威风
+<ul>
+<li>令周围3格敌方单位的
+力、技、守备各下降2点
+然后自身对应能力提高等量值
+（每种能力至多提高12点）</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-10"><a class="header" href="#结合攻击-10">结合攻击</a></h2>
+<ul>
+<li><strong>霸克 · 天空</strong>
+<ul>
+<li>连续发动一次太阳和一次月光攻击
+仅限持剑斧</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-10"><a class="header" href="#结合武器-10">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：战锤：射程 1, 威力 18, 命中 75 / 纹章士艾克的战锤。
+不可追击/克制重装/由自身主动攻击时
+必为后攻，但会发动猛击。</li>
+<li><strong>牵绊 10</strong>：乌尔邦：射程 1, 威力 16, 命中 90, 必杀 5 / 纹章士艾克的战斧。</li>
+<li><strong>牵绊 20</strong>：瑞格内尔：射程 1~2, 威力 11, 命中 80, 必杀 5 / 纹章士艾克的传说神剑。
+防守+2/攻击属性随距离变化。</li>
+</ul>
+<h2 id="继承技能-10"><a class="header" href="#继承技能-10">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：勇将
+<ul>
+<li>HP为75%及以下时
+技、运+6</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：大振
+<ul>
+<li>命中-10，必杀+10</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：斧术Lv.1
+<ul>
+<li>装备斧时，
+命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：斧术Lv.2
+<ul>
+<li>装备斧时，
+命中+10，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：援护封
+<ul>
+<li>被连携攻击命中时
+对方于本章内
+不能再使用连携攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：里投
+<ul>
+<li>可使用“里投”指令，
+战斗后将对手移动到身后</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：斧术Lv.3
+<ul>
+<li>装备斧时，
+攻击力+1，命中+10。
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：怒
+<ul>
+<li>HP为50%及以下时，
+必杀+20</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：勇将+
+<ul>
+<li>HP为75%及以下时
+技、运+8</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：斧术Lv.4
+<ul>
+<li>装备斧时，
+攻击力+2，命中+15。
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：守备之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的守备+4</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：里投+
+<ul>
+<li>可使用“里投+”指令，
+消耗3结合计量条或1结合回合
+战斗后将对手移动到身后，
+然后对其造成20%最大HP的伤害
+并令其进入break状态</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：斧术Lv.5
+<ul>
+<li>装备斧时，
+攻击力+2，命中+15。
+三相克制不利时失效。
+【达人】攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-10"><a class="header" href="#武器资质-10">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：斧</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="贝雷特-7"><a class="header" href="#贝雷特-7">贝雷特 ×7</a></h1>
+<h2 id="属性加成-11"><a class="header" href="#属性加成-11">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：力+1  魔力+1  速度+1</li>
+<li><strong>牵绊 5</strong>：力+2  魔力+1  速度+1</li>
+<li><strong>牵绊 10</strong>：力+2  魔力+2  速度+2</li>
+<li><strong>牵绊 20</strong>：力+3  魔力+3  速度+3</li>
+</ul>
+<h2 id="同步技能-11"><a class="header" href="#同步技能-11">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：指导
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（骑马）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【骑马】
+视为拥有“技之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（飞行）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【飞行】
+视为拥有“魔防之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（隐密）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【隐秘】
+视为拥有“速之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（重装）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【重装】
+视为拥有“守备之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（魔道）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【魔道】
+视为拥有“魔力之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（气功）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【气功】
+视为拥有“幸运之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（龙族）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【龙族】
+视为拥有“移动之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：指导（连携）
+<ul>
+<li>根据战斗类型视为拥有对应“呐喊”技能
+【连携】
+视为拥有“力之呐喊”</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：天刻之脉动
+<ul>
+<li>攻击失手时，额外进行一次命中判定。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：战技
+<ul>
+<li>可使用“猛烈铁拳”指令
+消耗5结合计量条或2结合回合
+发出强而有力的3拳</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：后发先至
+<ul>
+<li>攻击时
+若不为本场战斗第一次攻击
+攻击力+5</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：战技
+<ul>
+<li>可使用“猛烈铁拳”和“冥想”指令
+【猛烈铁拳】
+消耗5结合计量条或2结合回合
+发出强而有力的3拳
+【冥想】
+回复50%HP和1结合计量条</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：天刻之脉动+
+<ul>
+<li>攻击失手时，额外进行一次命中判定。
+敌方的攻击命中时，额外进行一次失手判定。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：战技
+<ul>
+<li>可使用“猛烈铁拳”“冥想”
+和“魔物崩击”指令
+【猛烈铁拳】
+消耗5结合计量条或2结合回合
+发出强而有力的3拳
+【冥想】
+回复50%HP和1结合计量条
+【魔物崩击】
+消耗4结合计量条或2结合回合
+挥出克制异形且无视异形防御的2拳</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-11"><a class="header" href="#结合特技-11">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：先生
+<ul>
+<li>无需使用支援指令
+结束行动即可发动支援效果</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-11"><a class="header" href="#结合攻击-11">结合攻击</a></h2>
+<ul>
+<li><strong>计策：女神之舞</strong>
+<ul>
+<li>限定技
+使相邻的我方单位再次行动</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-11"><a class="header" href="#结合武器-11">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：布鲁托刚格：射程 1, 威力 8, 命中 80 / 纹章士贝雷特的剑。
+剑刃被魔力环绕。
+克制龙/克制骑马。</li>
+<li><strong>牵绊 10</strong>：降魔杵：射程 1, 威力 5, 命中 90, 必杀 10 / 纹章士贝雷特的护手。
+攻击时以对手防守与魔防较低者为基准。
+由自身发动攻击时，连续攻击2次</li>
+<li><strong>牵绊 20</strong>：天帝之剑：射程 1~2, 威力 11, 命中 90, 必杀 10 / 纹章士贝雷特的英雄的遗产。
+根据自己的魔力提升威力。
+能攻击远方敌人/克制龙。
+每次结合限一次，
+可使用战技“霸天”
+发起对龙有效的攻击
+威力+10/命中+10/必杀+20</li>
+</ul>
+<h2 id="继承技能-11"><a class="header" href="#继承技能-11">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：格斗术Lv.1
+<ul>
+<li>装备体术时，
+命中+5，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：格斗术Lv.2
+<ul>
+<li>装备体术时，
+命中+10，
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：天刻之脉动
+<ul>
+<li>攻击失手时，额外进行一次命中判定。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：猛烈铁拳
+<ul>
+<li>可使用“猛烈铁拳“指令
+消耗5结合计量条或2结合回合
+发出强而有力的3拳</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：格斗术Lv.3
+<ul>
+<li>装备体术时，
+攻击力+1，命中+10。
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：后发先至
+<ul>
+<li>攻击时
+若不为本场战斗第一次攻击
+攻击力+5</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：冥想
+<ul>
+<li>可使用“冥想“指令
+回复50%HP和1结合计量条</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：格斗术Lv.4
+<ul>
+<li>装备体术时，
+攻击力+2，命中+15。
+三相克制不利时失效。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：魔物崩击
+<ul>
+<li>可使用“魔物崩击“指令
+消耗4结合计量条或2结合回合
+挥出克制异形且无视异形一半防御的2拳</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：格斗术Lv.5
+<ul>
+<li>装备体术时，
+攻击力+2，命中+15。
+三相克制不利时失效。
+【达人】攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-11"><a class="header" href="#武器资质-11">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：拳</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="库洛武-7"><a class="header" href="#库洛武-7">库洛武 ×7</a></h1>
+<h2 id="属性加成-12"><a class="header" href="#属性加成-12">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：力+1  魔力+1  技+3</li>
+<li><strong>牵绊 5</strong>：力+1  魔力+2  技+4</li>
+<li><strong>牵绊 10</strong>：力+2  魔力+2  技+5</li>
+<li><strong>牵绊 20</strong>：力+3  魔力+3  技+6</li>
+</ul>
+<h2 id="同步技能-12"><a class="header" href="#同步技能-12">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：半身
+<ul>
+<li>自身发动攻击时，
+鲁弗莱会参与连锁攻击。
+受到伤害时以一定概率防止之。
+（几率为“牵绊等级”×1.5%）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：战知识
+<ul>
+<li>周围3格内的我方单位
+若持有武器颜色与自身相同
+伤害+3，受到伤害-3</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：王器
+<ul>
+<li>自身的奥义触发率+10%</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：王器（龙族）
+<ul>
+<li>自身的奥义触发率+10%
+【龙族】 触发率额外+5%</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：七色之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的全能力+2</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：战知识+
+<ul>
+<li>周围3格内的我方单位
+若持有武器颜色与自身相同
+或战斗类型与自身相同
+伤害+3，受到伤害-3</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-12"><a class="header" href="#结合特技-12">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：觉醒
+<ul>
+<li>若周围3格内没有友军，
+命中·必杀回避+50，
+回避·必杀+10，
+且战知识对自身生效。</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-12"><a class="header" href="#结合攻击-12">结合攻击</a></h2>
+<ul>
+<li><strong>万钧雷霆剑</strong>
+<ul>
+<li>用附有魔力的剑攻击敌人
+仅限持剑
+（攻击力按力与魔力的和计算）</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-12"><a class="header" href="#结合武器-12">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：雷电剑：射程 1~2, 威力 9, 命中 80 / 纹章士鲁弗莱的魔法剑。
+能以魔法之雷攻击远方敌人。</li>
+<li><strong>牵绊 10</strong>：托隆：射程 3, 威力 6, 命中 55, 回避 -20 / 纹章士鲁弗莱的远程雷魔法。
+不可追击</li>
+<li><strong>牵绊 20</strong>：封剑法尔西昂：射程 1, 威力 5, 命中 80 / 纹章士库洛武的被封印的传说之剑。
+技+20/龙特效</li>
+</ul>
+<h2 id="继承技能-12"><a class="header" href="#继承技能-12">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 5</strong>：战知识
+<ul>
+<li>周围3格内的我方单位
+若持有武器颜色与自身相同
+伤害+3，受到伤害-3</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：王器
+<ul>
+<li>自身的奥义触发率+10%</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：王器（龙族）
+<ul>
+<li>自身的奥义触发率+10%
+【龙族】 触发率额外+5%</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：倾奇者
+<ul>
+<li>战斗时，双方命中+30，奥义触发率+15%</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：力之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔力之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的魔力+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：技之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的技+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：速之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的速+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：幸运之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的幸运+8</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：守备之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的守备+4</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔防之呐喊
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的魔防+4</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：战知识+
+<ul>
+<li>周围3格内的我方单位
+若持有武器颜色与自身相同
+或战斗类型与自身相同
+伤害+3，受到伤害-3</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-12"><a class="header" href="#武器资质-12">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：剑</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="神威-7"><a class="header" href="#神威-7">神威 ×7</a></h1>
+<h2 id="属性加成-13"><a class="header" href="#属性加成-13">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：魔力+1  技-2  速度+1  守备+1</li>
+<li><strong>牵绊 5</strong>：魔力+2  技-2  速度+1  守备+2</li>
+<li><strong>牵绊 10</strong>：魔力+2  技-2  速度+2  守备+3</li>
+<li><strong>牵绊 20</strong>：魔力+3  技-2  速度+3  守备+4</li>
+</ul>
+<h2 id="同步技能-13"><a class="header" href="#同步技能-13">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：咒缚
+<ul>
+<li>相邻敌人回避-20</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：咒缚（龙族）
+<ul>
+<li>相邻敌人回避-20
+【龙族】回避额外-10</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：龙咒
+<ul>
+<li>战斗结束后
+对方的全基本能力值-4
+（效果随时间递减，每回合回复1）</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：防阵
+<ul>
+<li>使敌人的连锁攻击和攻阵追击无效</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：负之连锁
+<ul>
+<li>积蓄对敌人的能力减少效果</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-13"><a class="header" href="#结合特技-13">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：攻阵
+<ul>
+<li>周围1格若存在友方
+攻击时会发动攻击力/命中值减半的追击
+攻击力/命中值随周围友方支援值提高</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-13"><a class="header" href="#结合攻击-13">结合攻击</a></h2>
+<ul>
+<li><strong>龙穿炮</strong>
+<ul>
+<li>使用水之力攻击前方1格
+并使后方5格化为“水洼”
+仅限相邻</li>
+</ul>
+</li>
+<li><strong>龙穿炮（龙族）</strong>
+<ul>
+<li>使用水之力攻击前方1格
+并使后方5格化为“水洼”，仅限相邻
+【龙族】攻击范围+1</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-13"><a class="header" href="#结合武器-13">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：逆神·丑寅：射程 1~2, 威力 7, 命中 70, 必杀 5 / 纹章士神威的咒术
+逆转三相克制并加倍</li>
+<li><strong>牵绊 10</strong>：真龙石：射程 1, 威力 25, 命中 75, 回避 -10, 必避 10 / 纹章士神威的真龙石
+魔法武器/不可追击
+技-5/速-4/守备+9/魔防+7</li>
+<li><strong>牵绊 20</strong>：夜刀神·终夜：射程 1, 威力 16, 命中 85, 必杀 10, 回避 10, 必避 10 / 纹章士神威的传说神刀。
+持有时力、速、守备、魔防+4
+（持有即可发挥效果）</li>
+</ul>
+<h2 id="继承技能-13"><a class="header" href="#继承技能-13">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：咒缚
+<ul>
+<li>相邻敌人回避-20</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：咒缚（龙族）
+<ul>
+<li>相邻敌人回避-20
+【龙族】回避额外-10</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：力封
+<ul>
+<li>战斗后
+对方的力-6
+（效果随时间递减，每回合回复1）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：魔力封
+<ul>
+<li>战斗后
+对方的魔力-6
+（效果随时间递减，每回合回复1）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：守备封
+<ul>
+<li>战斗后
+对方的守备-6
+（效果随时间递减，每回合回复1）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：速度封
+<ul>
+<li>战斗后
+对方的速度-6
+（效果随时间递减，每回合回复1）</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：魔防封
+<ul>
+<li>战斗后
+对方的魔防-6
+（效果随时间递减，每回合回复1）</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：防阵
+<ul>
+<li>使敌人的连锁攻击和攻阵追击无效</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：负之连锁
+<ul>
+<li>积蓄对敌人的能力减少效果</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-13"><a class="header" href="#武器资质-13">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：魔法</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="塞涅里欧-7"><a class="header" href="#塞涅里欧-7">塞涅里欧 ×7</a></h1>
+<h2 id="属性加成-14"><a class="header" href="#属性加成-14">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：魔力+2  技+1  魔防+1</li>
+<li><strong>牵绊 5</strong>：魔力+3  技+2  魔防+2</li>
+<li><strong>牵绊 10</strong>：魔力+4  技+3  魔防+3</li>
+<li><strong>牵绊 20</strong>：魔力+5  技+4  魔防+4</li>
+</ul>
+<h2 id="同步技能-14"><a class="header" href="#同步技能-14">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：理之精髓
+<ul>
+<li>当武器属性为：
+炎，且对方为骑马时；
+雷，且对方为龙族时；
+风，且对方为飞行时：
+攻击力+4。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：战术指南
+<ul>
+<li>可使用多种位移指令移动友方。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：慧眼
+<ul>
+<li>三相克制有利时
+攻击力+3</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：阻止复原
+<ul>
+<li>对方使用复活石时，
+复活时的HP恢复量变为50%。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：阻止复原+
+<ul>
+<li>对方使用复活石时，
+复活时的HP恢复量变为20%。</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：慧眼+
+<ul>
+<li>三相克制有利时
+攻击力+5</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：阻止复原++
+<ul>
+<li>对方使用复活石时，
+复活时的HP恢复量变为1。</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-14"><a class="header" href="#结合特技-14">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：斩绝
+<ul>
+<li>伤害增加对方已损失HP的30%，
+此部分伤害不可被减少或反击。</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-14"><a class="header" href="#结合攻击-14">结合攻击</a></h2>
+<ul>
+<li><strong>灾厄</strong>
+<ul>
+<li>以70%伤害的炎、雷、风魔法
+对敌人发动3连击</li>
+</ul>
+</li>
+<li><strong>灾厄（魔道）</strong>
+<ul>
+<li>以70%伤害的炎、雷、风魔法
+对敌人发动3连击
+【魔道】伤害倍率+10%</li>
+</ul>
+</li>
+<li><strong>灾厄（龙族）</strong>
+<ul>
+<li>以70%伤害的炎、雷、风魔法
+对敌人发动3连击
+【龙族】伤害倍率+20%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-14"><a class="header" href="#结合武器-14">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：雷暴：射程 3, 威力 7, 命中 65, 必杀 5, 回避 -20, 必避 -20 / 纹章士塞涅里欧的长射程雷魔法。
+不可追击</li>
+<li><strong>牵绊 10</strong>：魔法防护罩：射程 1~2 / 纹章士塞涅里欧的魔法之杖。
+周围2格内的我方单位获得“魔法反击”，
+效果持续1回合。</li>
+<li><strong>牵绊 20</strong>：列克斯卡利伯：射程 1~2, 威力 13, 命中 95, 必杀 30, 回避 -10, 必避 -10 / 纹章士塞涅里欧最高等的风魔法。
+克制飞行/守备·魔防-5/
+容易追击（+5）/容易被追击（-5）</li>
+</ul>
+<h2 id="继承技能-14"><a class="header" href="#继承技能-14">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：理之精髓
+<ul>
+<li>当武器属性为：
+炎，且对方为骑马时；
+雷，且对方为龙族时；
+风，且对方为飞行时：
+攻击力+4。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：战术指南
+<ul>
+<li>可使用多种位移指令移动友方。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：慧眼
+<ul>
+<li>三相克制有利时
+攻击力+3</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：阻止复原
+<ul>
+<li>对方使用复活石时，
+复活时的HP恢复量变为50%。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：蛇毒
+<ul>
+<li>自身发动攻击时
+对敌人造成HP最大值20%的伤害</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：魔力+1
+<ul>
+<li>魔力提升1</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：阻止复原+
+<ul>
+<li>对方使用复活石时，
+复活时的HP恢复量变为20%。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔力+2
+<ul>
+<li>魔力提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：慧眼+
+<ul>
+<li>三相克制有利时
+攻击力+5</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：阻止复原++
+<ul>
+<li>对方使用复活石时，
+复活时的HP恢复量变为1。</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-14"><a class="header" href="#武器资质-14">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：魔法</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="艾莉可-7"><a class="header" href="#艾莉可-7">艾莉可 ×7</a></h1>
+<h2 id="属性加成-15"><a class="header" href="#属性加成-15">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：力+2  魔防+2</li>
+<li><strong>牵绊 5</strong>：力+3  魔防+3</li>
+<li><strong>牵绊 10</strong>：力+4  魔防+4</li>
+<li><strong>牵绊 20</strong>：力+6  魔防+6</li>
+</ul>
+<h2 id="同步技能-15"><a class="header" href="#同步技能-15">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：交替
+<ul>
+<li>可使用“交替”指令
+通过替换纹章士来切换我方全员的
+“月之手镯”“优风”“深闺的千金”与
+“太阳之手镯”“勇空”“名门的公子”</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：月之手镯
+<ul>
+<li>自身使用物理/魔法武器发动攻击时
+将对方守备/魔防的30%加计至首次攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：优风
+<ul>
+<li>周围3格内的我方单位受到攻击后，
+令自身3格内我方单位守备、魔防+3，
+效果持续到下个我方回合结束。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：深闺的千金
+<ul>
+<li>周围2格男性友方单位
+受到伤害-2</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：月之手镯+
+<ul>
+<li>自身使用物理/魔法武器发动攻击时
+将对方守备/魔防的50%加计至首次攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：优风+
+<ul>
+<li>周围3格内的我方单位受到攻击后，
+令自身3格内我方单位守备、魔防+4，
+效果持续到下个我方回合结束。</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-15"><a class="header" href="#结合特技-15">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：双圣
+<ul>
+<li>与艾莉可结合时，使我方全员的
+“月之手镯”切换为“日月手镯”
+“优风”切换为“苍穹”
+“深闺的千金”切换为“高贵的血统”</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-15"><a class="header" href="#结合攻击-15">结合攻击</a></h2>
+<ul>
+<li><strong>双流</strong>
+<ul>
+<li>与艾夫拉姆合力施展连续攻击
+仅限持剑且相邻时
+（艾夫拉姆为枪攻击，可克制异形）</li>
+</ul>
+</li>
+<li><strong>双流（骑马）</strong>
+<ul>
+<li>与艾夫拉姆合力施展连续攻击
+仅限持剑且相邻时
+（艾夫拉姆为枪攻击，可克制异形）
+【骑马】艾夫拉姆的攻击伤害增为150%</li>
+</ul>
+</li>
+<li><strong>双流（龙族）</strong>
+<ul>
+<li>与艾夫拉姆合力施展连续攻击
+仅限持剑且相邻时
+（艾夫拉姆为枪攻击，可克制异形）
+【龙族】伤害增为120%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-15"><a class="header" href="#结合武器-15">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：风之剑：射程 1~2, 威力 9, 命中 70 / 纹章士艾莉可的魔法剑。
+能以魔法之风攻击远处敌人。
+克制飞行。</li>
+<li><strong>牵绊 10</strong>：勒金雷布：射程 1, 威力 10, 命中 80, 必杀 10 / 纹章士艾莉可的刺枪。
+克制骑马/克制重装。</li>
+<li><strong>牵绊 20</strong>：齐格林德：射程 1, 威力 18, 命中 90 / 纹章士艾莉可的双圣器之剑。
+异形特效/魔防+5</li>
+</ul>
+<h2 id="继承技能-15"><a class="header" href="#继承技能-15">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：月之手镯
+<ul>
+<li>自身使用物理/魔法武器发动攻击时
+将对方守备/魔防的30%加计至首次攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：优风
+<ul>
+<li>周围3格内的我方单位受到攻击后，
+令自身3格内我方单位守备、魔防+3，
+效果持续到下个我方回合结束。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：深闺的千金
+<ul>
+<li>周围2格男性友方单位
+受到伤害-2</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：魔防+1
+<ul>
+<li>魔防提升1</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：月之手镯+
+<ul>
+<li>自身使用物理/魔法武器发动攻击时
+将对方守备/魔防的50%加计至首次攻击</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：魔防+2
+<ul>
+<li>魔防提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：优风+
+<ul>
+<li>周围3格内的我方单位受到攻击后，
+令自身3格内我方单位守备、魔防+4，
+效果持续到下个我方回合结束。</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-15"><a class="header" href="#武器资质-15">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：枪</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="卡米拉-7"><a class="header" href="#卡米拉-7">卡米拉 ×7</a></h1>
+<h2 id="属性加成-16"><a class="header" href="#属性加成-16">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：力+1  速度+1  守备+1  移动+1</li>
+<li><strong>牵绊 5</strong>：力+1  速度+1  守备+2  移动+1</li>
+<li><strong>牵绊 10</strong>：力+2  速度+1  守备+2  移动+1</li>
+<li><strong>牵绊 20</strong>：力+3  速度+2  守备+3  移动+1</li>
+</ul>
+<h2 id="同步技能-16"><a class="header" href="#同步技能-16">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：天翔
+<ul>
+<li>对手是飞行单位时
+命中·回避+15</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：切入
+<ul>
+<li>可使用“切入”指令
+战斗后，与敌人互换位置</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：死亡吐息
+<ul>
+<li>自身发动攻击后
+对周围2格内的敌人造成HP最大值20%的伤害</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：居高临下
+<ul>
+<li>当对手不是骑乘兵种时
+伤害+5</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：天翔+
+<ul>
+<li>对手是飞行单位时
+命中·回避+30</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-16"><a class="header" href="#结合特技-16">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：疾风迅雷
+<ul>
+<li>自身发动攻击击倒敌人后
+可再行动一次
+若如此做，直到本次结合结束
+此技能失效</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-16"><a class="header" href="#结合攻击-16">结合攻击</a></h2>
+<ul>
+<li><strong>暗夜爆破阵</strong>
+<ul>
+<li>对自身周围3格内的敌人造成40%HP伤害</li>
+</ul>
+</li>
+<li><strong>暗夜爆破阵（龙族）</strong>
+<ul>
+<li>对自身周围3格内的敌人造成40%HP伤害
+【龙族】伤害+10%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-16"><a class="header" href="#结合武器-16">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：闪雷斧：射程 1~2, 威力 14, 命中 65, 回避 -20 / 纹章士卡米拉的魔法斧。
+能攻击远方敌人。</li>
+<li><strong>牵绊 10</strong>：闪电：射程 1~2, 威力 1, 命中 75 / 纹章士卡米拉的魔法。
+由自身发动攻击时，连续攻击2次。</li>
+<li><strong>牵绊 20</strong>：卡米拉的艳斧：射程 1, 威力 16, 命中 80 / 纹章士卡米拉的斧。
+女性专用/力·魔防+2</li>
+</ul>
+<h2 id="继承技能-16"><a class="header" href="#继承技能-16">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：天翔
+<ul>
+<li>对手是飞行单位时
+命中·回避+15</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：切入
+<ul>
+<li>可使用“切入”指令
+战斗后，与敌人互换位置</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：死亡吐息
+<ul>
+<li>自身发动攻击后
+对周围2格内的敌人造成HP最大值20%的伤害</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：力+1
+<ul>
+<li>力提升1</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：居高临下
+<ul>
+<li>当对手不是骑乘兵种时
+伤害+5</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：力+2
+<ul>
+<li>力提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：天翔+
+<ul>
+<li>对手是飞行单位时
+命中·回避+30</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-16"><a class="header" href="#武器资质-16">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：斧</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="艾黛尔贾特-6"><a class="header" href="#艾黛尔贾特-6">艾黛尔贾特 ×6</a></h1>
+<h2 id="属性加成-17"><a class="header" href="#属性加成-17">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：力+1  技+1  守备+1</li>
+<li><strong>牵绊 5</strong>：力+2  技+2  守备+2</li>
+<li><strong>牵绊 10</strong>：力+3  技+3  守备+2</li>
+<li><strong>牵绊 20</strong>：力+4  技+4  守备+3</li>
+</ul>
+<h2 id="同步技能-17"><a class="header" href="#同步技能-17">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：切磋琢磨
+<ul>
+<li>我军行动阶段开始时，上场的纹章士会随机切换。
+若同步纹章士为：
+艾黛尔贾特，免疫break效果；
+帝弥托利，移动+1且行动后可以在剩余移动力内移动；
+库罗德，移动+1且无视地形的额外消耗。</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：战技
+<ul>
+<li>可使用“战技”指令
+消耗结合计量条或结合回合数
+发动同步纹章士的特殊招式。</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：武器同步
+<ul>
+<li>若与同步的纹章士装备同种武器
+则攻击力+3</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：超凡魅力
+<ul>
+<li>自身的攻击触发连锁攻击时
+连锁攻击的伤害提升为120%</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：武器同步+
+<ul>
+<li>若与同步的纹章士装备同种武器
+则攻击力+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-17"><a class="header" href="#结合特技-17">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：限界突破
+<ul>
+<li>可无视同步纹章士，使“切磋琢磨”
+的所有效果生效，并可使用三级长的战技；
+“武器同步”可无条件触发。</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-17"><a class="header" href="#结合攻击-17">结合攻击</a></h2>
+<ul>
+<li><strong>连花月风闪</strong>
+<ul>
+<li>将战斗双方HP回复至上限，
+然后使用艾姆鲁、阿莱德巴尔
+和费鲁诺特施展50%伤害的连续攻击</li>
+</ul>
+</li>
+<li><strong>连花月风闪（龙族）</strong>
+<ul>
+<li>将战斗双方HP回复至上限，
+然后使用艾姆鲁、阿莱德巴尔
+和费鲁诺特施展50%伤害的连续攻击
+【龙族】伤害+10%</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-17"><a class="header" href="#结合武器-17">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：艾姆鲁：射程 1, 威力 24, 命中 60, 必杀 20 / 纹章士艾黛尔贾特的斧。
+不可追击/克制龙/由自身主动攻击时
+必为后攻，但会发动猛击。</li>
+<li><strong>牵绊 10</strong>：阿莱德巴尔：射程 1, 威力 15, 命中 75, 必杀 10 / 纹章士帝弥托利的枪。
+由自身发动攻击时，威力120%。</li>
+<li><strong>牵绊 20</strong>：费鲁诺特：射程 2, 威力 14, 命中 75, 必杀 20 / 纹章士库罗德的弓。
+由自身发动攻击时，回避+15。
+克制龙/克制飞行。</li>
+</ul>
+<h2 id="继承技能-17"><a class="header" href="#继承技能-17">继承技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：守备+1
+<ul>
+<li>守备提升1</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：武器同步
+<ul>
+<li>若与同步的纹章士装备同种武器
+则攻击力+3</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：破盔
+<ul>
+<li>可使用“破盔“指令
+消耗4结合计量条或2结合回合
+挥出克制重装的1斧</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：超凡魅力
+<ul>
+<li>自身的攻击触发连锁攻击时
+连锁攻击的伤害提升为120%</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：守备+2
+<ul>
+<li>守备提升2</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：弑骑一击
+<ul>
+<li>可使用“弑骑一击“指令
+消耗4结合计量条或2结合回合
+刺出克制骑马的1枪</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：武器同步+
+<ul>
+<li>若与同步的纹章士装备同种武器
+则攻击力+5</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：魔物射击
+<ul>
+<li>可使用“魔物射击“指令
+消耗3结合计量条或1结合回合
+射出克制异形的1箭</li>
+</ul>
+</li>
+</ul>
+<h2 id="武器资质-17"><a class="header" href="#武器资质-17">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：斧</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="琉尔-7"><a class="header" href="#琉尔-7">琉尔 ×7</a></h1>
+<h2 id="属性加成-18"><a class="header" href="#属性加成-18">属性加成</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：魔力+1  技+1  速度+1</li>
+<li><strong>牵绊 5</strong>：魔力+1  技+2  速度+2</li>
+<li><strong>牵绊 10</strong>：魔力+2  技+3  速度+3</li>
+<li><strong>牵绊 20</strong>：魔力+3  技+4  速度+4</li>
+</ul>
+<h2 id="同步技能-18"><a class="header" href="#同步技能-18">同步技能</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：邪龙有效
+<ul>
+<li>自身的攻击将获得邪龙有效的效果
+若周围2格内的我方单位持有克制龙的武器
+该武器也能获得邪龙有效的效果</li>
+</ul>
+</li>
+<li><strong>牵绊 1</strong>：系承牵绊者
+<ul>
+<li>回合开始时，自身邻接的
+我方单位结合计量条+1</li>
+</ul>
+</li>
+<li><strong>牵绊 5</strong>：神龙加护
+<ul>
+<li>自身受到的毒伤害、
+逐回合恢复的能力值降低效果均减半，
+降低自身受到的克制效果。</li>
+</ul>
+</li>
+<li><strong>牵绊 10</strong>：系承牵绊者+
+<ul>
+<li>回合开始时，自身2格内的
+我方单位结合计量条+1</li>
+</ul>
+</li>
+<li><strong>牵绊 20</strong>：艾雷欧斯的祝福
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的
+能力降低效果减少1</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合特技-18"><a class="header" href="#结合特技-18">结合特技</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：以心
+<ul>
+<li>自身发动攻击并打倒敌人时，
+结合状态的持续回合数+1。
+（不可超过最大持续回合数）</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合攻击-18"><a class="header" href="#结合攻击-18">结合攻击</a></h2>
+<ul>
+<li><strong>神龙破</strong>
+<ul>
+<li>剑与光束（魔法）的组合攻击
+仅限持剑且相邻时</li>
+</ul>
+</li>
+<li><strong>神龙破（魔道）</strong>
+<ul>
+<li>剑与光束（魔法）的组合攻击
+仅限持剑且相邻时
+【魔道】将魔力的20%加计至光束攻击伤害</li>
+</ul>
+</li>
+<li><strong>神龙破（气功）</strong>
+<ul>
+<li>剑与光束（魔法）的组合攻击
+仅限持剑且相邻时
+【气功】必定打破</li>
+</ul>
+</li>
+<li><strong>神龙破（龙族）</strong>
+<ul>
+<li>剑与光束（魔法）的组合攻击
+仅限持剑且相邻时
+【龙族】伤害增至120%</li>
+</ul>
+</li>
+<li><strong>神龙破（连携）</strong>
+<ul>
+<li>剑与光束（魔法）的组合攻击
+仅限持剑且相邻时
+【连携】将力的20%加计至剑攻击伤害</li>
+</ul>
+</li>
+</ul>
+<h2 id="结合武器-18"><a class="header" href="#结合武器-18">结合武器</a></h2>
+<ul>
+<li><strong>牵绊 1</strong>：莱拉西昂：射程 1, 威力 15, 命中 90, 必杀 10 / 纹章士琉尔的剑。
+由自身发动攻击并击败敌人时，
+同步中的相邻我方单位结合计量条+1。</li>
+<li><strong>牵绊 10</strong>：神龙体术：射程 1, 威力 10, 命中 85 / 纹章士琉尔的魔法格斗技。
+由自身发动攻击时，连续攻击2次。
+（攻击力仅以魔力为基准）</li>
+<li><strong>牵绊 20</strong>：欧里格帝亚：射程 1, 威力 14, 命中 105, 必杀 15, 回避 15, 必避 15 / 纹章士琉尔的剑。
+异形特效/龙特效</li>
+</ul>
+<h2 id="武器资质-18"><a class="header" href="#武器资质-18">武器资质</a></h2>
+<ul>
+<li><strong>牵绊 10</strong>：拳</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="人物"><a class="header" href="#人物">人物</a></h1>
+<p>本章节整理了可参与战斗的角色人物资料，包括其个人技能等要素。</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="佛贾特"><a class="header" href="#佛贾特">佛贾特</a></h1>
+<h2 id="个人技"><a class="header" href="#个人技">个人技</a></h2>
+<ul>
+<li><strong>小声声援</strong>
+<ul>
+<li>周围2格内的友方受到伤害-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="克萝艾"><a class="header" href="#克萝艾">克萝艾</a></h1>
+<h2 id="个人技-1"><a class="header" href="#个人技-1">个人技</a></h2>
+<ul>
+<li><strong>二人如画</strong>
+<ul>
+<li>若周围3格内有2位我方异性单位相邻
+造成伤害+3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="凡德雷"><a class="header" href="#凡德雷">凡德雷</a></h1>
+<h2 id="个人技-2"><a class="header" href="#个人技-2">个人技</a></h2>
+<ul>
+<li><strong>白之忠诚</strong>
+<ul>
+<li>与琉尔相邻时
+琉尔伤害+3，命中+15</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="史塔卢克"><a class="header" href="#史塔卢克">史塔卢克</a></h1>
+<h2 id="个人技-3"><a class="header" href="#个人技-3">个人技</a></h2>
+<ul>
+<li><strong>对抗意识</strong>
+<ul>
+<li>自身的等级不高于对方时
+必杀+10、造成伤害+2、所受伤害-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="奥尔坦希亚"><a class="header" href="#奥尔坦希亚">奥尔坦希亚</a></h1>
+<h2 id="个人技-4"><a class="header" href="#个人技-4">个人技</a></h2>
+<ul>
+<li><strong>辉煌原力</strong>
+<ul>
+<li>自身发动攻击击败对方后，
+力·魔力·技·速+4
+持续1回合</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="孤雷葛里"><a class="header" href="#孤雷葛里">孤雷葛里</a></h1>
+<h2 id="个人技-5"><a class="header" href="#个人技-5">个人技</a></h2>
+<ul>
+<li><strong>生存战略</strong>
+<ul>
+<li>自身HP&gt;50%且发起攻击时：
+造成伤害+1，命中·必杀+5。
+自身HP≤50%且受到攻击时：
+对方造成伤害-1，命中·必杀-5。</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="安娜"><a class="header" href="#安娜">安娜</a></h1>
+<h2 id="个人技-6"><a class="header" href="#个人技-6">个人技</a></h2>
+<ul>
+<li><strong>一夕致富</strong>
+<ul>
+<li>前7个回合。
+自身发起攻击并击倒敌方单位后，
+根据敌方武器种类，
+获得对应铁质武器。</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="安巴"><a class="header" href="#安巴">安巴</a></h1>
+<h2 id="个人技-7"><a class="header" href="#个人技-7">个人技</a></h2>
+<ul>
+<li><strong>爱好动物</strong>
+<ul>
+<li>自身与我方骑乘兵种相邻时
+伤害+2，受到伤害-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="尤娜卡"><a class="header" href="#尤娜卡">尤娜卡</a></h1>
+<h2 id="个人技-8"><a class="header" href="#个人技-8">个人技</a></h2>
+<ul>
+<li><strong>暗杀术</strong>
+<ul>
+<li>发动追击时，改为追击一定次数
+（次数为追击系数÷5）</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="布修隆"><a class="header" href="#布修隆">布修隆</a></h1>
+<h2 id="个人技-9"><a class="header" href="#个人技-9">个人技</a></h2>
+<ul>
+<li><strong>体格压制</strong>
+<ul>
+<li>周围1格HP不大于自身的敌方单位
+回避-15，必杀回避-5</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="希特丽妮卡"><a class="header" href="#希特丽妮卡">希特丽妮卡</a></h1>
+<h2 id="个人技-10"><a class="header" href="#个人技-10">个人技</a></h2>
+<ul>
+<li><strong>大富豪</strong>
+<ul>
+<li>自身装备的武器等级
+高于对方时，威力+3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="帕涅托涅"><a class="header" href="#帕涅托涅">帕涅托涅</a></h1>
+<h2 id="个人技-11"><a class="header" href="#个人技-11">个人技</a></h2>
+<ul>
+<li><strong>炎之血</strong>
+<ul>
+<li>HP不满时伤害+4</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="帝亚曼德"><a class="header" href="#帝亚曼德">帝亚曼德</a></h1>
+<h2 id="个人技-12"><a class="header" href="#个人技-12">个人技</a></h2>
+<ul>
+<li><strong>武士道</strong>
+<ul>
+<li>自身的等级高于对方时
+必杀+10、造成伤害+2、所受伤害-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="庞德罗"><a class="header" href="#庞德罗">庞德罗</a></h1>
+<h2 id="个人技-13"><a class="header" href="#个人技-13">个人技</a></h2>
+<ul>
+<li><strong>热血</strong>
+<ul>
+<li>若战斗双方HP均满，
+力·魔力·速+3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="戈尔德玛莉"><a class="header" href="#戈尔德玛莉">戈尔德玛莉</a></h1>
+<h2 id="个人技-14"><a class="header" href="#个人技-14">个人技</a></h2>
+<ul>
+<li><strong>叹息</strong>
+<ul>
+<li>自身发起战斗后，
+周围2格的敌方守备 · 魔防-2，
+持续1回合。</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="札菲亚"><a class="header" href="#札菲亚">札菲亚</a></h1>
+<h2 id="个人技-15"><a class="header" href="#个人技-15">个人技</a></h2>
+<ul>
+<li><strong>胜利的执念</strong>
+<ul>
+<li>HP为25%以下时，必杀+30。</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="杰尔科巴"><a class="header" href="#杰尔科巴">杰尔科巴</a></h1>
+<h2 id="个人技-16"><a class="header" href="#个人技-16">个人技</a></h2>
+<ul>
+<li><strong>爆炎使</strong>
+<ul>
+<li>自身发起攻击后
+若自身的HP为50%以下
+对周围2格内的敌人
+造成HP最大值20%的伤害</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="柯岚"><a class="header" href="#柯岚">柯岚</a></h1>
+<h2 id="个人技-17"><a class="header" href="#个人技-17">个人技</a></h2>
+<ul>
+<li><strong>碧之信仰</strong>
+<ul>
+<li>与琉尔相邻时
+琉尔所受伤害-3，回避+15</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="波聂"><a class="header" href="#波聂">波聂</a></h1>
+<h2 id="个人技-18"><a class="header" href="#个人技-18">个人技</a></h2>
+<ul>
+<li><strong>英俊大厨</strong>
+<ul>
+<li>周围2格内的敌方速度-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="洁德"><a class="header" href="#洁德">洁德</a></h1>
+<h2 id="个人技-19"><a class="header" href="#个人技-19">个人技</a></h2>
+<ul>
+<li><strong>涉猎</strong>
+<ul>
+<li>战斗时，
+增加伤害，减少受到伤害
+（增加、减少幅度为2格内武器种类数）</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="玛德琳"><a class="header" href="#玛德琳">玛德琳</a></h1>
+<h2 id="个人技-20"><a class="header" href="#个人技-20">个人技</a></h2>
+<ul>
+<li><strong>理想中的骑士</strong>
+<ul>
+<li>与自身相邻的我方骑乘单位
+伤害+2，所受伤害-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="玫琳"><a class="header" href="#玫琳">玫琳</a></h1>
+<h2 id="个人技-21"><a class="header" href="#个人技-21">个人技</a></h2>
+<ul>
+<li><strong>喜欢女性</strong>
+<ul>
+<li>与女性相邻时，
+伤害+2，受到伤害-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="琉尔"><a class="header" href="#琉尔">琉尔</a></h1>
+<h2 id="个人技-22"><a class="header" href="#个人技-22">个人技</a></h2>
+<ul>
+<li><strong>神龙的羁绊</strong>
+<ul>
+<li>相邻我方单位伤害+3
+所受伤害-1，命中+10</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="罗萨德"><a class="header" href="#罗萨德">罗萨德</a></h1>
+<h2 id="个人技-23"><a class="header" href="#个人技-23">个人技</a></h2>
+<ul>
+<li><strong>微笑</strong>
+<ul>
+<li>若敌人为男性单位，伤害+4
+必杀+20</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="艾媞耶"><a class="header" href="#艾媞耶">艾媞耶</a></h1>
+<h2 id="个人技-24"><a class="header" href="#个人技-24">个人技</a></h2>
+<ul>
+<li><strong>怪力</strong>
+<ul>
+<li>力比敌人高出5以上时，
+伤害+3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="艾比"><a class="header" href="#艾比">艾比</a></h1>
+<h2 id="个人技-25"><a class="header" href="#个人技-25">个人技</a></h2>
+<ul>
+<li><strong>执着</strong>
+<ul>
+<li>若自身与琉尔相邻
+且自身与琉尔一格内无其他单位
+双方伤害+3，受到伤害-1，命中+10</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="芙岚"><a class="header" href="#芙岚">芙岚</a></h1>
+<h2 id="个人技-26"><a class="header" href="#个人技-26">个人技</a></h2>
+<ul>
+<li><strong>绯红声援</strong>
+<ul>
+<li>与琉尔相邻时
+琉尔伤害+2，所受伤害-2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="花月"><a class="header" href="#花月">花月</a></h1>
+<h2 id="个人技-27"><a class="header" href="#个人技-27">个人技</a></h2>
+<ul>
+<li><strong>逃跑路线</strong>
+<ul>
+<li>受到猛击武器攻击时
+击退距离+1
+并将伤害反击给对方</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="莫布"><a class="header" href="#莫布">莫布</a></h1>
+<h2 id="个人技-28"><a class="header" href="#个人技-28">个人技</a></h2>
+<ul>
+<li><strong>友情之誓</strong>
+<ul>
+<li>贝珥的HP不大于50%时
+伤害+3，受到伤害-3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="菈琵思"><a class="header" href="#菈琵思">菈琵思</a></h1>
+<h2 id="个人技-29"><a class="header" href="#个人技-29">个人技</a></h2>
+<ul>
+<li><strong>野丫头</strong>
+<ul>
+<li>自身发动攻击且击倒对方后，
+对邻接的敌人造成HP最大值20%的伤害</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="蜜丝提拉"><a class="header" href="#蜜丝提拉">蜜丝提拉</a></h1>
+<h2 id="个人技-30"><a class="header" href="#个人技-30">个人技</a></h2>
+<ul>
+<li><strong>叱咤激励</strong>
+<ul>
+<li>周围2格内的友方伤害+2</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="贝珥"><a class="header" href="#贝珥">贝珥</a></h1>
+<h2 id="个人技-31"><a class="header" href="#个人技-31">个人技</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="贾恩"><a class="header" href="#贾恩">贾恩</a></h1>
+<h2 id="个人技-32"><a class="header" href="#个人技-32">个人技</a></h2>
+<ul>
+<li><strong>努力才能</strong>
+<ul>
+<li>等级提升时
+基本能力值较容易上升</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="赛勒斯提雅"><a class="header" href="#赛勒斯提雅">赛勒斯提雅</a></h1>
+<h2 id="个人技-33"><a class="header" href="#个人技-33">个人技</a></h2>
+<ul>
+<li><strong>开心果</strong>
+<ul>
+<li>可使用“支援“指令，
+使周围两格内友方的力、魔力、速+1
+自身发动攻击击倒敌人的行动结束后
+可以发动支援效果。</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="赛安达斯"><a class="header" href="#赛安达斯">赛安达斯</a></h1>
+<h2 id="个人技-34"><a class="header" href="#个人技-34">个人技</a></h2>
+<ul>
+<li><strong>神秘舞蹈</strong>
+<ul>
+<li>回合开始时
+回复自身周围2格内的我方单位
+回复量为各单位HP最大值的10%</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="路易"><a class="header" href="#路易">路易</a></h1>
+<h2 id="个人技-35"><a class="header" href="#个人技-35">个人技</a></h2>
+<ul>
+<li><strong>花园门卫</strong>
+<ul>
+<li>若周围3格内有2位我方同性单位相邻
+所受伤害-3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="锡莉奴"><a class="header" href="#锡莉奴">锡莉奴</a></h1>
+<h2 id="个人技-36"><a class="header" href="#个人技-36">个人技</a></h2>
+<ul>
+<li><strong>方阵</strong>
+<ul>
+<li>我方单位（自身除外）命中+5</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="阿尔弗雷德"><a class="header" href="#阿尔弗雷德">阿尔弗雷德</a></h1>
+<h2 id="个人技-37"><a class="header" href="#个人技-37">个人技</a></h2>
+<ul>
+<li><strong>轻骑踏破</strong>
+<ul>
+<li>移动后发动攻击时
+每移动2格敌方的速度、守备-1
+（至多减少4）</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="霖丹"><a class="header" href="#霖丹">霖丹</a></h1>
+<h2 id="个人技-38"><a class="header" href="#个人技-38">个人技</a></h2>
+<ul>
+<li><strong>博识</strong>
+<ul>
+<li>携带3本及以上魔道书时，
+必杀+10。</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="幕后实现说明"><a class="header" href="#幕后实现说明">幕后实现说明</a></h1>
+<p>本 Mod 并不仅仅包含内容与数值调整。</p>
+<p>为了支持其整体设计目标，我们使用了一个自定义的 Skyline 插件，对《Fire Emblem Engage》的部分运行时行为进行了扩展与调整。<br>本页面将从技术角度介绍 <strong>具体实现了哪些内容，以及为什么要这样做</strong>，不要求读者具备相关源码背景。</p>
+<hr>
+<h2 id="1-文件完整性与稳定性"><a class="header" href="#1-文件完整性与稳定性">1. 文件完整性与稳定性</a></h2>
+<p>为了在开发与测试过程中减少不可预期的行为：</p>
+<ul>
+<li>插件会在启动时对 Mod 文件执行 <strong>完整性校验</strong></li>
+<li><code>IF mod (Cobalt)</code> 目录下的文件会与预先记录的哈希值进行比对</li>
+<li>若检测到不一致，将直接在启动阶段报错，而不是继续运行</li>
+</ul>
+<p>这一机制的目的是为复杂的运行时逻辑提供一个<strong>稳定、可预测的基础环境</strong>。</p>
+<hr>
+<h2 id="2-职业转换与技能习得逻辑"><a class="header" href="#2-职业转换与技能习得逻辑">2. 职业转换与技能习得逻辑</a></h2>
+<p>职业转换系统中的多个关键行为由插件明确处理：</p>
+<ul>
+<li>晋级与转职流程被统一规范</li>
+<li>等级变化被显式控制，以避免边缘情况</li>
+<li>动态等级缩放被有意禁用</li>
+</ul>
+<h3 id="职业技能的处理方式"><a class="header" href="#职业技能的处理方式">职业技能的处理方式</a></h3>
+<p>插件为职业技能制定了一套一致的规则：</p>
+<ul>
+<li>当角色习得某职业的职业技能后，<br><strong>一旦转出该职业</strong>，该技能将进入可自由装备的继承技能池</li>
+<li>当角色<strong>转回原职业</strong>时：
+<ul>
+<li>继承技能池会被清空</li>
+<li>角色会立刻重新学会该职业的职业技能</li>
+</ul>
+</li>
+<li>对于已达到等级上限、无法继续升级的情况，也进行了额外处理</li>
+</ul>
+<p>这一设计旨在让技能的获得与切换行为更加直观、可理解。</p>
+<hr>
+<h2 id="3-战斗计算流程的扩展"><a class="header" href="#3-战斗计算流程的扩展">3. 战斗计算流程的扩展</a></h2>
+<p>部分战斗计算并非仅通过数据修改完成，而是在运行时对计算流程进行了扩展：</p>
+<ul>
+<li>命中、回避、必杀、必杀回避等公式被调整</li>
+<li>追击（双击）条件被重新定义</li>
+<li>武器相克效果被统一处理</li>
+<li>地形与支援修正被整合到一致的判定逻辑中</li>
+</ul>
+<p>这些调整的目标并非单纯改变强度，而是让战斗结果更加清晰、可预测。</p>
+<hr>
+<h2 id="4-结合气与-sp-行为"><a class="header" href="#4-结合气与-sp-行为">4. 结合气与 SP 行为</a></h2>
+<h3 id="结合气engage-count-1"><a class="header" href="#结合气engage-count-1">结合气（Engage Count）</a></h3>
+<ul>
+<li>原有部分结合气累积逻辑被抑制</li>
+<li>结合气的获取改为基于以下行为进行计算：
+<ul>
+<li>主动发起战斗</li>
+<li>击败敌人</li>
+<li>单次行动中同时满足上述条件</li>
+</ul>
+</li>
+</ul>
+<h3 id="sp-系统-1"><a class="header" href="#sp-系统-1">SP 系统</a></h3>
+<ul>
+<li>SP 的获取不再依赖是否装备纹章士</li>
+<li>角色获得的 <strong>SP 等于获得的 EXP</strong></li>
+</ul>
+<p>这些规则通过运行时逻辑统一执行，以保证在各种场景下的一致性。</p>
+<hr>
+<h2 id="5-炮台cannon系统的调整"><a class="header" href="#5-炮台cannon系统的调整">5. 炮台（Cannon）系统的调整</a></h2>
+<p>地图炮台系统进行了多项改进：</p>
+<ul>
+<li>炮弹不再消耗</li>
+<li>剩余弹药显示为无限</li>
+<li>支持多目标选择</li>
+<li>不同类型炮台的射程显示方式被统一</li>
+</ul>
+<p>目标选择逻辑也进行了调整，使其更贴近实际战斗影响。</p>
+<hr>
+<h2 id="6-技能行为的修正与扩展"><a class="header" href="#6-技能行为的修正与扩展">6. 技能行为的修正与扩展</a></h2>
+<p>对部分技能行为进行了修正或补充：</p>
+<ul>
+<li><strong>再移动＋＋（Canto++）</strong> 改为提供剩余移动力</li>
+<li>Style Bonus 变体技能在条件变化时能够正确切换与卸除</li>
+<li>地形有效性判定在伤害、回复与站位逻辑中统一</li>
+<li>武器熟练度判定被扩展以支持自定义资质规则</li>
+</ul>
+<p>这些改动主要集中在行为一致性与正确性上。</p>
+<hr>
+<h2 id="7-道具逻辑扩展"><a class="header" href="#7-道具逻辑扩展">7. 道具逻辑扩展</a></h2>
+<p>在必要的场景下，对道具行为进行了扩展：</p>
+<ul>
+<li>可通过附带技能标签覆盖治疗量</li>
+<li>部分祝福类道具放宽了可使用条件</li>
+<li>在受控场景中，适当放宽了道具使用限制</li>
+</ul>
+<p>所有调整均基于运行时条件进行判定。</p>
+<hr>
+<h2 id="8-脚本与事件扩展"><a class="header" href="#8-脚本与事件扩展">8. 脚本与事件扩展</a></h2>
+<p>插件为事件脚本提供了额外的功能接口：</p>
+<ul>
+<li>可直接操作结合气、回合数与牵绊等级</li>
+<li>提供更复杂的目标筛选逻辑（如妨害目标选择）</li>
+<li>支持自定义地图效果与条件判断</li>
+<li>提供用于特定关卡的实用函数</li>
+</ul>
+<p>这些扩展使复杂机制可以通过脚本表达，而无需硬编码在关卡中。</p>
+<hr>
+<h2 id="9-有意限制的系统"><a class="header" href="#9-有意限制的系统">9. 有意限制的系统</a></h2>
+<p>出于整体设计与节奏考虑，一些系统被有意限制或禁用：</p>
+<ul>
+<li>井（Well）系统</li>
+<li>投资系统</li>
+<li>游击战（Skirmish）</li>
+</ul>
+<p>这些调整是 Mod 整体设计的一部分。</p>
+<hr>
+<h2 id="总结"><a class="header" href="#总结">总结</a></h2>
+<p>该插件作为 Mod 的<strong>技术支撑框架</strong>：</p>
+<ul>
+<li>对现有系统进行了有限而明确的扩展</li>
+<li>处理了一些难以通过数据层解决的边缘问题</li>
+<li>为整体机制提供了更稳定、可控的实现方式</li>
+</ul>
+<p>其目标并非替代原有系统，而是在尊重原设计的基础上，<br><strong>对其进行谨慎而必要的调整</strong>。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>

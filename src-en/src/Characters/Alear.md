@@ -1,0 +1,8 @@
+# Alear
+
+## Personal Skill
+
+- **Divinely Bonds**
+  - Adjacent allies deal +3 damage,
+get +10 Hit and take 1 less damage.
+

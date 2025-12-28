@@ -1,0 +1,11 @@
+[book]
+title = "Engage Fates Wiki"
+authors = ["Mercedes"]
+language = "en"
+src = "src"
+
+[output.html]
+default-theme = "dark"
+
+[build]
+build-dir = "book"

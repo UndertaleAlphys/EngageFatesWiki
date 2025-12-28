@@ -1,0 +1,9 @@
+# Etie
+
+## Personal Skill
+
+- **Puissance**
+  - When user's Str is 5 or more points
+higher than the enemy's Str, 
+damage +3 during battle.
+

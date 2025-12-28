@@ -1,0 +1,106 @@
+# Eirika ×7
+
+## Stat Bonuses
+
+- **Lv 1**：Str+2  Res+2
+- **Lv 5**：Str+3  Res+3
+- **Lv 10**：Str+4  Res+4
+- **Lv 20**：Str+6  Res+6
+
+## Sync Skills
+
+- **Lv 1**：Night and Day
+  - Use to switch Emblems and swap
+between Lunar Brace/Gentility/Demoiselle and
+Solar Brace/Bravery/Gentilhomme for all allies.
+- **Lv 1**：Lunar Brace
+  - If unit initiates combat with
+a physical/magical weapon, 
+grants Atk+30% of foe's Def/Res
+for the first hit.
+- **Lv 5**：Gentility
+  - When an ally within 3 radius is attacked,
+grants +3 Def/Res for allies within 3 radius
+for 1 turn.
+- **Lv 5**：Demoiselle
+  - Male allies within 2-radius
+tale -2 Dmg.
+- **Lv 10**：Lunar Brace+
+  - If unit initiates combat with
+a physical/magical weapon,
+grants Atk+50% of foe's Def/Res
+for the first hit.
+- **Lv 20**：Gentility+
+  - When an ally within 3 radius is attacked,
+grants +4 Def/Res for allies within 3 radius
+for 1 turn.
+
+## Engage Skills
+
+- **Lv 1**：Sacred Twins
+  - While engaged with Eirika, changes
+Lunar Brace to Eclipse Brace,
+Gentility to Blue Skies, and
+Demoiselle to Nobility for all allies.
+
+## Engage Attack
+
+- **Twin Strike**
+  - Use to make a sword attack followed
+by a lance attack from Ephraim on
+adjacent foe. Effective: Corrupted.
+- **Twin Strike (Cavalry)**
+  - Use to make a sword attack followed
+by a lance attack from Ephraim on
+adjacent foe. Effective: Corrupted.
+[Cavalry] Ephraim deals +50%
+damage.
+- **Twin Strike (Dragon)**
+  - Use to make a sword attack followed
+by a lance attack from Ephraim on
+adjacent foe. Effective: Corrupted.
+[Dragon] +20% damage.
+
+## Engage Weapons
+
+- **Lv 1**：Wind Sword: Range 1~2, Mt 9, Hit 70 / Magical sword wielded by Emblem
+Eirika. Can strike close or at range.
+Effective: Flying.
+- **Lv 10**：Reginleif: Range 1, Mt 10, Hit 80, Crit 10 / Lance wielded by Emblem Eirika.
+Effective: Cavalry, Flier, Armored.
+- **Lv 20**：Sieglinde: Range 1, Mt 18, Hit 90 / Paired sword wielded by Emblem
+Eirika. Grants Res+5.
+Effective: Corrupted.
+
+## Inheritable Skills
+
+- **Lv 1**：Lunar Brace
+  - If unit initiates combat with
+a physical/magical weapon, 
+grants Atk+30% of foe's Def/Res
+for the first hit.
+- **Lv 5**：Gentility
+  - When an ally within 3 radius is attacked,
+grants +3 Def/Res for allies within 3 radius
+for 1 turn.
+- **Lv 5**：Demoiselle
+  - Male allies within 2-radius
+tale -2 Dmg.
+- **Lv 5**：Resistance +1
+  - Grants Res+1.
+- **Lv 10**：Lunar Brace+
+  - If unit initiates combat with
+a physical/magical weapon,
+grants Atk+50% of foe's Def/Res
+for the first hit.
+- **Lv 10**：Resistance +2
+  - Grants Res+2.
+- **Lv 20**：Gentility+
+  - When an ally within 3 radius is attacked,
+grants +4 Def/Res for allies within 3 radius
+for 1 turn.
+
+## Proficiency
+
+- **Lv 10**：Lance
+

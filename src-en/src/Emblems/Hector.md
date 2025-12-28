@@ -1,0 +1,102 @@
+# Hector ×7
+
+## Stat Bonuses
+
+- **Lv 1**：HP+5  Str+1  Res-2
+- **Lv 5**：HP+10  Str+1  Res-2
+- **Lv 10**：HP+15  Str+2  Res-2
+- **Lv 20**：HP+20  Str+2  Res-2
+
+## Sync Skills
+
+- **Lv 1**：Quick Riposte
+  - If unit's HP is 75% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).
+- **Lv 5**：Impenetrable Stance
+  - Grant the unit "Impenetrable",
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.
+- **Lv 5**：Impenetrable Stance (Dragon)
+  - Grant the unit "Impenetrable",
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.
+[Dragon] -1 engage meter cost.
+- **Lv 5**：Strong Riposte
+  - When enemy triggers the battle, 
+Dmg+3
+- **Lv 10**：Strengthtaker
+  - Grants a stacking Str+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn't combat last turn,
+lose 2 Str when phase starts.
+- **Lv 20**：Quick Riposte+
+  - If unit's HP is 50% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).
+
+## Engage Skills
+
+- **Lv 1**：Heavy Attack
+  - When weapon's Mt>=10,
+grants Str+5.
+When foe initiates battle,
+and if the unit's Str is greater,
+add 30% of the Str difference
+to the damage dealt.
+
+## Engage Attack
+
+- **Thunder Storm**
+  - Use to attack at double weapon's Mt.
+Sword/axe only.
+
+## Engage Weapons
+
+- **Lv 1**：Wolf Beil: Range 1, Mt 10, Hit 75, Crit 5 / Axe wielded by Emblem Hector.
+Effective: Cavalry, Armored.
+- **Lv 10**：Runesword: Range 1~2, Mt 14, Hit 80 / An exceptional sword of Emblem Hector.
+Hard to follow up(-3)/
+The type of damage varies by distance.
+- **Lv 20**：Armads: Range 1, Mt 18, Hit 85 / Lightning-charged axe wielded by
+Emblem Hector. Grants Def+5.
+Effective: Dragon.
+
+## Inheritable Skills
+
+- **Lv 1**：Quick Riposte
+  - If unit's HP is 75% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).
+- **Lv 1**：HP +3
+  - Grants max HP+3.
+- **Lv 5**：Impenetrable Stance
+  - Grant the unit "Impenetrable",
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.
+- **Lv 5**：Impenetrable Stance (Dragon)
+  - Grant the unit "Impenetrable",
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.
+[Dragon] -1 engage meter cost.
+- **Lv 5**：Strong Riposte
+  - When enemy triggers the battle, 
+Dmg+3
+- **Lv 10**：Strengthtaker
+  - Grants a stacking Str+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn't combat last turn,
+lose 2 Str when phase starts.
+- **Lv 10**：HP +5
+  - Grants max HP+5.
+- **Lv 20**：Quick Riposte+
+  - If unit's HP is 50% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).
+
+## Proficiency
+
+- **Lv 10**：Axe
+

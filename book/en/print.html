@@ -1,0 +1,4383 @@
+<!DOCTYPE HTML>
+<html lang="en" class="dark sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Engage Fates Wiki</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "dark";
+            const default_dark_theme = "navy";
+            window.path_to_searchindex_js = "searchindex-9561e0bf.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc-7d3633c8.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('dark')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Engage Fates Wiki</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <p>Welcome to the EngageIFmod wiki!</p>
+<h1 id="what-does-this-mod-do"><a class="header" href="#what-does-this-mod-do">What Does This Mod Do?</a></h1>
+<p>This mod aims to <strong>overhaul the overall gameplay experience</strong> of <em>Fire Emblem Engage</em>.<br>It includes, but is not limited to:</p>
+<ul>
+<li>A complete rework of <strong>core systems</strong></li>
+<li>Redesigned <strong>weapons and items</strong></li>
+<li>Overhauled <strong>skills and Emblems</strong></li>
+<li>Reimagined <strong>map and level design</strong></li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Note:</strong> This mod is currently under active development.</p>
+</blockquote>
+<p>👉 You can check out the sidebar for more detailed information.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="mod-installation-guide"><a class="header" href="#mod-installation-guide">Mod Installation Guide</a></h1>
+<p>This page explains how to install the Engage Fates and covers common issues.</p>
+<hr>
+<h2 id="1-requirements"><a class="header" href="#1-requirements">1. Requirements</a></h2>
+<ul>
+<li><strong>Ryujinx Emulator</strong>
+<ul>
+<li>Game: <em>Fire Emblem Engage</em></li>
+<li>Version: <strong>v2.0.0</strong></li>
+<li>Make sure the base game runs correctly in Ryujinx before installing the mod.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="2-dependencies"><a class="header" href="#2-dependencies">2. Dependencies</a></h2>
+<ul>
+<li><strong>Cobalt</strong>
+<ul>
+<li>Recommended version: <strong>v1.25.4 or later</strong></li>
+<li>This mod is built on the Cobalt framework. Older versions may cause crashes or missing features.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-mod-files-and-installation-path"><a class="header" href="#3-mod-files-and-installation-path">3. Mod Files and Installation Path</a></h2>
+<p>The mod consists of <strong>two required components</strong>:</p>
+<ol>
+<li>
+<p><strong>IF mod (Cobalt)</strong></p>
+<ul>
+<li>Main mod files</li>
+</ul>
+</li>
+<li>
+<p><strong>IFmodSoundBank</strong></p>
+<ul>
+<li>Music and sound resources</li>
+</ul>
+</li>
+</ol>
+<h3 id="installation-path"><a class="header" href="#installation-path">Installation Path</a></h3>
+<h2 id="both-folders-must-be-placed-together-in-the-following-directory-sdengagemods-if-mod-cobalt-ifmodsoundbank"><a class="header" href="#both-folders-must-be-placed-together-in-the-following-directory-sdengagemods-if-mod-cobalt-ifmodsoundbank">Both folders must be placed <strong>together</strong> in the following directory:
+sd:/engage/mods/<br>├─ IF mod (Cobalt)/<br>└─ IFmodSoundBank/</a></h2>
+<h2 id="4-common-issues--notes"><a class="header" href="#4-common-issues--notes">4. Common Issues &amp; Notes</a></h2>
+<h3 id="1-errors-on-startup--plugin-panic"><a class="header" href="#1-errors-on-startup--plugin-panic">1. Errors on startup / Plugin panic</a></h3>
+<p>Please check the following:</p>
+<ul>
+<li>The mod is installed in the <strong>correct directory</strong></li>
+<li>Folder names have <strong>not been changed</strong></li>
+<li><strong>IFmodSoundBank</strong> is present</li>
+</ul>
+<p>⚠️ <strong>Important</strong><br>Do <strong>not</strong> modify any files inside <code>IF mod (Cobalt)</code>.<br>The plugin performs an <strong>integrity check</strong> at startup, and any changes may cause the mod to fail.</p>
+<hr>
+<h3 id="2-compatibility-with-other-mods"><a class="header" href="#2-compatibility-with-other-mods">2. Compatibility with other mods</a></h3>
+<ul>
+<li>Using this mod together with <strong>romfs-modifying mods is not recommended</strong></li>
+<li>If additional plugins are required:
+<ul>
+<li>Place them in <strong>separate folders</strong></li>
+<li>Do <strong>not</strong> merge them into <code>IF mod (Cobalt)</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="3-running-on-real-hardware-nintendo-switch"><a class="header" href="#3-running-on-real-hardware-nintendo-switch">3. Running on real hardware (Nintendo Switch)</a></h3>
+<ul>
+<li>The Nintendo Switch does <strong>not allow non-ASCII characters</strong> in file paths</li>
+<li>When installing on real hardware:
+<ul>
+<li>A <strong>special converter tool</strong> is required</li>
+<li>Convert all paths to <strong>English letters and numbers only</strong></li>
+</ul>
+</li>
+</ul>
+<p>Otherwise, the system will not recognize the mod.</p>
+<hr>
+<p>If problems persist, please re-check the installation path and dependency versions.</p>
+<hr>
+<h2 id="5-archive-format-requirement"><a class="header" href="#5-archive-format-requirement">5. Archive Format Requirement</a></h2>
+<ul>
+<li>This mod <strong>must be extracted before use</strong></li>
+<li>Do <strong>not</strong> place <code>.zip</code>, <code>.7z</code>, or other archive files directly into the <code>mods</code> directory</li>
+</ul>
+<p>While some mods may still work when kept in an archived format, <strong>IF Mod (Cobalt) does not support running from compressed archives</strong>.</p>
+<p>Please make sure the mod is <strong>fully extracted</strong> before installation, and that the directory structure looks like this:
+sd:/engage/mods/<br>├─ IF mod (Cobalt)/<br>└─ IFmodSoundBank/</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="calculator"><a class="header" href="#calculator">Calculator</a></h1>
+<ul>
+<li>
+<p><strong>Hit</strong><br><code>Dex × 1.5 + Lck × 0.5 + Weapon Hit + Support Hit</code></p>
+</li>
+<li>
+<p><strong>Avo</strong><br><code>Spd × 1.5 + Lck × 0.5 + Weapon Avo + Support Avo + Terrain Avo</code></p>
+</li>
+<li>
+<p><strong>Crit</strong><br><code>(Dex - 4) × 0.5 + Weapon Crit + Support Crit</code></p>
+</li>
+<li>
+<p><strong>Ddg (Dodge)</strong><br><code>Lck × 0.5 + Weapon Ddg + Support Ddg</code></p>
+</li>
+<li>
+<p><strong>Rod Hit</strong><br><code>Mag + Dex + Weapon Hit</code></p>
+</li>
+<li>
+<p><strong>Rod Avo</strong><br><code>Res × 1.5 + Lck × 0.5 + Terrain Avo</code></p>
+</li>
+<li>
+<p><strong>Chain Attack Damage</strong><br><code>10% of foe’s Max HP</code></p>
+</li>
+<li>
+<p><strong>Chain Attack Hit Rate</strong><br><code>100</code></p>
+</li>
+<li>
+<p><strong>Weapon Advantage</strong><br><code>Unit grants +20 Hit and +20 Avo, deals +2 Dmg and takes -2 dmg if they have advantage of weapon</code></p>
+</li>
+</ul>
+<hr>
+<h1 id="follow-up-mechanics"><a class="header" href="#follow-up-mechanics">Follow-Up Mechanics</a></h1>
+<ul>
+<li>
+<p><strong>Follow-Up Coefficient</strong><br>By default, equal to the Speed difference between unit and foe.<br>(Some weapons may modify this value.)</p>
+</li>
+<li>
+<p><strong>Follow-Up Condition</strong><br>A unit can follow up if the coefficient is <strong>5 or higher</strong>.</p>
+</li>
+</ul>
+<hr>
+<h1 id="engage-count"><a class="header" href="#engage-count">Engage Count</a></h1>
+<ul>
+<li>
+<p>If the unit <strong>initiates combat</strong> or <strong>defeats an enemy</strong>,<br>→ <code>Engage Count +1</code></p>
+</li>
+<li>
+<p>If the unit does <strong>both</strong> in one action,<br>→ <code>Engage Count +2</code></p>
+</li>
+</ul>
+<hr>
+<h1 id="sp-system"><a class="header" href="#sp-system">SP System</a></h1>
+<ul>
+<li>Units gain <strong>SP = EXP</strong>,<br>regardless of whether they equip an Emblem Ring.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="class-change"><a href="#class-change" class="header">Class-Change</a></h1>
+<h2 id="class-change-system-overview"><a class="header" href="#class-change-system-overview">Class Change System Overview</a></h2>
+<h3 id="class-level-caps"><a class="header" href="#class-level-caps">Class Level Caps</a></h3>
+<ul>
+<li><strong>Base Classes</strong>: Max Level <strong>20</strong></li>
+<li><strong>Advanced &amp; Special Classes</strong>: Max Level <strong>40</strong></li>
+</ul>
+<hr>
+<h3 id="class-skills"><a class="header" href="#class-skills">Class Skills</a></h3>
+<ul>
+<li><strong>Base Classes</strong>:<br>If a class has a class skill, the unit learns it upon leveling up.</li>
+<li><strong>Advanced &amp; Special Classes</strong>:<br>The class skill is learned once the unit reaches <strong>level 21</strong>.</li>
+</ul>
+<h4 id="class-skill-and-inheritable-skill-pool-behavior"><a class="header" href="#class-skill-and-inheritable-skill-pool-behavior">Class Skill and Inheritable Skill Pool Behavior</a></h4>
+<ul>
+<li>After a unit <strong>learns a class-specific skill</strong>, switching <strong>out of that class</strong> will cause the class skill to be added to the <strong>freely equippable inheritable skill pool</strong>.</li>
+<li>The skill can then be equipped like any other inheritable skill.</li>
+</ul>
+<p>However:</p>
+<ul>
+<li><strong>If the unit switches back to the original class</strong>:
+<ul>
+<li>All freely equipped inheritable skills are <strong>removed</strong></li>
+<li>The unit will <strong>immediately relearn</strong> that class’s original class skill</li>
+</ul>
+</li>
+</ul>
+<p>This behavior is part of the game’s intended mechanics and is <strong>not a bug</strong>.</p>
+<hr>
+<h3 id="master-seal"><a class="header" href="#master-seal">Master Seal</a></h3>
+<ul>
+<li>A <strong>Master Seal</strong> can be used when a <strong>Base class</strong> unit reaches <strong>level 10</strong>.</li>
+<li>Promotes the unit to a relevant <strong>Advanced class</strong>.</li>
+<li>Upon promotion, the unit’s level becomes <strong>20</strong>, even if it was lower before.</li>
+<li><strong>No stat increases</strong> are applied from level-ups during this promotion.</li>
+</ul>
+<hr>
+<h3 id="second-seal"><a class="header" href="#second-seal">Second Seal</a></h3>
+<ul>
+<li>Reclassing keeps the <strong>unit’s level unchanged</strong>.</li>
+</ul>
+<h4 id="base-class-units"><a class="header" href="#base-class-units">Base Class Units:</a></h4>
+<ul>
+<li>Can reclass into another <strong>Base</strong> or <strong>Special</strong> class.</li>
+</ul>
+<h4 id="advanced-class-units"><a class="header" href="#advanced-class-units">Advanced Class Units:</a></h4>
+<ul>
+<li>Can reclass into another <strong>Advanced</strong> or <strong>Special</strong> class.</li>
+</ul>
+<h4 id="special-class-units"><a class="header" href="#special-class-units">Special Class Units:</a></h4>
+<ul>
+<li>If <strong>level &lt; 20</strong>: Can reclass into a <strong>Base</strong> or <strong>Special</strong> class.</li>
+<li>If <strong>level ≥ 20</strong>: Can reclass into an <strong>Advanced</strong> or <strong>Special</strong> class.</li>
+</ul>
+<hr>
+<h3 id="other-info"><a class="header" href="#other-info">Other Info</a></h3>
+<ul>
+<li>Units <strong>cannot reclass into the same class</strong> they are currently in.</li>
+<li>If a unit has already reached the <strong>max level</strong> of the new class after reclassing, they will <strong>immediately learn</strong> that class’s skill.
+<ul>
+<li><em>(Prevents skill loss due to being unable to level further.)</em></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="emblems"><a class="header" href="#emblems">Emblems</a></h1>
+<p>Detailed information for each Emblem.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="alear-7"><a class="header" href="#alear-7">Alear ×7</a></h1>
+<h2 id="stat-bonuses"><a class="header" href="#stat-bonuses">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Mag+1  Dex+1  Spd+1</li>
+<li><strong>Lv 5</strong>：Mag+1  Dex+2  Spd+2</li>
+<li><strong>Lv 10</strong>：Mag+2  Dex+3  Spd+3</li>
+<li><strong>Lv 20</strong>：Mag+3  Dex+4  Spd+4</li>
+</ul>
+<h2 id="sync-skills"><a class="header" href="#sync-skills">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Holy Aura
+<ul>
+<li>Unit is Effective: Fell Dragon. Allies
+within 2 spaces with Effective:
+Dragon gain Effective: Fell Dragon.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Bond Forger
+<ul>
+<li>At the start of each turn,
+grants +1 to the Engage meter
+of all adjacent allies.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Holy Shield
+<ul>
+<li>Halves stat-reduction effects, poison damage,
+and reduces damage from effectiveness.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Bond Forger+
+<ul>
+<li>At the start of each turn,
+grants +1 to the Engage meter
+of all allies within 2 radius.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Boon of Elyos
+<ul>
+<li>Grants the unit “Rally” command,
+use to -1 Debuff to all allies in 2 radius.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills"><a class="header" href="#engage-skills">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Attuned
+<ul>
+<li>If unit initiates combat and defeats a foe,
+extends Engage duration by 1.
+(Cannot exceed the maximum duration.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack"><a class="header" href="#engage-attack">Engage Attack</a></h2>
+<ul>
+<li><strong>Dragon Blast</strong>
+<ul>
+<li>Use to make two attacks against an
+adjacent foe with a sword and
+powerful magic beam.</li>
+</ul>
+</li>
+<li><strong>Dragon Blast (Mystical)</strong>
+<ul>
+<li>Use to make two attacks against an
+adjacent foe with a sword and
+powerful magic beam.
+[Mystical] Adds 20% of Mag to
+beam attack.</li>
+</ul>
+</li>
+<li><strong>Dragon Blast (Qi Adept)</strong>
+<ul>
+<li>Use to make two attacks against an
+adjacent foe with a sword and
+powerful magic beam.
+[Qi Adept] Breaks foe.</li>
+</ul>
+</li>
+<li><strong>Dragon Blast (Dragon)</strong>
+<ul>
+<li>Use to make two attacks against an
+adjacent foe with a sword and
+powerful magic beam.
+[Dragon] +20% damage.</li>
+</ul>
+</li>
+<li><strong>Dragon Blast (Backup)</strong>
+<ul>
+<li>Use to make two attacks against an
+adjacent foe with a sword and
+powerful magic beam.
+[Backup] Adds 20% of Str to
+sword attack.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons"><a class="header" href="#engage-weapons">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Lyrátion: Range 1, Mt 15, Hit 90, Crit 10 / Sword of Emblem Alear. If
+user defeats foe in player phase, fills
+adjacent allies’ engage meters by 1.</li>
+<li><strong>Lv 10</strong>：Dragon’s Fist: Range 1, Mt 10, Hit 85 / Magical attack wielded by Emblem
+Alear. If user initiates
+combat, attacks twice. (Uses Mag.)</li>
+<li><strong>Lv 20</strong>：Oligoludia: Range 1, Mt 14, Hit 105, Crit 15, Avo 15, Ddg 15 / Sword wielded by Emblem
+Alear.
+Effective: Corrupted, Dragon.</li>
+</ul>
+<h2 id="proficiency"><a class="header" href="#proficiency">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Fist</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="byleth-7"><a class="header" href="#byleth-7">Byleth ×7</a></h1>
+<h2 id="stat-bonuses-1"><a class="header" href="#stat-bonuses-1">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Str+1  Mag+1  Spd+1</li>
+<li><strong>Lv 5</strong>：Str+2  Mag+1  Spd+1</li>
+<li><strong>Lv 10</strong>：Str+2  Mag+2  Spd+2</li>
+<li><strong>Lv 20</strong>：Str+3  Mag+3  Spd+3</li>
+</ul>
+<h2 id="sync-skills-1"><a class="header" href="#sync-skills-1">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Mentorship
+<ul>
+<li>Grants the unit “Rally” command,
+the effect is decided by battlestyle.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Cavalry)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Cavalry] Get Rally Skill</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Flying)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Flying] Get Rally Resistance</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Covert)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Covert] Get Rally Speed</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Armored)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Armored] Get Rally Defense</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Mystical)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Mystical] Get Rally Magic</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Qi Adept)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Qi Adept] Get Rally Luck</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Dragon)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Dragon] Get Rally Movement</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Mentorship (Backup)
+<ul>
+<li>Grant this unit “Rally” command,
+the type of Rally depends on battlestyle.
+[Backup] Get Rally Strength</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Divine Pulse
+<ul>
+<li>When miss an attack, use another
+random number to decide the outcome.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Combat Arts
+<ul>
+<li>Grant the unit “Fierce Iron Fist”.
+“Fierce Iron Fist”
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Latter Hit Faster
+<ul>
+<li>The non-first attacks
+during battle get Dmg+5.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Combat Arts
+<ul>
+<li>Grant the unit “Fierce Iron Fist”
+and “Meditation”
+“Fierce Iron Fist”
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.
+“Meditation”
+Restore 50% max HP
+and 1 engage meter.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Divine Pulse+
+<ul>
+<li>When miss an attack, use another
+random number to decide the outcome.
+When an enemy’s hit lands, use another
+random number to decide the outcome.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Combat Arts
+<ul>
+<li>Grant the unit “Fierce Iron Fist”,
+“Meditation” and “Monster Crusher”
+“Fierce Iron Fist”
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.
+“Meditation”
+Restore 50% max HP
+and 1 engage meter.
+“Monster Crusher”
+Cost 4 engage meter or 2 engage
+turns to strike 2 consecutive hits,
+effective against corrupted, and
+ignore half of their Def.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-1"><a class="header" href="#engage-skills-1">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Sensei
+<ul>
+<li>Unit will “Rally”
+automatically after
+ending their turn.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-1"><a class="header" href="#engage-attack-1">Engage Attack</a></h2>
+<ul>
+<li><strong>Goddess Dance</strong>
+<ul>
+<li>Use to grant another action to
+all adjacent allies.
+Once per chapter.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-1"><a class="header" href="#engage-weapons-1">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Blutgang: Range 1, Mt 8, Hit 80 / Magical sword wielded by Emblem
+Byleth. Effective: Dragon, Cavalry.</li>
+<li><strong>Lv 10</strong>：Vajra-Mushti: Range 1, Mt 5, Hit 90, Crit 10 / Gauntlets wielded by Emblem Byleth.
+If user initiates combat, attacks
+twice. Uses lowest of foe’s Def/Res.</li>
+<li><strong>Lv 20</strong>：Sword of the Creator: Range 1~2, Mt 11, Hit 90, Crit 10 / Sword of Emblem Byleth. Raises
+damage with user’s Mag. Can strike
+close or at range. Effective: Dragon
+Once per Engage, can use combat art
+Ruptured Heaven: Effective against
+Dragon, +10 Mt/Hit, +20 Crit</li>
+</ul>
+<h2 id="inheritable-skills"><a class="header" href="#inheritable-skills">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Martial Prowess Lv.1
+<ul>
+<li>Grants Hit+5
+when using martials,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Martial Prowess Lv.2
+<ul>
+<li>Grants Hit+10
+when using martials,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Divine Pulse
+<ul>
+<li>When miss an attack, use another
+random number to decide the outcome.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Fierce Iron Fist
+<ul>
+<li>Grant the unit “Fierce Iron Fist”.
+Cost 5 engage meter or 2 engage
+turns to strike 3 consecutive hits.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Martial Prowess Lv.3
+<ul>
+<li>Grants Atk+1 and Hit+10
+when using martials,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Latter Hit Faster
+<ul>
+<li>The non-first attacks
+during battle get Dmg+5.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Meditation
+<ul>
+<li>Grants the unit “Meditaion”
+command, use to restore 50%
+max HP and 1 engage meter.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Martial Prowess Lv.4
+<ul>
+<li>Grants Atk+2 and Hit+15
+when using martials,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Monster Crusher
+<ul>
+<li>Grant the unit “Monster Crusher”.
+Cost 4 engage meter or 2 engage
+turns to strike 2 consecutive hits,
+effective against corrupted, and
+ignore half of their Def.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Martial Prowess Lv.5
+<ul>
+<li>Grants Atk+2 and Hit+15
+when using martials,
+fails at weapon disadvantage.
+[Martialfaire]Grants Atk+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-1"><a class="header" href="#proficiency-1">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Fist</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="camilla-7"><a class="header" href="#camilla-7">Camilla ×7</a></h1>
+<h2 id="stat-bonuses-2"><a class="header" href="#stat-bonuses-2">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Str+1  Spd+1  Def+1  Mov+1</li>
+<li><strong>Lv 5</strong>：Str+1  Spd+1  Def+2  Mov+1</li>
+<li><strong>Lv 10</strong>：Str+2  Spd+1  Def+2  Mov+1</li>
+<li><strong>Lv 20</strong>：Str+3  Spd+2  Def+3  Mov+1</li>
+</ul>
+<h2 id="sync-skills-2"><a class="header" href="#sync-skills-2">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Air Superiority
+<ul>
+<li>When fighting against a
+flying unit, grants Hit/Avo+15.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Lunge
+<ul>
+<li>Grants the unit “Lunge” command,
+use to swap places with an enemy after battle.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Savage Blow
+<ul>
+<li>If unit initiates combat, deals damage
+to foes within 2 spaces equal to 20%
+of their max HP after combat.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Trample
+<ul>
+<li>Unless enemy is on a mount,
+damage+5.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Air Superiority+
+<ul>
+<li>When fighting against a
+flying unit, grants Hit/Avo+30.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-2"><a class="header" href="#engage-skills-2">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Galeforce
+<ul>
+<li>When user triggers the battle, allows a
+full action if the user defeats the enemy
+(once per Engage)</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-2"><a class="header" href="#engage-attack-2">Engage Attack</a></h2>
+<ul>
+<li><strong>Dark Inferno</strong>
+<ul>
+<li>Use to deal damage to foes
+within 3 tiles</li>
+</ul>
+</li>
+<li><strong>Dark Inferno (Dragon)</strong>
+<ul>
+<li>Use to deal damage to foes
+within 3 tiles
+[Dragon] Increases damage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-2"><a class="header" href="#engage-weapons-2">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Bolt Axe: Range 1~2, Mt 14, Hit 65, Avo -20 / Magic axe wielded by Emblem
+Camilla. Can strike close or at range.</li>
+<li><strong>Lv 10</strong>：Lightning: Range 1~2, Mt 1, Hit 75 / Magic wielded by Emblem Camilla.
+If user initiates combat, attacks
+twice.</li>
+<li><strong>Lv 20</strong>：Camilla’s Axe: Range 1, Mt 16, Hit 80 / Axe wielded by Emblem Camilla.
+Female only / Grants Str/Res+2</li>
+</ul>
+<h2 id="inheritable-skills-1"><a class="header" href="#inheritable-skills-1">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Air Superiority
+<ul>
+<li>When fighting against a
+flying unit, grants Hit/Avo+15.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Lunge
+<ul>
+<li>Grants the unit “Lunge” command,
+use to swap places with an enemy after battle.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Savage Blow
+<ul>
+<li>If unit initiates combat, deals damage
+to foes within 2 spaces equal to 20%
+of their max HP after combat.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Strength +1
+<ul>
+<li>Grants Str+1.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Trample
+<ul>
+<li>Unless enemy is on a mount,
+damage+5.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Strength +2
+<ul>
+<li>Grants Str+2.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Air Superiority+
+<ul>
+<li>When fighting against a
+flying unit, grants Hit/Avo+30.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-2"><a class="header" href="#proficiency-2">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Axe</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="celica-5"><a class="header" href="#celica-5">Celica ×5</a></h1>
+<h2 id="stat-bonuses-3"><a class="header" href="#stat-bonuses-3">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：HP+2  Mag+2  Dex+1</li>
+<li><strong>Lv 5</strong>：HP+3  Mag+3  Dex+2</li>
+<li><strong>Lv 10</strong>：HP+5  Mag+4  Dex+3</li>
+<li><strong>Lv 20</strong>：HP+5  Mag+5  Dex+4</li>
+</ul>
+<h2 id="sync-skills-3"><a class="header" href="#sync-skills-3">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Echo
+<ul>
+<li>Grant this unit “Echo” command,
+use to perform magical attack with
+50% damage, but can attack twice.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Echo (Mystical)
+<ul>
+<li>Grant this unit “Echo” command,
+use to perform magical attack with
+50% damage, but can attack twice.
+[Mystical] Damage increase to 60%</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Echo (Dragon)
+<ul>
+<li>Grant this unit “Echo” command,
+use to perform magical attack with
+50% damage, but can attack twice.
+[Dragon] Damage increase to 60%</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Resonance
+<ul>
+<li>When fighting with a tome, grants
+Dmg+3. If the foe survives after battle,
+the unit suffers Def/Res-1.
+(The debuff lasts for 1 turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Counter
+<ul>
+<li>When an adjacent enemy initiate and
+hit this unit, deals the same damage
+taken by this unit to the foe.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Countermagic
+<ul>
+<li>When hit by a magical attack,
+deals the same damage taken by
+the user to the foe.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Resonance+
+<ul>
+<li>When fighting with a tome, grants
+Dmg+5. If the foe survives after battle,
+the unit suffers Def/Res-1.
+(The debuff lasts for 1 turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Counter+
+<ul>
+<li>When an adjacent enemy hit
+this unit, deals the same damage
+taken by this unit to the foe.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：CounterMagic+
+<ul>
+<li>When hit by magical attacks,
+deals the same damage to the foe.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-3"><a class="header" href="#engage-skills-3">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Chaos Style
+<ul>
+<li>Increase damage dealt and restore
+HP equals to the increased damage.
+For physical attack, increase 20% of
+enemy’s Mag. For magical attack,
+increase 20% of enemy’s Str.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-3"><a class="header" href="#engage-attack-3">Engage Attack</a></h2>
+<ul>
+<li><strong>Warp Ragnarok</strong>
+<ul>
+<li>Use to warp up to 10 spaces and
+make a powerful magic attack.</li>
+</ul>
+</li>
+<li><strong>Warp Ragnarok (Cavalry)</strong>
+<ul>
+<li>Use to warp up to 10 spaces and
+make a powerful magic attack.
+[Cavalry] Warp distance +2.</li>
+</ul>
+</li>
+<li><strong>Warp Ragnarok (Flying)</strong>
+<ul>
+<li>Use to warp up to 10 spaces and
+make a powerful magic attack.
+[Flying] Warp distance +5.</li>
+</ul>
+</li>
+<li><strong>Warp Ragnarok (Mystical)</strong>
+<ul>
+<li>Use to warp up to 10 spaces and
+make a powerful magic attack.
+[Mystical] +20% damage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-3"><a class="header" href="#engage-weapons-3">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Seraphim: Range 1~2, Mt 5, Hit 90 / Holy tome wielded by Emblem
+Celica. Effective: Corrupted.</li>
+<li><strong>Lv 10</strong>：Holy Sword: Range 1~2, Mt 10, Hit 85 / Emblem Celica’s holy sword.
+Effective: Corrupted
+Damage type varies by distance.
+At start of player’s turn,
+all corrupted units in 3 radius
+lose 10 HP.</li>
+<li><strong>Lv 20</strong>：Ragnarok: Range 1~2, Mt 15, Hit 95, Crit 10 / Mighty fire tome wielded by Emblem
+Celica.</li>
+</ul>
+<h2 id="inheritable-skills-2"><a class="header" href="#inheritable-skills-2">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Echo
+<ul>
+<li>Grant this unit “Echo” command,
+use to perform magical attack with
+50% damage, but can attack twice.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Echo (Mystical)
+<ul>
+<li>Grant this unit “Echo” command,
+use to perform magical attack with
+50% damage, but can attack twice.
+[Mystical] Damage increase to 60%</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Echo (Dragon)
+<ul>
+<li>Grant this unit “Echo” command,
+use to perform magical attack with
+50% damage, but can attack twice.
+[Dragon] Damage increase to 60%</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Resonance
+<ul>
+<li>When fighting with a tome, grants
+Dmg+3. If the foe survives after battle,
+the unit suffers Def/Res-1.
+(The debuff lasts for 1 turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Tome Prowess Lv.1
+<ul>
+<li>Grants Atk+1
+when using tomes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Tome Prowess Lv.2
+<ul>
+<li>Grants Atk+1 and Hit+5
+when using tomes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Counter
+<ul>
+<li>When an adjacent enemy initiate and
+hit this unit, deals the same damage
+taken by this unit to the foe.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Tome Prowess Lv.3
+<ul>
+<li>Grants Atk+2 and Hit+5
+when using tomes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Countermagic
+<ul>
+<li>When hit by a magical attack,
+deals the same damage taken by
+the user to the foe.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Resonance+
+<ul>
+<li>When fighting with a tome, grants
+Dmg+5. If the foe survives after battle,
+the unit suffers Def/Res-1.
+(The debuff lasts for 1 turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Magic
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Mag to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Tome Prowess Lv.4
+<ul>
+<li>Grants Atk+3 and Hit+10
+when using tomes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Tome Prowess Lv.5
+<ul>
+<li>Grants Atk+3 and Hit+10
+when using tomes,
+fails at weapon disadvantage.
+[Tomefaire]Grants Atk+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-3"><a class="header" href="#proficiency-3">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Magic</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chrom-7"><a class="header" href="#chrom-7">Chrom ×7</a></h1>
+<h2 id="stat-bonuses-4"><a class="header" href="#stat-bonuses-4">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Str+1  Mag+1  Dex+3</li>
+<li><strong>Lv 5</strong>：Str+1  Mag+2  Dex+4</li>
+<li><strong>Lv 10</strong>：Str+2  Mag+2  Dex+5</li>
+<li><strong>Lv 20</strong>：Str+3  Mag+3  Dex+6</li>
+</ul>
+<h2 id="sync-skills-4"><a class="header" href="#sync-skills-4">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Other Half
+<ul>
+<li>If unit initiates combat, Robin chain
+attacks.
+When hit, may prevent the damage.
+Trigger% = Bond Level×1.5</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Veteran
+<ul>
+<li>Allies within 3 spaces
+deal +3 Dmg, take -3 Dmg,
+if they equip weapons of
+the same color with unit.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Rightful King
+<ul>
+<li>+10% to unit’s skill activation rates.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Rightful King (Dragon)
+<ul>
+<li>+10% to unit’s skill activation rates.
+[Dragon] +5% extra rates.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Spectrum
+<ul>
+<li>Grants the unit “Rally” command,
+use to +2 to all stats to all allies
+in 2 radius, last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Veteran+
+<ul>
+<li>Allies within 3 spaces
+deal +3 Dmg, take -3 Dmg,
+if they equip weapons of
+the same color, or have
+the same battle style with unit.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-4"><a class="header" href="#engage-skills-4">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Awakening
+<ul>
+<li>If no allies are within 3 spaces,
+grants +50 to Hit/Ddg, +10 to Avo/Crit,
+and the effect of Veteran applies to unit.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-4"><a class="header" href="#engage-attack-4">Engage Attack</a></h2>
+<ul>
+<li><strong>Giga Levin Sword</strong>
+<ul>
+<li>Use to attack with a magic sword.
+Uses the power of both Str and Mag.
+Swords only.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-4"><a class="header" href="#engage-weapons-4">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Levin Sword: Range 1~2, Mt 9, Hit 80 / Magic sword wielded by Emblem
+Robin. Can hit foes with magic
+lightning from a distance.</li>
+<li><strong>Lv 10</strong>：Thoron: Range 3, Mt 6, Hit 55, Avo -20 / Long-range Lightning magic
+wielded byEmblem Robin.
+Cannot follow up.</li>
+<li><strong>Lv 20</strong>：Sealed Falchion: Range 1, Mt 5, Hit 80 / The sealed legendary sword wielded by
+Emblem Chrom. Dex+20. Effective: Dragon.</li>
+</ul>
+<h2 id="inheritable-skills-3"><a class="header" href="#inheritable-skills-3">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 5</strong>：Veteran
+<ul>
+<li>Allies within 3 spaces
+deal +3 Dmg, take -3 Dmg,
+if they equip weapons of
+the same color with unit.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Rightful King
+<ul>
+<li>+10% to unit’s skill activation rates.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Rightful King (Dragon)
+<ul>
+<li>+10% to unit’s skill activation rates.
+[Dragon] +5% extra rates.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Quixotic
+<ul>
+<li>Grants Hit+30 and +15% to skill-trigger
+rate to unit and foe in combat.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Strength
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Str to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Magic
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Mag to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Skill
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Dex to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Speed
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Spd to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Luck
+<ul>
+<li>Grants the unit “Rally” command,
+use to +8 Luck to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Defense
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Def to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Resistance
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Res to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Veteran+
+<ul>
+<li>Allies within 3 spaces
+deal +3 Dmg, take -3 Dmg,
+if they equip weapons of
+the same color, or have
+the same battle style with unit.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-4"><a class="header" href="#proficiency-4">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Sword</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="corrin-7"><a class="header" href="#corrin-7">Corrin ×7</a></h1>
+<h2 id="stat-bonuses-5"><a class="header" href="#stat-bonuses-5">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Mag+1  Dex-2  Spd+1  Def+1</li>
+<li><strong>Lv 5</strong>：Mag+2  Dex-2  Spd+1  Def+2</li>
+<li><strong>Lv 10</strong>：Mag+2  Dex-2  Spd+2  Def+3</li>
+<li><strong>Lv 20</strong>：Mag+3  Dex-2  Spd+3  Def+4</li>
+</ul>
+<h2 id="sync-skills-5"><a class="header" href="#sync-skills-5">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Heartseeker
+<ul>
+<li>Adjacent enemies lose 20 Avo.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Heartseeker (Dragon)
+<ul>
+<li>Adjacent enemies lose 20 Avo.
+[Dragon] Enemies lose 10 extra Avo.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Draconic Hex
+<ul>
+<li>After battle, inflicts -4 to all
+of foe’s basic stats after combat.
+(Penalties shrink by 1 each turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Pair Up
+<ul>
+<li>Prevents damage from foes’ chain
+attacks and “Pair Up Attack” against unit.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Inevitable End
+<ul>
+<li>If the user inflicts a stat debuff on
+the target, stacks the stat debuffs
+with those already applied on the target.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-5"><a class="header" href="#engage-skills-5">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Pair Up Attack
+<ul>
+<li>Pair Up Attack
+If exist adjacent ally, when this
+unit initiate attack, perform a
+follow up attack with half Hit/Dmg.
+Hit and Dmg will increase based
+on the support level of adjacent allies.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-5"><a class="header" href="#engage-attack-5">Engage Attack</a></h2>
+<ul>
+<li><strong>Torrential Roar</strong>
+<ul>
+<li>Use to adjacent foe,
+turning 5 spaces into water
+terrain.</li>
+</ul>
+</li>
+<li><strong>Torrential Roar (Dragon)</strong>
+<ul>
+<li>Use to adjacent foe,
+turning 5 spaces into water
+terrain.
+[Dragon] Attack Range +1.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-5"><a class="header" href="#engage-weapons-5">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Calamity Gate: Range 1~2, Mt 7, Hit 70, Crit 5 / A scroll used by Emblem Corrin.
+Reverse the weapon triangle
+and double its effect.</li>
+<li><strong>Lv 10</strong>：Dragonstone+: Range 1, Mt 25, Hit 75, Avo -10, Ddg 10 / The dragon stone owned by
+Emblem Corrin, magic weapon.
+Cannot follow up
+-5 Dex/-4 Spd/+9 Def/+7 Res</li>
+<li><strong>Lv 20</strong>：Yato: Range 1, Mt 16, Hit 85, Crit 10, Avo 10, Ddg 10 / Sacred sword wielded by Emblem
+Corrin.
++4 Str/Spd/Def/Res when owned</li>
+</ul>
+<h2 id="inheritable-skills-4"><a class="header" href="#inheritable-skills-4">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Heartseeker
+<ul>
+<li>Adjacent enemies lose 20 Avo.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Heartseeker (Dragon)
+<ul>
+<li>Adjacent enemies lose 20 Avo.
+[Dragon] Enemies lose 10 extra Avo.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Seal Strength
+<ul>
+<li>Inflicts Str-6 on foe
+after combat. (Penalty
+shrinks by 1 each turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Seal Magic
+<ul>
+<li>Inflicts Mag-6 on foe
+after combat. (Penalty
+shrinks by 1 each turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Seal Defense
+<ul>
+<li>Inflicts Def-6 on foe
+after combat. (Penalty
+shrinks by 1 each turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Seal Speed
+<ul>
+<li>Inflicts Spd-6 on foe
+after combat. (Penalty
+shrinks by 1 each turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Seal Resistance
+<ul>
+<li>Inflicts Res-6 on foe
+after combat. (Penalty
+shrinks by 1 each turn.)</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Pair Up
+<ul>
+<li>Prevents damage from foes’ chain
+attacks and “Pair Up Attack” against unit.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Inevitable End
+<ul>
+<li>If the user inflicts a stat debuff on
+the target, stacks the stat debuffs
+with those already applied on the target.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-5"><a class="header" href="#proficiency-5">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Magic</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="edelgard-6"><a class="header" href="#edelgard-6">Edelgard ×6</a></h1>
+<h2 id="stat-bonuses-6"><a class="header" href="#stat-bonuses-6">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Str+1  Dex+1  Def+1</li>
+<li><strong>Lv 5</strong>：Str+2  Dex+2  Def+2</li>
+<li><strong>Lv 10</strong>：Str+3  Dex+3  Def+2</li>
+<li><strong>Lv 20</strong>：Str+4  Dex+4  Def+3</li>
+</ul>
+<h2 id="sync-skills-6"><a class="header" href="#sync-skills-6">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Friendly Rivalry
+<ul>
+<li>At start of player phase, the Emblem
+will randomly switch.
+If sycned emblem is:
+Edelgard, grants immunity to break;
+Dimitri, grants mov+1 and canto;
+Claude, grants mov+1, and unit pays
+no extra cost on any terrain.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Combat Arts
+<ul>
+<li>Enables use of Edelgard, Dimitri, or
+Claude’s Combat Art based on sycned emblem.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Weapon Sync
+<ul>
+<li>Grants Atk +3 when synced with an Emblem
+wielding the same weapon type.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Charm
+<ul>
+<li>If unit’s attack triggers a chain
+attack, increases chain attack
+Dmg by 20%.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Weapon Sync+
+<ul>
+<li>Grants Atk +5 when synced with an Emblem
+wielding the same weapon type.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-6"><a class="header" href="#engage-skills-6">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Limit Breaker
+<ul>
+<li>Grants unit all effects of Friendly Rivalry.
+Enables use of Edelgard, Dimitri, or
+Claude’s Combat Art regardless of sycned emblem.
+Triggers “Weapon Sync” regardless of
+equipped weapons.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-6"><a class="header" href="#engage-attack-6">Engage Attack</a></h2>
+<ul>
+<li><strong>Houses Unite</strong>
+<ul>
+<li>Use to restore unit’s and foe’s HP to full,
+then attack with Aymr, Areadbhar,
+and Failnaught at 50% damage.</li>
+</ul>
+</li>
+<li><strong>Houses Unite (Dragon)</strong>
+<ul>
+<li>Use to restore unit’s and foe’s HP to full,
+then attack with Aymr, Areadbhar,
+and Failnaught at 50% damage.
+[Dragon] +10% damage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-6"><a class="header" href="#engage-weapons-6">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Aymr: Range 1, Mt 24, Hit 60, Crit 20 / Axe of Emblem Edelgard. Smashes
+foes. Cannot follow up, or strike first
+if initiating combat. Eff: Dragon.</li>
+<li><strong>Lv 10</strong>：Areadbhar: Range 1, Mt 15, Hit 75, Crit 10 / Lance wielded by Emblem Dimitri.
+If user initiates combat, grants
+Mt+20%.</li>
+<li><strong>Lv 20</strong>：Failnaught: Range 2, Mt 14, Hit 75, Crit 20 / Bow wielded by Emblem Claude.
+If user initiates combat, grants
+Avo+15. Effective: Dragon, Flying.</li>
+</ul>
+<h2 id="inheritable-skills-5"><a class="header" href="#inheritable-skills-5">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Defense +1
+<ul>
+<li>Grants Def+1.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Weapon Sync
+<ul>
+<li>Grants Atk +3 when synced with an Emblem
+wielding the same weapon type.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Helm Splitter
+<ul>
+<li>Grant the unit “Helm Splitter”.
+Cost 4 engage meter or 2 engage turn
+to attack with axes.
+Effective: Armored.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Charm
+<ul>
+<li>If unit’s attack triggers a chain
+attack, increases chain attack
+Dmg by 20%.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Defense +2
+<ul>
+<li>Grants Def+2.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Knightkneeler
+<ul>
+<li>Grant the unit “Knightkneeler”.
+Cost 4 engage meter or 2 engage turn
+to attack with lances.
+Effective: Cavalry.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Weapon Sync+
+<ul>
+<li>Grants Atk +5 when synced with an Emblem
+wielding the same weapon type.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Monster Blast
+<ul>
+<li>Grant the unit “Monster Crusher”.
+Cost 3 engage meter or 1 engage turn.
+Effective: Corrupted.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-6"><a class="header" href="#proficiency-6">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Axe</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="eirika-7"><a class="header" href="#eirika-7">Eirika ×7</a></h1>
+<h2 id="stat-bonuses-7"><a class="header" href="#stat-bonuses-7">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Str+2  Res+2</li>
+<li><strong>Lv 5</strong>：Str+3  Res+3</li>
+<li><strong>Lv 10</strong>：Str+4  Res+4</li>
+<li><strong>Lv 20</strong>：Str+6  Res+6</li>
+</ul>
+<h2 id="sync-skills-7"><a class="header" href="#sync-skills-7">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Night and Day
+<ul>
+<li>Use to switch Emblems and swap
+between Lunar Brace/Gentility/Demoiselle and
+Solar Brace/Bravery/Gentilhomme for all allies.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Lunar Brace
+<ul>
+<li>If unit initiates combat with
+a physical/magical weapon,
+grants Atk+30% of foe’s Def/Res
+for the first hit.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Gentility
+<ul>
+<li>When an ally within 3 radius is attacked,
+grants +3 Def/Res for allies within 3 radius
+for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Demoiselle
+<ul>
+<li>Male allies within 2-radius
+tale -2 Dmg.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Lunar Brace+
+<ul>
+<li>If unit initiates combat with
+a physical/magical weapon,
+grants Atk+50% of foe’s Def/Res
+for the first hit.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Gentility+
+<ul>
+<li>When an ally within 3 radius is attacked,
+grants +4 Def/Res for allies within 3 radius
+for 1 turn.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-7"><a class="header" href="#engage-skills-7">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Sacred Twins
+<ul>
+<li>While engaged with Eirika, changes
+Lunar Brace to Eclipse Brace,
+Gentility to Blue Skies, and
+Demoiselle to Nobility for all allies.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-7"><a class="header" href="#engage-attack-7">Engage Attack</a></h2>
+<ul>
+<li><strong>Twin Strike</strong>
+<ul>
+<li>Use to make a sword attack followed
+by a lance attack from Ephraim on
+adjacent foe. Effective: Corrupted.</li>
+</ul>
+</li>
+<li><strong>Twin Strike (Cavalry)</strong>
+<ul>
+<li>Use to make a sword attack followed
+by a lance attack from Ephraim on
+adjacent foe. Effective: Corrupted.
+[Cavalry] Ephraim deals +50%
+damage.</li>
+</ul>
+</li>
+<li><strong>Twin Strike (Dragon)</strong>
+<ul>
+<li>Use to make a sword attack followed
+by a lance attack from Ephraim on
+adjacent foe. Effective: Corrupted.
+[Dragon] +20% damage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-7"><a class="header" href="#engage-weapons-7">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Wind Sword: Range 1~2, Mt 9, Hit 70 / Magical sword wielded by Emblem
+Eirika. Can strike close or at range.
+Effective: Flying.</li>
+<li><strong>Lv 10</strong>：Reginleif: Range 1, Mt 10, Hit 80, Crit 10 / Lance wielded by Emblem Eirika.
+Effective: Cavalry, Flier, Armored.</li>
+<li><strong>Lv 20</strong>：Sieglinde: Range 1, Mt 18, Hit 90 / Paired sword wielded by Emblem
+Eirika. Grants Res+5.
+Effective: Corrupted.</li>
+</ul>
+<h2 id="inheritable-skills-6"><a class="header" href="#inheritable-skills-6">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Lunar Brace
+<ul>
+<li>If unit initiates combat with
+a physical/magical weapon,
+grants Atk+30% of foe’s Def/Res
+for the first hit.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Gentility
+<ul>
+<li>When an ally within 3 radius is attacked,
+grants +3 Def/Res for allies within 3 radius
+for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Demoiselle
+<ul>
+<li>Male allies within 2-radius
+tale -2 Dmg.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Resistance +1
+<ul>
+<li>Grants Res+1.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Lunar Brace+
+<ul>
+<li>If unit initiates combat with
+a physical/magical weapon,
+grants Atk+50% of foe’s Def/Res
+for the first hit.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Resistance +2
+<ul>
+<li>Grants Res+2.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Gentility+
+<ul>
+<li>When an ally within 3 radius is attacked,
+grants +4 Def/Res for allies within 3 radius
+for 1 turn.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-7"><a class="header" href="#proficiency-7">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Lance</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="hector-7"><a class="header" href="#hector-7">Hector ×7</a></h1>
+<h2 id="stat-bonuses-8"><a class="header" href="#stat-bonuses-8">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：HP+5  Str+1  Res-2</li>
+<li><strong>Lv 5</strong>：HP+10  Str+1  Res-2</li>
+<li><strong>Lv 10</strong>：HP+15  Str+2  Res-2</li>
+<li><strong>Lv 20</strong>：HP+20  Str+2  Res-2</li>
+</ul>
+<h2 id="sync-skills-8"><a class="header" href="#sync-skills-8">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Quick Riposte
+<ul>
+<li>If unit’s HP is 75% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Impenetrable Stance
+<ul>
+<li>Grant the unit “Impenetrable”,
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Impenetrable Stance (Dragon)
+<ul>
+<li>Grant the unit “Impenetrable”,
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.
+[Dragon] -1 engage meter cost.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Strong Riposte
+<ul>
+<li>When enemy triggers the battle,
+Dmg+3</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Strengthtaker
+<ul>
+<li>Grants a stacking Str+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn’t combat last turn,
+lose 2 Str when phase starts.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Quick Riposte+
+<ul>
+<li>If unit’s HP is 50% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-8"><a class="header" href="#engage-skills-8">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Heavy Attack
+<ul>
+<li>When weapon’s Mt&gt;=10,
+grants Str+5.
+When foe initiates battle,
+and if the unit’s Str is greater,
+add 30% of the Str difference
+to the damage dealt.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-8"><a class="header" href="#engage-attack-8">Engage Attack</a></h2>
+<ul>
+<li><strong>Thunder Storm</strong>
+<ul>
+<li>Use to attack at double weapon’s Mt.
+Sword/axe only.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-8"><a class="header" href="#engage-weapons-8">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Wolf Beil: Range 1, Mt 10, Hit 75, Crit 5 / Axe wielded by Emblem Hector.
+Effective: Cavalry, Armored.</li>
+<li><strong>Lv 10</strong>：Runesword: Range 1~2, Mt 14, Hit 80 / An exceptional sword of Emblem Hector.
+Hard to follow up(-3)/
+The type of damage varies by distance.</li>
+<li><strong>Lv 20</strong>：Armads: Range 1, Mt 18, Hit 85 / Lightning-charged axe wielded by
+Emblem Hector. Grants Def+5.
+Effective: Dragon.</li>
+</ul>
+<h2 id="inheritable-skills-7"><a class="header" href="#inheritable-skills-7">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Quick Riposte
+<ul>
+<li>If unit’s HP is 75% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：HP +3
+<ul>
+<li>Grants max HP+3.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Impenetrable Stance
+<ul>
+<li>Grant the unit “Impenetrable”,
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Impenetrable Stance (Dragon)
+<ul>
+<li>Grant the unit “Impenetrable”,
+cost 3 engage meter or 1 engage turn
+to grant immunity to break.
+[Dragon] -1 engage meter cost.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Strong Riposte
+<ul>
+<li>When enemy triggers the battle,
+Dmg+3</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Strengthtaker
+<ul>
+<li>Grants a stacking Str+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn’t combat last turn,
+lose 2 Str when phase starts.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：HP +5
+<ul>
+<li>Grants max HP+5.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Quick Riposte+
+<ul>
+<li>If unit’s HP is 50% or more and foe
+initiates combat, unit will always
+follow up (if weapon allows).</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-8"><a class="header" href="#proficiency-8">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Axe</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="ike-6"><a class="header" href="#ike-6">Ike ×6</a></h1>
+<h2 id="stat-bonuses-9"><a class="header" href="#stat-bonuses-9">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Str+1  Def+2</li>
+<li><strong>Lv 5</strong>：Str+2  Def+3</li>
+<li><strong>Lv 10</strong>：Str+3  Def+4</li>
+<li><strong>Lv 20</strong>：Str+4  Def+5</li>
+</ul>
+<h2 id="sync-skills-9"><a class="header" href="#sync-skills-9">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Resolve
+<ul>
+<li>The unit’s HP &lt;= 75%,
+Grants +6 Dex/Luck.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Seal Chain
+<ul>
+<li>When hit by a chain attack,
+the enemy who perform this
+chain attack cannot chain attack
+again in this chapter.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Backdrop
+<ul>
+<li>Grant this unit “Backdrop+”,
+use to throw the enemy backward
+after battle.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Wrath
+<ul>
+<li>The unit’s HP &lt;= 50%,
+Grants +20 Crit.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Resolve+
+<ul>
+<li>The unit’s HP &lt;= 75%,
+Grants +8 Dex/Luck.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Backdrop+
+<ul>
+<li>Grant this unit “Backdrop+”,
+cost 3 engage meter or 1 engage
+turn to throw the enemy backward.
+Deals 20% of max HP’s damage
+and break the enemy.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-9"><a class="header" href="#engage-skills-9">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Brooding Menace
+<ul>
+<li>All enemies within 3 radius
+lose 2 Str/Dex/Def, and this unit’s
+Str/Dex/Def increase the same value.
+(Maximum of 12 Str/Def)</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-9"><a class="header" href="#engage-attack-9">Engage Attack</a></h2>
+<ul>
+<li><strong>Great Aether</strong>
+<ul>
+<li>Perform a consecutive attack, first
+hit with Sol and second hit with
+Luna. Sword/Axe only.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-9"><a class="header" href="#engage-weapons-9">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Hammer: Range 1, Mt 18, Hit 75 / Hammer of Emblem Ike. Smashes
+foes. Cannot follow up, or strike first
+if initiating combat. Eff: Armored.</li>
+<li><strong>Lv 10</strong>：Urvan: Range 1, Mt 16, Hit 90, Crit 5 / Heirloom axe wielded by Emblem
+Ike.</li>
+<li><strong>Lv 20</strong>：Ragnell: Range 1~2, Mt 11, Hit 80, Crit 5 / Sacred sword wielded by Emblem
+Ike. Grants Def+2/
+Damage type varies by distance.</li>
+</ul>
+<h2 id="inheritable-skills-8"><a class="header" href="#inheritable-skills-8">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Resolve
+<ul>
+<li>The unit’s HP &lt;= 75%,
+Grants +6 Dex/Luck.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Gamble
+<ul>
+<li>-10 to Hit, +10 to Crit.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Axe Prowess Lv.1
+<ul>
+<li>Grants Hit+5
+when using axes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Axe Prowess Lv.2
+<ul>
+<li>Grants Hit+10
+when using axes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Seal Chain
+<ul>
+<li>When hit by a chain attack,
+the enemy who perform this
+chain attack cannot chain attack
+again in this chapter.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Backdrop
+<ul>
+<li>Grant this unit “Backdrop+”,
+use to throw the enemy backward
+after battle.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Axe Prowess Lv.3
+<ul>
+<li>Grants Atk+1 and Hit+10
+when using axes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Wrath
+<ul>
+<li>The unit’s HP &lt;= 50%,
+Grants +20 Crit.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Resolve+
+<ul>
+<li>The unit’s HP &lt;= 75%,
+Grants +8 Dex/Luck.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Axe Prowess Lv.4
+<ul>
+<li>Grants Atk+2 and Hit+15
+when using axes,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Defense
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Def to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Backdrop+
+<ul>
+<li>Grant this unit “Backdrop+”,
+cost 3 engage meter or 1 engage
+turn to throw the enemy backward.
+Deals 20% of max HP’s damage
+and break the enemy.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Axe Prowess Lv.5
+<ul>
+<li>Grants Atk+2 and Hit+15
+when using axes,
+fails at weapon disadvantage.
+[Axefaire]Grants Atk+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-9"><a class="header" href="#proficiency-9">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Axe</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="leif-5"><a class="header" href="#leif-5">Leif ×5</a></h1>
+<h2 id="stat-bonuses-10"><a class="header" href="#stat-bonuses-10">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：HP+3  Dex+1  Def+1  Res+1</li>
+<li><strong>Lv 5</strong>：HP+3  Dex+2  Def+2  Res+1</li>
+<li><strong>Lv 10</strong>：HP+3  Dex+3  Def+3  Res+2</li>
+<li><strong>Lv 20</strong>：HP+5  Dex+4  Def+4  Res+2</li>
+</ul>
+<h2 id="sync-skills-10"><a class="header" href="#sync-skills-10">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Arm Master
+<ul>
+<li>Can use sword/lance/axe
+not higher than level C.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Vantage
+<ul>
+<li>If unit’s HP is 25% or less and foe
+initiates combat, unit can counter
+before foe’s first attack.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Zeroing Weapons
+<ul>
+<li>Grants the unit “Rally” command,
+use to grant allies in 2 radius
+Hit+20/Weapon’s Mt+20%</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Triangle Adept+
+<ul>
+<li>If use a different type of weapon
+(Red, Blue, Green, Other) from
+the last battle, Dmg+5.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Vantage+
+<ul>
+<li>If unit’s HP is 50% or less and foe
+initiates combat, unit can counter
+before foe’s first attack.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Triangle Adept
+<ul>
+<li>If use a different type of weapon
+(Red, Blue, Green, Other) from
+the last battle, Dmg+3.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Arm Master+
+<ul>
+<li>Can use sword/lance/axe
+not higher than level B.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Triangle Adept+
+<ul>
+<li>If use a different type of weapon
+(Red, Blue, Green, Other) from
+the last battle, Dmg+5.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Arm Master++
+<ul>
+<li>Can use sword/lance/axe
+not higher than level A.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-10"><a class="header" href="#engage-skills-10">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Adaptable
+<ul>
+<li>If foe initiates combat, unit counters
+with the best weapon available (in
+terms of range, weapon advantage,
+effective bonus, etc.).</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-10"><a class="header" href="#engage-attack-10">Engage Attack</a></h2>
+<ul>
+<li><strong>Quadruple Hit</strong>
+<ul>
+<li>Use to attack once each with sword,
+lance, axe, and bow.</li>
+</ul>
+</li>
+<li><strong>Quadruple Hit (Qi Adept)</strong>
+<ul>
+<li>Use to attack once each with sword,
+lance, axe, and bow.
+[Qi Adept] Breaks foe.</li>
+</ul>
+</li>
+<li><strong>Quadruple Hit (Dragon)</strong>
+<ul>
+<li>Use to attack once each with sword,
+lance, axe, and bow.
+[Dragon] +20% damage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-10"><a class="header" href="#engage-weapons-10">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：S Potion: A unique potion of emblem Leaf.
+A stats+3, reduce 1/turn.</li>
+<li><strong>Lv 10</strong>：Physic+: Range 1~10, Mt 2, Hit 100 / Emblem Leif’s long range staff.
+Can heal at a distance.</li>
+</ul>
+<h2 id="inheritable-skills-9"><a class="header" href="#inheritable-skills-9">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Arms Shield
+<ul>
+<li>When unit has weapon advantage,
+unit takes 3 less damage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Vantage
+<ul>
+<li>If unit’s HP is 25% or less and foe
+initiates combat, unit can counter
+before foe’s first attack.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Dagger Prowess Lv.1
+<ul>
+<li>Grants Atk+1
+when using daggers,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Dagger Prowess Lv.2
+<ul>
+<li>Grants Atk+2
+when using daggers,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Zeroing Weapons
+<ul>
+<li>Grants the unit “Rally” command,
+use to grant allies in 2 radius
+Hit+20/Weapon’s Mt+20%</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Dagger Prowess Lv.3
+<ul>
+<li>Grants Atk+3
+when using daggers,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Arms Shield+
+<ul>
+<li>When unit has weapon advantage,
+unit takes 4 less damage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Vantage+
+<ul>
+<li>If unit’s HP is 50% or less and foe
+initiates combat, unit can counter
+before foe’s first attack.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Dagger Prowess Lv.4
+<ul>
+<li>Grants Atk+4 and Hit+5
+when using daggers,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Arms Shield++
+<ul>
+<li>When unit has weapon advantage,
+unit takes 5 less damage.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Dagger Prowess Lv.5
+<ul>
+<li>Grants Atk+4 and Hit+5
+when using daggers,
+fails at weapon disadvantage.
+[Daggerfaire]Grants Atk+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-10"><a class="header" href="#proficiency-10">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Dagger</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lucina-7"><a class="header" href="#lucina-7">Lucina ×7</a></h1>
+<h2 id="stat-bonuses-11"><a class="header" href="#stat-bonuses-11">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Dex+2  Spd+1  Lck+2</li>
+<li><strong>Lv 5</strong>：Dex+3  Spd+2  Lck+2</li>
+<li><strong>Lv 10</strong>：Dex+4  Spd+3  Lck+4</li>
+<li><strong>Lv 20</strong>：Dex+5  Spd+4  Lck+6</li>
+</ul>
+<h2 id="sync-skills-11"><a class="header" href="#sync-skills-11">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Dual Strike
+<ul>
+<li>Unit participates in chain attacks as
+if it were a backup unit.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Dual Assist
+<ul>
+<li>When an ally attacks an enemy
+within this unit’s weapon range,
+and if the unit is able to chain
+attack, join the chain attack.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Dual Support
+<ul>
+<li>When taken damage, and the unit
+has allies nearby, this unit take
+less damage.
+Each support level increase this value by 1.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Shuttle
+<ul>
+<li>Grants the unit “Shuttle” command,
+use to swap places with an ally
+within 5 tiles.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Shuttle (Dragon)
+<ul>
+<li>Grants the unit “Shuttle” command,
+use to swap places with an ally
+within 5 tiles.
+[Dragon] +2 range</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Dual Assist+
+<ul>
+<li>When an ally attacks an enemy
+within this unit’s weapon range,
+and if the unit is able to chain
+attack, join the chain attack.
+If this unit is at max HP,
+deals 2x Dmg.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-11"><a class="header" href="#engage-skills-11">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Bonded
+<ul>
+<li>All allies within 2 radius gets the
+skill “Dual Strike”. For all units,
+if he/she has skill “Dual Support”,
+the unit’s also gets 1 support level
+for each ally at distance 2.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-11"><a class="header" href="#engage-attack-11">Engage Attack</a></h2>
+<ul>
+<li><strong>All for One</strong>
+<ul>
+<li>Use to make a sword attack against
+a foe. All allies within 2
+spaces chain attack.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-11"><a class="header" href="#engage-weapons-11">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Noble Sword: Range 1, Mt 6, Hit 85, Crit 10 / Emblem Lucina’s sword.
+When equipped by Royalty,
+Dmg+5.</li>
+<li><strong>Lv 10</strong>：Parthia: Range 2, Mt 16, Hit 70, Ddg -5 / Bow wielded by Emblem Lucina.
+Effective: Flying.
+Use to recover 30 HP</li>
+<li><strong>Lv 20</strong>：Parallel Falchion: Range 1~2, Mt 9, Hit 80, Crit 5 / Sacred sword wielded by Emblem
+Lucina. Effective: Dragon. Lck+20
+Damage type varies by distance.</li>
+</ul>
+<h2 id="inheritable-skills-10"><a class="header" href="#inheritable-skills-10">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Underdog
+<ul>
+<li>If unit’s Lvl &lt; foe’s Lvl,
+grants Hit/Avo+15.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Pavise
+<ul>
+<li>When attacked by sword/lance/
+axe/martial art, has a chance
+to reduce the damage by half.
+(=Dex%)</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Aegis
+<ul>
+<li>When attacked by tome/bow/
+dagger/other weapon, has a chance
+to reduce the damage by half.
+(=Dex%)</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Luck +2
+<ul>
+<li>Grants Lck+2.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Dual Support
+<ul>
+<li>When taken damage, and the unit
+has allies nearby, this unit take
+less damage.
+Each support level increase this value by 1.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Luck
+<ul>
+<li>Grants the unit “Rally” command,
+use to +8 Luck to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Luck +4
+<ul>
+<li>Grants Lck+4.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-11"><a class="header" href="#proficiency-11">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Sword</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lyn-7"><a class="header" href="#lyn-7">Lyn ×7</a></h1>
+<h2 id="stat-bonuses-12"><a class="header" href="#stat-bonuses-12">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Dex+2  Spd+2</li>
+<li><strong>Lv 5</strong>：Dex+4  Spd+3</li>
+<li><strong>Lv 10</strong>：Dex+6  Spd+4</li>
+<li><strong>Lv 20</strong>：Dex+8  Spd+5</li>
+</ul>
+<h2 id="sync-skills-12"><a class="header" href="#sync-skills-12">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Alacrity
+<ul>
+<li>If unit initiates combat with an ability
+to follow up of 7 or more, unit’s
+follow-up (if possible) occurs before
+foe can counterattack.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Curved Shot
+<ul>
+<li>Grant this unit “Curved Shot”,
+cost 4 engage meter or 2 engage turns
+to increase the attack range
+of bow or shuriken by 1,
+but Hit is reduced by
+20×(Distance of attack -2).</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Quick Draw
+<ul>
+<li>When user triggers the battle,
+Dmg+4.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Alacrity+
+<ul>
+<li>If unit initiates combat with an ability
+to follow up of 6 or more, unit’s
+follow-up (if possible) occurs before
+foe can counterattack.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Speedtaker
+<ul>
+<li>Grants a stacking Spd+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn’t combat last turn,
+lose 2 Spd when phase starts.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Alacrity++
+<ul>
+<li>If unit initiates combat with an ability
+to follow up of 5 or more, unit’s
+follow-up (if possible) occurs before
+foe can counterattack.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-12"><a class="header" href="#engage-skills-12">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Swift Strike
+<ul>
+<li>When weapon’s Mt&lt;10,
+grants Spd+5.
+When this unit initiate battle,
+and if this unit’s Spd is faster,
+add 30% of the Spd difference
+to the damage dealt.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-12"><a class="header" href="#engage-attack-12">Engage Attack</a></h2>
+<ul>
+<li><strong>Astra Storm</strong>
+<ul>
+<li>Use to launch 5 bow attacks at 50%
+damage, bow only.</li>
+</ul>
+</li>
+<li><strong>Astra Storm (Covert)</strong>
+<ul>
+<li>Use to launch 5 bow attacks at 50%
+damage, bow only.
+[Covert] Range +1.</li>
+</ul>
+</li>
+<li><strong>Astra Storm (Qi Adept)</strong>
+<ul>
+<li>Use to launch 5 bow attacks at 50%
+damage, bow only.
+[Qi Adept] Breaks the target.</li>
+</ul>
+</li>
+<li><strong>Astra Storm (Dragon)</strong>
+<ul>
+<li>Use to launch 5 bow attacks at 50%
+damage, bow only.
+[Dragon] Range +1.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-12"><a class="header" href="#engage-weapons-12">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Falcon Bow: Range 2, Mt 6, Hit 125 / Emblem Lyn’s yumi
+Effective: Flying (5x).</li>
+<li><strong>Lv 10</strong>：Wind Chaser: Range 3, Mt 7, Hit 70, Avo -20 / Emblem Lyn’s long range yumi
+Cannot follow up
+When unit initiate a battle and hit,
+reduce foe’s Mov by half, last one turn.</li>
+<li><strong>Lv 20</strong>：Mulagir: Range 2, Mt 5, Hit 90 / Mighty yumi wielded by Emblem Lyn.
+If user initiates combat, attacks twice.
+Grants Spd+2. Effective: Flying,
+Dragon.</li>
+</ul>
+<h2 id="inheritable-skills-11"><a class="header" href="#inheritable-skills-11">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Alacrity
+<ul>
+<li>If unit initiates combat with an ability
+to follow up of 7 or more, unit’s
+follow-up (if possible) occurs before
+foe can counterattack.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Bow Prowess Lv.1
+<ul>
+<li>Grants Atk+1
+when using bows,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Bow Prowess Lv.2
+<ul>
+<li>Grants Atk+1 and Hit+5
+when using bows,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Curved Shot
+<ul>
+<li>Grant this unit “Curved Shot”,
+cost 4 engage meter or 2 engage turns
+to increase the attack range
+of bow or shuriken by 1,
+but Hit is reduced by
+20×(Distance of attack -2).</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Quick Draw
+<ul>
+<li>When user triggers the battle,
+Dmg+4.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Bow Prowess Lv.3
+<ul>
+<li>Grants Atk+2 and Hit+5
+when using bows,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Alacrity+
+<ul>
+<li>If unit initiates combat with an ability
+to follow up of 6 or more, unit’s
+follow-up (if possible) occurs before
+foe can counterattack.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Speedtaker
+<ul>
+<li>Grants a stacking Spd+2 each time
+unit initiates combat and defeats a
+foe. (Max +10)
+If this unit didn’t combat last turn,
+lose 2 Spd when phase starts.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Bow Prowess Lv.4
+<ul>
+<li>Grants Atk+3 and Hit+10
+when using bows,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Speed
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Spd to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Bow Prowess Lv.5
+<ul>
+<li>Grants Atk+3 and Hit+10
+when using bows,
+fails at weapon disadvantage.
+[Bow Prowess]Grants Atk+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-12"><a class="header" href="#proficiency-12">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Bow</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="marth-5"><a class="header" href="#marth-5">Marth ×5</a></h1>
+<h2 id="stat-bonuses-13"><a class="header" href="#stat-bonuses-13">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Str+1  Dex+1  Spd+1</li>
+<li><strong>Lv 5</strong>：Str+1  Dex+2  Spd+2</li>
+<li><strong>Lv 10</strong>：Str+2  Dex+3  Spd+3</li>
+<li><strong>Lv 20</strong>：Str+3  Dex+4  Spd+4</li>
+</ul>
+<h2 id="sync-skills-13"><a class="header" href="#sync-skills-13">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Break Defenses
+<ul>
+<li>If unit’s attack breaks foe, unit
+makes an extra attack at 50%
+damage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Convoy
+<ul>
+<li>Use to deposit or retrieve weapons
+and items.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Shieldbreaker
+<ul>
+<li>Grants the unit “Shieldbreaker” command,
+use 3 engage meter or 1 engage turn
+to get Seal Defense and Seal Resistance
+for the next battle.
+If the foe is defeated, apply the effect
+to the enemies in 2 radius of the foe.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Unyielding
+<ul>
+<li>If the unit is attacked, and their
+HP is lower than 50% after battle,
+grant +1 Mov, and when initiate
+combat, Dmg+5. At the end of each
+player’s phase, if the unit has not
+initiate any combat, lose the effect.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Unyielding+
+<ul>
+<li>If the unit is attacked, and their
+HP is lower than 70% after battle,
+grant +1 Mov, and when initiate
+combat, Dmg+7. At the end of each
+player’s phase, if the unit has not
+initiate any combat, lose the effect.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-13"><a class="header" href="#engage-skills-13">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Divine Speed
+<ul>
+<li>Unit performs an extra attack
+at 50% damage in combat.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Divine Speed (Dragon)
+<ul>
+<li>Unit performs an extra attack
+at 50% damage in combat.
+[Dragon] Unit recovers HP equal to
+damage dealt by extra attack.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-13"><a class="header" href="#engage-attack-13">Engage Attack</a></h2>
+<ul>
+<li><strong>Lodestar Rush</strong>
+<ul>
+<li>Use to launch 7 consecutive sword
+attacks at 30% damage. Adjacent
+foe only.</li>
+</ul>
+</li>
+<li><strong>Lodestar Rush (Mystical)</strong>
+<ul>
+<li>Use to launch 7 consecutive sword
+attacks at 30% damage. Adjacent foe
+only.
+[Mystical] Damage based on Mag.</li>
+</ul>
+</li>
+<li><strong>Lodestar Rush (Dragon)</strong>
+<ul>
+<li>Use to launch 7 consecutive sword
+attacks at 30% damage. Adjacent foe
+only.
+[Dragon] +2 attacks.</li>
+</ul>
+</li>
+<li><strong>Lodestar Rush (Backup)</strong>
+<ul>
+<li>Use to launch 7 consecutive sword
+attacks at 30% damage. Adjacent foe
+only.
+[Backup] +1 attack.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-13"><a class="header" href="#engage-weapons-13">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Rapier: Range 1, Mt 6, Hit 95, Avo 20 / Sword wielded by Emblem Marth.
+Effective: Cavalry, Flier, Armored.</li>
+<li><strong>Lv 10</strong>：Gradius: Range 1~2, Mt 13, Hit 70 / Emblem Marth’s most
+valuable lance.
+Can strike at range.
+Cannot follow up/Crit/
+Trigger skills/
++5 Foe’s ability to follow up/
+Use to recover 30 HP</li>
+<li><strong>Lv 20</strong>：Falchion: Range 1, Mt 10, Hit 100, Avo 20 / Sacred sword wielded by Emblem
+Marth. Effective: Dragon.</li>
+</ul>
+<h2 id="inheritable-skills-12"><a class="header" href="#inheritable-skills-12">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Perceptive
+<ul>
+<li>If unit has triangle advantage,
+unit’s Spd+2.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Speed +1
+<ul>
+<li>Grants Spd+1.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Life and Death
+<ul>
+<li>Unit deals +10 damage and takes
++10 damage during combat.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Unyielding
+<ul>
+<li>If the unit is attacked, and their
+HP is lower than 50% after battle,
+grant +1 Mov, and when initiate
+combat, Dmg+5. At the end of each
+player’s phase, if the unit has not
+initiate any combat, lose the effect.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Skill
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Dex to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Shieldbreaker
+<ul>
+<li>Grants the unit “Shieldbreaker” command,
+use 3 engage meter or 1 engage turn
+to get Seal Defense and Seal Resistance
+for the next battle.
+If the foe is defeated, apply the effect
+to the enemies in 2 radius of the foe.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Speed +2
+<ul>
+<li>Grants Spd+2.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Unyielding+
+<ul>
+<li>If the unit is attacked, and their
+HP is lower than 70% after battle,
+grant +1 Mov, and when initiate
+combat, Dmg+7. At the end of each
+player’s phase, if the unit has not
+initiate any combat, lose the effect.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Perceptive+
+<ul>
+<li>If unit has triangle advantage,
+unit’s Spd+3.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-13"><a class="header" href="#proficiency-13">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Sword</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="micaiah-5"><a class="header" href="#micaiah-5">Micaiah ×5</a></h1>
+<h2 id="stat-bonuses-14"><a class="header" href="#stat-bonuses-14">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Mag+1  Lck+2  Res+2</li>
+<li><strong>Lv 5</strong>：Mag+2  Lck+2  Res+3</li>
+<li><strong>Lv 10</strong>：Mag+3  Lck+4  Res+4</li>
+<li><strong>Lv 20</strong>：Mag+4  Lck+6  Res+5</li>
+</ul>
+<h2 id="sync-skills-14"><a class="header" href="#sync-skills-14">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Cleric
+<ul>
+<li>Unit can equip staves up to level C.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Healing Light
+<ul>
+<li>After unit heals an ally with a staff,
+if the unit’s HP is lower than the ally,
+unit’s HP restore to the same value.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Camaraderie
+<ul>
+<li>When use a single target staff
+to an ally, grant he/she +10 max
+HP, until he/she initiates a battle.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Staffbreaker
+<ul>
+<li>Avo+50 if the enemy
+uses staves.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Cleric+
+<ul>
+<li>Unit can equip staves up to level B.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Cleric++
+<ul>
+<li>Unit can equip staves up to level A.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-14"><a class="header" href="#engage-skills-14">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Augment
+<ul>
+<li>The range of all the staves are set
+to 10. At the start of player’s phase,
+heal all allies within in 10 radius 10HP.
+Each 3 Mag of the healer increase the
+value by 1, and each space between
+decrease the value by 1.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Augment (Qi Adept)
+<ul>
+<li>The range of all the staves are set
+to 10. At the start of player’s phase,
+heal all allies within in 10 radius 10HP.
+Each 3 Mag of the healer increase the
+value by 1, and each space between
+decrease the value by 1.
+[Qi Adept] +20% to HP healed
+by staves.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Augment (Dragon)
+<ul>
+<li>The range of all the staves are set
+to 10. At the start of player’s phase,
+heal all allies within in 10 radius 10HP.
+Each 3 Mag of the healer increase the
+value by 1, and each space between
+decrease the value by 1.
+[Dragon] The range of both effects
+are increased to 11.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-14"><a class="header" href="#engage-attack-14">Engage Attack</a></h2>
+<ul>
+<li><strong>Great Sacrifice</strong>
+<ul>
+<li>Use to restore full HP to all allies
+within 10 radius, even those not
+under the player’s control.
+After use, unit’s HP=1.</li>
+</ul>
+</li>
+<li><strong>Great Sacrifice (Armored)</strong>
+<ul>
+<li>Use to restore full HP to all allies
+within 10 radius, even those not
+under the player’scontrol.
+After use, unit’s HP=1.
+[Armored] Grants Def+1 to all
+healed during their next combat.</li>
+</ul>
+</li>
+<li><strong>Great Sacrifice (Dragon)</strong>
+<ul>
+<li>Use to restore full HP to all allies
+within 10 radius, even those not
+under the player’scontrol.
+After use, unit’s HP=1.
+[Dragon] Unit’s HP=30% current.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-14"><a class="header" href="#engage-weapons-14">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Shine: Range 1~2, Mt 7, Hit 90, Crit 10 / Light tome wielded by Emblem
+Micaiah. Foe lost 20 hit in this
+chapter when hit.</li>
+<li><strong>Lv 10</strong>：Nosferatu: Range 1~2, Mt 4, Hit 85 / Light tome wielded by Emblem
+Micaiah. User recovers HP equal
+to 50% of damage dealt.
+Cannot follow up</li>
+<li><strong>Lv 20</strong>：Thani: Range 1~2, Mt 9, Hit 100 / Mighty light tome wielded by
+Emblem Micaiah. Effective: Cavalry,
+Armored.</li>
+</ul>
+<h2 id="inheritable-skills-13"><a class="header" href="#inheritable-skills-13">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Staff Prowess 1
+<ul>
+<li>Staves heal an additional 1 HP.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Staff Prowess 2
+<ul>
+<li>Grants Hit+5 when using a staff.
+Staves also heal an additional 1 HP.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Healing Light
+<ul>
+<li>After unit heals an ally with a staff,
+if the unit’s HP is lower than the ally,
+unit’s HP restore to the same value.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Staff Prowess 3
+<ul>
+<li>Grants Hit+5 when using a staff.
+Staves also heal an additional 2 HP.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Camaraderie
+<ul>
+<li>When use a single target staff
+to an ally, grant he/she +10 max
+HP, until he/she initiates a battle.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Staffbreaker
+<ul>
+<li>Avo+50 if the enemy
+uses staves.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Resistance
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Res to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Staff Prowess 4
+<ul>
+<li>Grants Hit+10 when using a staff.
+Staves also heal an additional 3 HP.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Staff Prowess 5
+<ul>
+<li>Grants Hit+30 when using a staff.
+Staves also heal an additional 3 HP.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-14"><a class="header" href="#proficiency-14">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Rod</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="roy-5"><a class="header" href="#roy-5">Roy ×5</a></h1>
+<h2 id="stat-bonuses-15"><a class="header" href="#stat-bonuses-15">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：HP+3  Str+2</li>
+<li><strong>Lv 5</strong>：HP+5  Str+3</li>
+<li><strong>Lv 10</strong>：HP+7  Str+4</li>
+<li><strong>Lv 20</strong>：HP+10  Str+5</li>
+</ul>
+<h2 id="sync-skills-15"><a class="header" href="#sync-skills-15">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：HoldOut
+<ul>
+<li>If unit had 30% HP or more at start
+of combat, unit would not take
+damage from the lethal attack.
+After that, lose HoldOut in this turn.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Terrain Resistance
+<ul>
+<li>Nullifies damage from terrain.
+Unit won’t be affected by the negative
+effect of terrain or pay extra cost on
+any terrain.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Advance
+<ul>
+<li>Use to move up to 2 spaces toward a foe
+that is up to 3 spaces away and attack.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：HoldOut+
+<ul>
+<li>If unit had 20% HP or more at start
+of combat, unit would not take
+damage from the lethal attack.
+After that, lose HoldOut in this turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Press Advantage
+<ul>
+<li>When the enemy is in
+a negative effect terrain,
+Dmg+5.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：HoldOut++
+<ul>
+<li>If unit had 10% HP or more at start
+of combat, unit would not take
+damage from the lethal attack.
+After that, lose HoldOut in this turn.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Press Advantage+
+<ul>
+<li>When the enemy is in
+a negative effect terrain,
+Dmg+7.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：HoldOut+++
+<ul>
+<li>If unit had 2HP or more at start
+of combat, unit would not take
+damage from the lethal attack.
+After that, lose HoldOut in this turn.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-15"><a class="header" href="#engage-skills-15">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Rise Above
+<ul>
+<li>Grants Lvl+5.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-15"><a class="header" href="#engage-attack-15">Engage Attack</a></h2>
+<ul>
+<li><strong>Blazing Lion</strong>
+<ul>
+<li>Use to attack foe. The 3 spaces wide
+area of the foe and the 2 rows beyond
+it are set on fire.
+Sword only, 1 range only.</li>
+</ul>
+</li>
+<li><strong>Blazing Lion (Dragon)</strong>
+<ul>
+<li>Use to attack foe. The 3 spaces wide
+area of the foe and the 2 rows beyond
+it are set on fire.
+Sword only, 1 range only.
+[Dragon] Expands burning area.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-15"><a class="header" href="#engage-weapons-15">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Lancereaver: Range 1, Mt 7, Hit 80, Crit 5 / Unusual sword wielded by Emblem
+Roy. Grants advantage vs. lances
+but disadvantage vs. axes.</li>
+<li><strong>Lv 10</strong>：Wyrmslayer: Range 1, Mt 6, Hit 70 / Sword wielded by Emblem Roy.
+Effective: Dragon.</li>
+<li><strong>Lv 20</strong>：Binding Blade: Range 1~2, Mt 11, Hit 95, Crit 10 / Famous sword wielded by Emblem
+Roy. Grants Def/Res+2. Can strike
+close or at range.
+Effective: Dragon</li>
+</ul>
+<h2 id="inheritable-skills-14"><a class="header" href="#inheritable-skills-14">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Terrain Resistance
+<ul>
+<li>Nullifies damage from terrain.
+Unit won’t be affected by the negative
+effect of terrain or pay extra cost on
+any terrain.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Sword Prowess Lv.1
+<ul>
+<li>Grants Atk+1
+when using swords,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Sword Prowess Lv.2
+<ul>
+<li>Grants Atk+2
+when using swords,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Advance
+<ul>
+<li>Use to move up to 2 spaces toward a foe
+that is up to 3 spaces away and attack.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Sword Prowess Lv.3
+<ul>
+<li>Grants Atk+3
+when using swords,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Press Advantage
+<ul>
+<li>When the enemy is in
+a negative effect terrain,
+Dmg+5.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Strength
+<ul>
+<li>Grants the unit “Rally” command,
+use to +4 Str to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Sword Prowess Lv.4
+<ul>
+<li>Grants Atk+4 and Hit+5
+when using swords,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Press Advantage+
+<ul>
+<li>When the enemy is in
+a negative effect terrain,
+Dmg+7.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Sword Prowess Lv.5
+<ul>
+<li>Grants Atk+4 and Hit+5
+when using swords,
+fails at weapon disadvantage.
+[Swordfaire]Grants Atk+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-15"><a class="header" href="#proficiency-15">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Sword</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="sigurd-5"><a class="header" href="#sigurd-5">Sigurd ×5</a></h1>
+<h2 id="stat-bonuses-16"><a class="header" href="#stat-bonuses-16">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Dex+1  Spd+1  Lck-2  Def+1  Mov+1</li>
+<li><strong>Lv 5</strong>：Dex+2  Spd+1  Lck-2  Def+2  Mov+1</li>
+<li><strong>Lv 10</strong>：Dex+3  Spd+1  Lck-2  Def+3  Mov+1</li>
+<li><strong>Lv 20</strong>：Dex+4  Spd+2  Lck-2  Def+4  Mov+1</li>
+</ul>
+<h2 id="sync-skills-16"><a class="header" href="#sync-skills-16">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Canter
+<ul>
+<li>Unit can move 2 spaces after acting.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Momentum
+<ul>
+<li>Grants Atk+1 to first attack during
+combat for each mov point unit cost
+before attacking(max 9).</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Headlong Rush
+<ul>
+<li>Grants the unit “Rush” command,
+can pass through the foe after battle.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Anti-Mounted
+<ul>
+<li>When fighting against a mounted unit,
+Hit+10, Dmg+2.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Canter+
+<ul>
+<li>Unit can move 3 spaces after acting.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Anti-Mounted+
+<ul>
+<li>When fighting against a mounted unit,
+Hit+15, Dmg+3.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Momentum+
+<ul>
+<li>Grants Atk+1 to first attack during
+combat for each mov point unit cost
+before attacking. If unit cost move
+points&gt;=9, the first attack would
+break foe.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-16"><a class="header" href="#engage-skills-16">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Gallop
+<ul>
+<li>Grants Mov+5.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Gallop (Cavalry)
+<ul>
+<li>Grants Mov+5.
+[Cavalry] Grants another Mov+2.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Gallop (Covert)
+<ul>
+<li>Grants Mov+5.
+[Covert] Unit does not pay extra
+movement cost on any terrain.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Gallop (Dragon)
+<ul>
+<li>Grants Mov+5.
+[Dragon] Grants another Mov+1.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-16"><a class="header" href="#engage-attack-16">Engage Attack</a></h2>
+<ul>
+<li><strong>Override</strong>
+<ul>
+<li>Use to attack and move through a
+line of adjacent foes. Sword/lance
+only.</li>
+</ul>
+</li>
+<li><strong>Override (Dragon)</strong>
+<ul>
+<li>Use to attack and move through a
+line of adjacent foes. Sword/lance
+only.
+[Dragon] +20% damage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-16"><a class="header" href="#engage-weapons-16">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Ridersbane: Range 1, Mt 7, Hit 75 / Lance wielded by Emblem Sigurd.
+Effective: Cavalry/Flier</li>
+<li><strong>Lv 10</strong>：Knight Sword: Range 1, Mt 12, Hit 90 / Emblem Sigurd’s knight sword.
+If equipped by a mounted
+unit, grants Def +5.</li>
+<li><strong>Lv 20</strong>：Tyrfing: Range 1, Mt 15, Hit 85 / Sword wielded by Emblem Sigurd.
+Grants Res+5.</li>
+</ul>
+<h2 id="inheritable-skills-15"><a class="header" href="#inheritable-skills-15">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Canter
+<ul>
+<li>Unit can move 2 spaces after acting.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Lance Prowess Lv.1
+<ul>
+<li>Grants Atk+1
+when using lances,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Lance Prowess Lv.2
+<ul>
+<li>Grants Atk+1 and Hit+5
+when using lances,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Momentum
+<ul>
+<li>Grants Atk+1 to first attack during
+combat for each mov point unit cost
+before attacking(max 9).</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Lance Prowess Lv.3
+<ul>
+<li>Grants Atk+2 and Hit+5
+when using lances,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Headlong Rush
+<ul>
+<li>Grants the unit “Rush” command,
+can pass through the foe after battle.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Anti-Mounted
+<ul>
+<li>When fighting against a mounted unit,
+Hit+10, Dmg+2.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Lance Prowess Lv.4
+<ul>
+<li>Grants Atk+3 and Hit+10
+when using lances,
+fails at weapon disadvantage.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Rally Movement
+<ul>
+<li>Grants the unit “Rally” command,
+use to +1 Mov to all allies in 2 radius,
+last for 1 turn.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Anti-Mounted+
+<ul>
+<li>When fighting against a mounted unit,
+Hit+15, Dmg+3.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Lance Prowess Lv.5
+<ul>
+<li>Grants Atk+3 and Hit+10
+when using lances,
+fails at weapon disadvantage.
+[Lancefaire]Grants Atk+5</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-16"><a class="header" href="#proficiency-16">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Lance</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="soren-7"><a class="header" href="#soren-7">Soren ×7</a></h1>
+<h2 id="stat-bonuses-17"><a class="header" href="#stat-bonuses-17">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Mag+2  Dex+1  Res+1</li>
+<li><strong>Lv 5</strong>：Mag+3  Dex+2  Res+2</li>
+<li><strong>Lv 10</strong>：Mag+4  Dex+3  Res+3</li>
+<li><strong>Lv 20</strong>：Mag+5  Dex+4  Res+4</li>
+</ul>
+<h2 id="sync-skills-17"><a class="header" href="#sync-skills-17">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Anima Focus
+<ul>
+<li>Grants Atk+4 if unit attacks with:
+fire, and foe’s style is Cavalry;
+thunder, and foe’s style is Dragon;
+wind, and foe’s style is Flying.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Tactical Advice
+<ul>
+<li>Grants the ability to use
+multiple positioning commands.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Keen Insight
+<ul>
+<li>When unit has weapon advantage,
+grants Atk+3.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Block Recovery
+<ul>
+<li>When foe uses a Revival Stone,
+they recover only 50% of their HP.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Block Recovery+
+<ul>
+<li>When foe uses a Revival Stone,
+they recover only 20% of their HP.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Keen Insight+
+<ul>
+<li>When unit has weapon advantage,
+grants Atk+5.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Block Recovery++
+<ul>
+<li>When foe uses a Revival Stone,
+they recover only 1 HP.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-17"><a class="header" href="#engage-skills-17">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Severance
+<ul>
+<li>Adds damage equal to 30% of foe’s lost HP.
+This damage cannot be mitigated or countered.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-17"><a class="header" href="#engage-attack-17">Engage Attack</a></h2>
+<ul>
+<li><strong>Cataclysm</strong>
+<ul>
+<li>Use to attack a foe with fire, thunder
+and wind magic at 70% damage.</li>
+</ul>
+</li>
+<li><strong>Cataclysm (Mystical)</strong>
+<ul>
+<li>Use to attack a foe with fire, thunder
+and wind magic at 70% damage.
+[Mystical] +10% damage.</li>
+</ul>
+</li>
+<li><strong>Cataclysm (Dragon)</strong>
+<ul>
+<li>Use to attack a foe with fire, thunder
+and wind magic at 70% damage.
+[Dragon] +20% damage.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-17"><a class="header" href="#engage-weapons-17">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Bolting: Range 3, Mt 7, Hit 65, Crit 5, Avo -20, Ddg -20 / Long-range thunder magic wielded
+by Emblem Soren. Cannot follow up.</li>
+<li><strong>Lv 10</strong>：Reflect: Range 1~2 / Staff of Emblem Soren. Allies within
+2 spaces gain “Counter Magic” for 1 turn.</li>
+<li><strong>Lv 20</strong>：Rexcalibur: Range 1~2, Mt 13, Hit 95, Crit 30, Avo -10, Ddg -10 / Powerful wind magic wielded by
+Emblem Soren.
+Effective: Flying. Def/Res-5.
++5 unit’s and foe’s ability
+to follow up</li>
+</ul>
+<h2 id="inheritable-skills-16"><a class="header" href="#inheritable-skills-16">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Anima Focus
+<ul>
+<li>Grants Atk+4 if unit attacks with:
+fire, and foe’s style is Cavalry;
+thunder, and foe’s style is Dragon;
+wind, and foe’s style is Flying.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Tactical Advice
+<ul>
+<li>Grants the ability to use
+multiple positioning commands.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Keen Insight
+<ul>
+<li>When unit has weapon advantage,
+grants Atk+3.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Block Recovery
+<ul>
+<li>When foe uses a Revival Stone,
+they recover only 50% of their HP.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Poison Strike
+<ul>
+<li>If unit initiates combat, deals damage
+to foe equal to 20% of their max HP
+after combat.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Magic +1
+<ul>
+<li>Grants Mag+1.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Block Recovery+
+<ul>
+<li>When foe uses a Revival Stone,
+they recover only 20% of their HP.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Magic +2
+<ul>
+<li>Grants Mag+2.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Keen Insight+
+<ul>
+<li>When unit has weapon advantage,
+grants Atk+5.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Block Recovery++
+<ul>
+<li>When foe uses a Revival Stone,
+they recover only 1 HP.</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-17"><a class="header" href="#proficiency-17">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Magic</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="tiki-7"><a class="header" href="#tiki-7">Tiki ×7</a></h1>
+<h2 id="stat-bonuses-18"><a class="header" href="#stat-bonuses-18">Stat Bonuses</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Mag+1  Def+1</li>
+<li><strong>Lv 5</strong>：Str+1  Mag+1  Def+1  Res+1</li>
+<li><strong>Lv 10</strong>：Str+1  Mag+2  Dex+1  Lck+2  Def+2  Res+1</li>
+<li><strong>Lv 20</strong>：Str+2  Mag+2  Dex+1  Lck+2  Def+3  Res+1</li>
+</ul>
+<h2 id="sync-skills-18"><a class="header" href="#sync-skills-18">Sync Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Rhythm
+<ul>
+<li>In odd-number turns, allies within
+3 radius get Hit/Crit+10.
+In even-number turns, allies within
+3 radius get Avo/Ddg+10.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Rhythm (Cavalry)
+<ul>
+<li>In odd-number turns, allies within
+3 radius get Hit/Crit+10.
+In even-number turns, allies within
+3 radius get Avo/Ddg+10.
+[Cavalry] Provide extra 10 Ddg in even turns.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Rhythm (Dragon)
+<ul>
+<li>In odd-number turns, allies within
+3 radius get Hit/Crit+10.
+In even-number turns, allies within
+3 radius get Avo/Ddg+10.
+[Dragon] Provide extra 10 Hit in odd turns.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Geosphere
+<ul>
+<li>After unit ends their turn,
+terrain within 2 radius get
+effect “Divine Domain”</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Lightsphere
+<ul>
+<li>Can use “Rally” command, allies
+within 2 radius get an effect:
+In this turn, in each battle,
+non-first received dmg reduce 50%
+non-first inflict dmg increase 50%</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Starsphere
+<ul>
+<li>Each turn, get stats bonus in turn:
+Str/Def → Mag/Res → Dex/Spd/Luck
+(The increased stats = Level/10,
+round up, maximum at 4.)</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Geosphere
+<ul>
+<li>After unit ends their turn,
+terrain within 3 radius get
+effect “Divine Domain”</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-skills-18"><a class="header" href="#engage-skills-18">Engage Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Draconic Form
+<ul>
+<li>Unit transforms into and fights as a
+dragon while engaged. Grants
+Str/Mag+3 Def/Res+4
+Dex/Luck+8 Spd -4</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Draconic Form (Dragon)
+<ul>
+<li>Unit transforms into and fights as a
+dragon while engaged. Grants
+Str/Mag+3 Def/Res+4
+Dex/Luck+8 Spd -4
+[Dragon] Get extra stats,
+Dex/Luck+2 Str/Mag/Def/Res+1</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-attack-18"><a class="header" href="#engage-attack-18">Engage Attack</a></h2>
+<ul>
+<li><strong>Divine Blessing</strong>
+<ul>
+<li>Maximize an ally’s HP and engage meter.</li>
+</ul>
+</li>
+</ul>
+<h2 id="engage-weapons-18"><a class="header" href="#engage-weapons-18">Engage Weapons</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Tail Smash: Range 1, Mt 16, Hit 85, Avo -10, Ddg 10 / Smash attack used by Emblem Tiki.
+Smashes foes. Cannot follow up, or
+strike first if initiating combat.
+Wielder suffers -10 physical damage.
+Effective: Dragon</li>
+<li><strong>Lv 10</strong>：Holy Breath: Range 1, Mt 20, Hit 75, Avo -10, Ddg 10 / The magical breath of emblem Tiki.
+Cannot follow up
+When initiate combat, Dmg +10
+Effective: Dragon</li>
+<li><strong>Lv 20</strong>：Eternal Claw: Range 1, Mt 5, Hit 90, Crit 10, Avo -10, Ddg 10 / Claw attack used by Emblem Tiki.
+If user initiates combat, attacks twice
+and deals physical and magical
+damage each.
+Effective: Dragon</li>
+</ul>
+<h2 id="inheritable-skills-17"><a class="header" href="#inheritable-skills-17">Inheritable Skills</a></h2>
+<ul>
+<li><strong>Lv 1</strong>：Geosphere
+<ul>
+<li>After unit ends their turn,
+terrain within 2 radius get
+effect “Divine Domain”</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：OddShaped
+<ul>
+<li>During odd-numbered
+Turns, damage+4.</li>
+</ul>
+</li>
+<li><strong>Lv 1</strong>：Evenhanded
+<ul>
+<li>During even-numbered
+Turns, damage+4.</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Lightsphere
+<ul>
+<li>Can use “Rally” command, allies
+within 2 radius get an effect:
+In this turn, in each battle,
+non-first received dmg reduce 50%
+non-first inflict dmg increase 50%</li>
+</ul>
+</li>
+<li><strong>Lv 5</strong>：Dexterity +1
+<ul>
+<li>Grants Dex+1.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Starsphere
+<ul>
+<li>Each turn, get stats bonus in turn:
+Str/Def → Mag/Res → Dex/Spd/Luck
+(The increased stats = Level/10,
+round up, maximum at 4.)</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Dexterity +2
+<ul>
+<li>Grants Dex+2.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Better Odds
+<ul>
+<li>Recover 40% HP at the start
+of odd-numbered player phase.</li>
+</ul>
+</li>
+<li><strong>Lv 10</strong>：Even Better
+<ul>
+<li>Recover 40% HP at the start
+of even-numbered player phase.</li>
+</ul>
+</li>
+<li><strong>Lv 20</strong>：Geosphere
+<ul>
+<li>After unit ends their turn,
+terrain within 3 radius get
+effect “Divine Domain”</li>
+</ul>
+</li>
+</ul>
+<h2 id="proficiency-18"><a class="header" href="#proficiency-18">Proficiency</a></h2>
+<ul>
+<li><strong>Lv 10</strong>：Fist</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="characters"><a class="header" href="#characters">Characters</a></h1>
+<p>A list of playable characters and their personal skills.</p>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="alcryst"><a class="header" href="#alcryst">Alcryst</a></h1>
+<h2 id="personal-skill"><a class="header" href="#personal-skill">Personal Skill</a></h2>
+<ul>
+<li><strong>Competitive</strong>
+<ul>
+<li>If unit’s level is not higher than
+the enemy’s, Crit+10, Dmg+2,
+Dmg taken -2.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="alear"><a class="header" href="#alear">Alear</a></h1>
+<h2 id="personal-skill-1"><a class="header" href="#personal-skill-1">Personal Skill</a></h2>
+<ul>
+<li><strong>Divinely Bonds</strong>
+<ul>
+<li>Adjacent allies deal +3 damage,
+get +10 Hit and take 1 less damage.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="alfred"><a class="header" href="#alfred">Alfred</a></h1>
+<h2 id="personal-skill-2"><a class="header" href="#personal-skill-2">Personal Skill</a></h2>
+<ul>
+<li><strong>Ride-by Attack</strong>
+<ul>
+<li>When unit initiates an attack, foe
+suffers Spd/Def -1 for every 2 spaces
+unit traveled before attack(max 4).</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="amber"><a class="header" href="#amber">Amber</a></h1>
+<h2 id="personal-skill-3"><a class="header" href="#personal-skill-3">Personal Skill</a></h2>
+<ul>
+<li><strong>Animal Friend</strong>
+<ul>
+<li>When adjacent to a mounted
+ally, Dmg+2, Dmg taken -2.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="anna"><a class="header" href="#anna">Anna</a></h1>
+<h2 id="personal-skill-4"><a class="header" href="#personal-skill-4">Personal Skill</a></h2>
+<ul>
+<li><strong>Make a Killing</strong>
+<ul>
+<li>During the first 7 turns,
+if unit initiates combat and defeats foe,
+rewards unit with an iron weapon after combat.
+The weapon gained depends on the enemy defeated.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="boucheron"><a class="header" href="#boucheron">Boucheron</a></h1>
+<h2 id="personal-skill-5"><a class="header" href="#personal-skill-5">Personal Skill</a></h2>
+<ul>
+<li><strong>Daunting Physique</strong>
+<ul>
+<li>If the adjacent enemies’ HP
+is lower than this unit, they
+suffer Avo-15, Ddg-5.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="bunet"><a class="header" href="#bunet">Bunet</a></h1>
+<h2 id="personal-skill-6"><a class="header" href="#personal-skill-6">Personal Skill</a></h2>
+<ul>
+<li><strong>Lupper Bringer</strong>
+<ul>
+<li>Enemies within 2 spaces -2 Spd</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="chloé"><a class="header" href="#chloé">Chloé</a></h1>
+<h2 id="personal-skill-7"><a class="header" href="#personal-skill-7">Personal Skill</a></h2>
+<ul>
+<li><strong>Fairy-Tale Folk</strong>
+<ul>
+<li>If a male and a female ally are
+adjacent within 3 spaces, unit
+deals +3 damage during combat.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="citrinne"><a class="header" href="#citrinne">Citrinne</a></h1>
+<h2 id="personal-skill-8"><a class="header" href="#personal-skill-8">Personal Skill</a></h2>
+<ul>
+<li><strong>Financial Bully</strong>
+<ul>
+<li>If this unit’s weapon level is
+higher than the enemy, Dmg+3.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="clanne"><a class="header" href="#clanne">Clanne</a></h1>
+<h2 id="personal-skill-9"><a class="header" href="#personal-skill-9">Personal Skill</a></h2>
+<ul>
+<li><strong>Verdant Faith</strong>
+<ul>
+<li>If unit is adjacent to the Divine
+Dragon, grants Divine Dragon
+Avo+15 and suffers -3 damage.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="céline"><a class="header" href="#céline">Céline</a></h1>
+<h2 id="personal-skill-10"><a class="header" href="#personal-skill-10">Personal Skill</a></h2>
+<ul>
+<li><strong>Gentle Flower</strong>
+<ul>
+<li>Grants all allies (except Celine)
+Hit+5.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="diamant"><a class="header" href="#diamant">Diamant</a></h1>
+<h2 id="personal-skill-11"><a class="header" href="#personal-skill-11">Personal Skill</a></h2>
+<ul>
+<li><strong>Bushido</strong>
+<ul>
+<li>If unit’s level is higher than foe’s,
+grants Crit+10 during combat, and
+unit deals +2 damage and takes 2
+less damage.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="etie"><a class="header" href="#etie">Etie</a></h1>
+<h2 id="personal-skill-12"><a class="header" href="#personal-skill-12">Personal Skill</a></h2>
+<ul>
+<li><strong>Puissance</strong>
+<ul>
+<li>When user’s Str is 5 or more points
+higher than the enemy’s Str,
+damage +3 during battle.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="fogado"><a class="header" href="#fogado">Fogado</a></h1>
+<h2 id="personal-skill-13"><a class="header" href="#personal-skill-13">Personal Skill</a></h2>
+<ul>
+<li><strong>Quiet Strength</strong>
+<ul>
+<li>Allies within 2 spaces take
+-2 Dmg</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="framme"><a class="header" href="#framme">Framme</a></h1>
+<h2 id="personal-skill-14"><a class="header" href="#personal-skill-14">Personal Skill</a></h2>
+<ul>
+<li><strong>Crimson Cheer</strong>
+<ul>
+<li>If unit is adjacent to the Divine
+Dragon, grants Divine Dragon
+Dmg+2 and suffers -2 damage.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="goldmary"><a class="header" href="#goldmary">Goldmary</a></h1>
+<h2 id="personal-skill-15"><a class="header" href="#personal-skill-15">Personal Skill</a></h2>
+<ul>
+<li><strong>Disarming Sigh</strong>
+<ul>
+<li>After initiate a combat, enemies
+in 2 radius suffer Def/Res -2,
+last for 1 turn.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="gregory"><a class="header" href="#gregory">Gregory</a></h1>
+<h2 id="personal-skill-16"><a class="header" href="#personal-skill-16">Personal Skill</a></h2>
+<ul>
+<li><strong>Survival Plan</strong>
+<ul>
+<li>If unit’s HP is above 50%,
+grants +1 Dmg and +5 Hit/Crit
+when unit initiates combat.
+If unit’s HP is not above 50%,
+inflicts -1 Dmg and -5 Hit/Crit
+on foe when they initiate combat.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="hortensia"><a class="header" href="#hortensia">Hortensia</a></h1>
+<h2 id="personal-skill-17"><a class="header" href="#personal-skill-17">Personal Skill</a></h2>
+<ul>
+<li><strong>Big Personality</strong>
+<ul>
+<li>When this unit initiate combat
+and defeat an enemy, Str/Mag/
+Dex/Spd+4, last for 1 turn.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="ivy"><a class="header" href="#ivy">Ivy</a></h1>
+<h2 id="personal-skill-18"><a class="header" href="#personal-skill-18">Personal Skill</a></h2>
+<ul>
+<li><strong>Single-Minded</strong>
+<ul>
+<li>If the only unit adjacent to Alear
+is Ivy, and the only unit adjacent
+to Ivy is Alear, grants both Dmg+3,
+Dmg taken -1, Hit+10.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="jade"><a class="header" href="#jade">Jade</a></h1>
+<h2 id="personal-skill-19"><a class="header" href="#personal-skill-19">Personal Skill</a></h2>
+<ul>
+<li><strong>Erudite</strong>
+<ul>
+<li>During battle, increase damage
+dealt, and reduce damage taken.
+(The value equals the number of
+weapon types within 2 radius)</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="jean"><a class="header" href="#jean">Jean</a></h1>
+<h2 id="personal-skill-20"><a class="header" href="#personal-skill-20">Personal Skill</a></h2>
+<ul>
+<li><strong>Expertise</strong>
+<ul>
+<li>Grants unit enhanced stat growth
+when leveling up.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="kagetsu"><a class="header" href="#kagetsu">Kagetsu</a></h1>
+<h2 id="personal-skill-21"><a class="header" href="#personal-skill-21">Personal Skill</a></h2>
+<ul>
+<li><strong>Escape Route</strong>
+<ul>
+<li>If hit by a smash weapon, the
+smash distance+1, and deals
+the same damage to the enemy.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lapis"><a class="header" href="#lapis">Lapis</a></h1>
+<h2 id="personal-skill-22"><a class="header" href="#personal-skill-22">Personal Skill</a></h2>
+<ul>
+<li><strong>Fearsome Blow</strong>
+<ul>
+<li>If this unit initiate combat and
+defeat an enemy, all adjacent enemies
+lose 20% of max HP.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="lindon"><a class="header" href="#lindon">Lindon</a></h1>
+<h2 id="personal-skill-23"><a class="header" href="#personal-skill-23">Personal Skill</a></h2>
+<ul>
+<li><strong>Well-Versed</strong>
+<ul>
+<li>Grants Crit+10 when unit is carrying
+three or more tomes/scrolls.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="louis"><a class="header" href="#louis">Louis</a></h1>
+<h2 id="personal-skill-24"><a class="header" href="#personal-skill-24">Personal Skill</a></h2>
+<ul>
+<li><strong>Admiration</strong>
+<ul>
+<li>If two female allies/two male allies
+are adjacent within 3 spaces,
+this unit takes 3 less damage during combat.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="madeline"><a class="header" href="#madeline">Madeline</a></h1>
+<h2 id="personal-skill-25"><a class="header" href="#personal-skill-25">Personal Skill</a></h2>
+<ul>
+<li><strong>Knightly Code</strong>
+<ul>
+<li>Adjacent mounted allies
+deal +2 Dmg, take -2 Dmg.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="mauvier"><a class="header" href="#mauvier">Mauvier</a></h1>
+<h2 id="personal-skill-26"><a class="header" href="#personal-skill-26">Personal Skill</a></h2>
+<ul>
+<li><strong>Vow of Friendship</strong>
+<ul>
+<li>When Veyre is under half HP,
+this unit get Dmg+3 and
+taken Dmg -3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="merrin"><a class="header" href="#merrin">Merrin</a></h1>
+<h2 id="personal-skill-27"><a class="header" href="#personal-skill-27">Personal Skill</a></h2>
+<ul>
+<li><strong>Sisterhood</strong>
+<ul>
+<li>Unit takes -2 Dmg and deals +2 Dmg
+when adjacent to female allies.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="pandreo"><a class="header" href="#pandreo">Pandreo</a></h1>
+<h2 id="personal-skill-28"><a class="header" href="#personal-skill-28">Personal Skill</a></h2>
+<ul>
+<li><strong>Hot Blood</strong>
+<ul>
+<li>When unit’s HP=100% and foe’s HP=100%,
+unit gets Str/Mag/Spd+3</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="panette"><a class="header" href="#panette">Panette</a></h1>
+<h2 id="personal-skill-29"><a class="header" href="#personal-skill-29">Personal Skill</a></h2>
+<ul>
+<li><strong>Fiery Blood</strong>
+<ul>
+<li>If HP isn’t full, unit deals
++4 Dmg</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="rosado"><a class="header" href="#rosado">Rosado</a></h1>
+<h2 id="personal-skill-30"><a class="header" href="#personal-skill-30">Personal Skill</a></h2>
+<ul>
+<li><strong>Stunning Smile</strong>
+<ul>
+<li>If foe is male, grants Dmg+4,
+Crit+20.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="saphir"><a class="header" href="#saphir">Saphir</a></h1>
+<h2 id="personal-skill-31"><a class="header" href="#personal-skill-31">Personal Skill</a></h2>
+<ul>
+<li><strong>In Extremis</strong>
+<ul>
+<li>If unit’s HP is 25% or less at start of
+combat, grants Crit+30 during combat.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="seadall"><a class="header" href="#seadall">Seadall</a></h1>
+<h2 id="personal-skill-32"><a class="header" href="#personal-skill-32">Personal Skill</a></h2>
+<ul>
+<li><strong>Curious Dance</strong>
+<ul>
+<li>At start of turn, allies within 2
+spaces of unit recover 10% of
+their max HP.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="timerra"><a class="header" href="#timerra">Timerra</a></h1>
+<h2 id="personal-skill-33"><a class="header" href="#personal-skill-33">Personal Skill</a></h2>
+<ul>
+<li><strong>Rallying Cry</strong>
+<ul>
+<li>Allies within 2 spaces deal
++2 Dmg</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="vander"><a class="header" href="#vander">Vander</a></h1>
+<h2 id="personal-skill-34"><a class="header" href="#personal-skill-34">Personal Skill</a></h2>
+<ul>
+<li><strong>Alabaster Duty</strong>
+<ul>
+<li>If unit is adjacent to the Divine
+Dragon, grants Divine
+Dragon Dmg+3, Hit+15.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="veyle"><a class="header" href="#veyle">Veyle</a></h1>
+<h2 id="personal-skill-35"><a class="header" href="#personal-skill-35">Personal Skill</a></h2>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="yunaka"><a class="header" href="#yunaka">Yunaka</a></h1>
+<h2 id="personal-skill-36"><a class="header" href="#personal-skill-36">Personal Skill</a></h2>
+<ul>
+<li><strong>Trained to Kill</strong>
+<ul>
+<li>For every 5 Spd Yunaka faster
+than the enemy, +1 follow up
+attack.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="zelestia"><a class="header" href="#zelestia">Zelestia</a></h1>
+<h2 id="personal-skill-37"><a class="header" href="#personal-skill-37">Personal Skill</a></h2>
+<ul>
+<li><strong>Friendly Boost</strong>
+<ul>
+<li>Grants the unit “Rally” command,
+use to +1 Str/Mag/Spd to all allies in 2 radius.
+If unit initiates combat and defeats a foe,
+unit will “Rally” automatically.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="zelkov"><a class="header" href="#zelkov">Zelkov</a></h1>
+<h2 id="personal-skill-38"><a class="header" href="#personal-skill-38">Personal Skill</a></h2>
+<ul>
+<li><strong>Pyrotechnics</strong>
+<ul>
+<li>When user triggers the battle at under
+half HP, the user and enemies within a
+2 tile radius have their HP reduced by 20%.</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="behind-the-scenes-technical-overview"><a class="header" href="#behind-the-scenes-technical-overview">Behind the Scenes: Technical Overview</a></h1>
+<p>This mod goes beyond content and balance adjustments.</p>
+<p>In order to support its design goals, a custom Skyline plugin is used to extend and adapt parts of <em>Fire Emblem Engage</em>’s runtime behavior.<br>This page provides a technical overview of <strong>what was implemented and why</strong>, without assuming familiarity with the underlying code.</p>
+<hr>
+<h2 id="1-file-integrity-and-stability"><a class="header" href="#1-file-integrity-and-stability">1. File Integrity and Stability</a></h2>
+<p>To reduce the risk of inconsistent behavior during development and testing:</p>
+<ul>
+<li>The plugin performs a <strong>startup integrity check</strong> on the mod files</li>
+<li>Files under <code>IF mod (Cobalt)</code> are verified against a known hash list</li>
+<li>Mismatches result in a clear startup error rather than undefined behavior</li>
+</ul>
+<p>This mechanism exists to ensure a <strong>stable and predictable baseline</strong>, especially as the mod introduces complex runtime logic.</p>
+<hr>
+<h2 id="2-class-change-and-skill-acquisition"><a class="header" href="#2-class-change-and-skill-acquisition">2. Class Change and Skill Acquisition</a></h2>
+<p>Several aspects of the class change system are handled explicitly in code:</p>
+<ul>
+<li>Promotion and reclass behavior is normalized</li>
+<li>Level transitions are controlled to avoid edge cases</li>
+<li>Dynamic level scaling is intentionally disabled</li>
+</ul>
+<h3 id="class-skill-handling"><a class="header" href="#class-skill-handling">Class Skill Handling</a></h3>
+<p>A consistent rule is enforced for class skills:</p>
+<ul>
+<li>After learning a class skill, switching out of the class makes it available as a freely equippable inherited skill</li>
+<li>Switching back to the original class:
+<ul>
+<li>Clears inherited skills</li>
+<li>Immediately restores the class skill</li>
+</ul>
+</li>
+<li>Situations where a unit cannot level further are handled gracefully</li>
+</ul>
+<p>This approach was chosen to make skill behavior more predictable and transparent to the player.</p>
+<hr>
+<h2 id="3-combat-calculation-extensions"><a class="header" href="#3-combat-calculation-extensions">3. Combat Calculation Extensions</a></h2>
+<p>Instead of relying solely on data edits, parts of the combat calculation pipeline are extended at runtime:</p>
+<ul>
+<li>Hit, Avoid, Crit, and Dodge formulas are adjusted</li>
+<li>Follow-up (double attack) conditions are clarified</li>
+<li>Weapon advantage effects are applied consistently</li>
+<li>Terrain and support modifiers are unified</li>
+</ul>
+<p>These changes aim to make combat outcomes easier to reason about, rather than strictly increasing or decreasing power.</p>
+<hr>
+<h2 id="4-engage-count-and-sp-behavior"><a class="header" href="#4-engage-count-and-sp-behavior">4. Engage Count and SP Behavior</a></h2>
+<h3 id="engage-count-1"><a class="header" href="#engage-count-1">Engage Count</a></h3>
+<ul>
+<li>Certain original Engage gauge updates are suppressed</li>
+<li>Engage gain is recalculated based on:
+<ul>
+<li>Combat initiation</li>
+<li>Enemy defeat</li>
+<li>Combined actions within a single turn</li>
+</ul>
+</li>
+</ul>
+<h3 id="sp-system-1"><a class="header" href="#sp-system-1">SP System</a></h3>
+<ul>
+<li>SP gain is treated independently from Emblem equipment</li>
+<li>Units gain <strong>SP equal to EXP</strong>, regardless of Emblem status</li>
+</ul>
+<p>These rules are enforced at runtime to ensure consistency across all contexts.</p>
+<hr>
+<h2 id="5-artillery-cannon-system-adjustments"><a class="header" href="#5-artillery-cannon-system-adjustments">5. Artillery (Cannon) System Adjustments</a></h2>
+<p>The map artillery system is extended for clarity and usability:</p>
+<ul>
+<li>Ammunition consumption is disabled</li>
+<li>Remaining shots are displayed as unlimited</li>
+<li>Multi-target selection is supported</li>
+<li>Range display behavior is unified across different cannon types</li>
+</ul>
+<p>Target selection logic is refined to better reflect actual combat impact.</p>
+<hr>
+<h2 id="6-skill-behavior-corrections"><a class="header" href="#6-skill-behavior-corrections">6. Skill Behavior Corrections</a></h2>
+<p>Several skill-related behaviors are corrected or extended:</p>
+<ul>
+<li><strong>Canto++</strong> grants remaining movement rather than a fixed value</li>
+<li>Style Bonus variant skills are resolved and removed cleanly when conditions change</li>
+<li>Terrain validity checks are unified across damage, healing, and positioning</li>
+<li>Weapon proficiency logic is adapted to support custom aptitude rules</li>
+</ul>
+<p>These adjustments focus on correctness and consistency rather than raw power.</p>
+<hr>
+<h2 id="7-item-logic-extensions"><a class="header" href="#7-item-logic-extensions">7. Item Logic Extensions</a></h2>
+<p>Item behavior is extended where necessary:</p>
+<ul>
+<li>Healing values can be overridden via embedded skill tags</li>
+<li>Certain Blessing-type items gain expanded usability conditions</li>
+<li>Item usage restrictions are selectively relaxed in controlled scenarios</li>
+</ul>
+<p>All overrides are context-aware and validated at runtime.</p>
+<hr>
+<h2 id="8-script-and-event-extensions"><a class="header" href="#8-script-and-event-extensions">8. Script and Event Extensions</a></h2>
+<p>To support custom scenarios and mechanics, additional script-level functions are provided:</p>
+<ul>
+<li>Direct access to Engage Count, turns, and bond levels</li>
+<li>Advanced unit targeting queries for debuff and support logic</li>
+<li>Custom map effects and conditional checks</li>
+<li>Scenario-specific utility functions</li>
+</ul>
+<p>These extensions allow complex behaviors to be expressed without hardcoding map-specific logic.</p>
+<hr>
+<h2 id="9-intentional-system-constraints"><a class="header" href="#9-intentional-system-constraints">9. Intentional System Constraints</a></h2>
+<p>Some systems are deliberately disabled or limited:</p>
+<ul>
+<li>The Well system</li>
+<li>Investment mechanics</li>
+<li>Skirmish generation</li>
+</ul>
+<p>These decisions are part of the mod’s overall balance and pacing goals.</p>
+<hr>
+<h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
+<p>This plugin serves as a <strong>supporting framework</strong> for the mod:</p>
+<ul>
+<li>It provides controlled extensions to existing systems</li>
+<li>It resolves edge cases that are difficult to address through data alone</li>
+<li>It enables more consistent and predictable mechanics</li>
+</ul>
+<p>The goal is not to replace the original game systems, but to <strong>adapt them carefully</strong> to support the mod’s design direction.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
+
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+
+    </div>
+    </body>
+</html>
