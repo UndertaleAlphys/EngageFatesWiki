@@ -79,44 +79,44 @@ Effective: Dragon
 
 ## Inheritable Skills
 
-- **Lv 1**：Terrain Resistance Cost 500
-  - Nullifies damage from terrain.
+- **Lv 1**：Terrain Resistance
+  - Cost 500|Nullifies damage from terrain.
 Unit won't be affected by the negative
 effect of terrain or pay extra cost on
 any terrain.
-- **Lv 1**：Sword Prowess Lv.1 Cost 100
-  - Grants Atk+1
+- **Lv 1**：Sword Prowess Lv.1
+  - Cost 100|Grants Atk+1
 when using swords,
 fails at weapon disadvantage.
-- **Lv 1**：Sword Prowess Lv.2 Cost 300
-  - Grants Atk+2
+- **Lv 1**：Sword Prowess Lv.2
+  - Cost 300|Grants Atk+2
 when using swords,
 fails at weapon disadvantage.
-- **Lv 5**：Advance Cost 500
-  - Use to move up to 2 spaces toward a foe
+- **Lv 5**：Advance
+  - Cost 500|Use to move up to 2 spaces toward a foe
 that is up to 3 spaces away and attack.
-- **Lv 5**：Sword Prowess Lv.3 Cost 750
-  - Grants Atk+3
+- **Lv 5**：Sword Prowess Lv.3
+  - Cost 750|Grants Atk+3
 when using swords,
 fails at weapon disadvantage.
-- **Lv 10**：Press Advantage Cost 750
-  - When the enemy is in
+- **Lv 10**：Press Advantage
+  - Cost 750|When the enemy is in
 a negative effect terrain,
 Dmg+5.
-- **Lv 10**：Rally Strength Cost 1000
-  - Grants the unit "Rally" command,
+- **Lv 10**：Rally Strength
+  - Cost 1000|Grants the unit "Rally" command,
 use to +4 Str to all allies in 2 radius,
 last for 1 turn.
-- **Lv 10**：Sword Prowess Lv.4 Cost 1500
-  - Grants Atk+4 and Hit+5
+- **Lv 10**：Sword Prowess Lv.4
+  - Cost 1500|Grants Atk+4 and Hit+5
 when using swords,
 fails at weapon disadvantage.
-- **Lv 20**：Press Advantage+ Cost 1000
-  - When the enemy is in
+- **Lv 20**：Press Advantage+
+  - Cost 1000|When the enemy is in
 a negative effect terrain,
 Dmg+7.
-- **Lv 20**：Sword Prowess Lv.5 Cost 3500
-  - Grants Atk+4 and Hit+5
+- **Lv 20**：Sword Prowess Lv.5
+  - Cost 3500|Grants Atk+4 and Hit+5
 when using swords,
 fails at weapon disadvantage.
 [Swordfaire]Grants Atk+5

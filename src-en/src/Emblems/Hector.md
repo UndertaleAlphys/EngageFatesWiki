@@ -65,14 +65,14 @@ Effective: Dragon.
 
 ## Inheritable Skills
 
-- **Lv 1**：Quick Riposte Cost 2250
-  - If unit's HP is 75% or more and foe
+- **Lv 1**：Quick Riposte
+  - Cost 2250|If unit's HP is 75% or more and foe
 initiates combat, unit will always
 follow up (if weapon allows).
-- **Lv 1**：HP +3 Cost 300
-  - Grants max HP+3.
-- **Lv 5**：Impenetrable Stance Cost 3000
-  - Grant the unit "Impenetrable",
+- **Lv 1**：HP +3
+  - Cost 300|Grants max HP+3.
+- **Lv 5**：Impenetrable Stance
+  - Cost 3000|Grant the unit "Impenetrable",
 cost 3 engage meter or 1 engage turn
 to grant immunity to break.
 - **Lv 5**：Impenetrable Stance (Dragon)
@@ -80,19 +80,19 @@ to grant immunity to break.
 cost 3 engage meter or 1 engage turn
 to grant immunity to break.
 [Dragon] -1 engage meter cost.
-- **Lv 5**：Strong Riposte Cost 1000
-  - When enemy triggers the battle, 
+- **Lv 5**：Strong Riposte
+  - Cost 1000|When enemy triggers the battle, 
 Dmg+3
-- **Lv 10**：Strengthtaker Cost 1500
-  - Grants a stacking Str+2 each time
+- **Lv 10**：Strengthtaker
+  - Cost 1500|Grants a stacking Str+2 each time
 unit initiates combat and defeats a
 foe. (Max +10)
 If this unit didn't combat last turn,
 lose 2 Str when phase starts.
-- **Lv 10**：HP +5 Cost 600
-  - Grants max HP+5.
-- **Lv 20**：Quick Riposte+ Cost 3750
-  - If unit's HP is 50% or more and foe
+- **Lv 10**：HP +5
+  - Cost 600|Grants max HP+5.
+- **Lv 20**：Quick Riposte+
+  - Cost 3750|If unit's HP is 50% or more and foe
 initiates combat, unit will always
 follow up (if weapon allows).
 

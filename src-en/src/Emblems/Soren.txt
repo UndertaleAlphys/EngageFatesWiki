@@ -61,36 +61,36 @@ Effective: Flying. Def/Res-5.
 to follow up
 
 Inheritable Skills
-- Lv 1: Anima Focus Cost 800
-  Grants Atk+4 if unit attacks with:
+- Lv 1: Anima Focus
+  Cost 800|Grants Atk+4 if unit attacks with:
 fire, and foe's style is Cavalry;
 thunder, and foe's style is Dragon;
 wind, and foe's style is Flying.
-- Lv 1: Tactical Advice Cost 2000
-  Grants the ability to use
+- Lv 1: Tactical Advice
+  Cost 2000|Grants the ability to use
 multiple positioning commands.
-- Lv 5: Keen Insight Cost 750
-  When unit has weapon advantage,
+- Lv 5: Keen Insight
+  Cost 750|When unit has weapon advantage,
 grants Atk+3.
-- Lv 5: Block Recovery Cost 1500
-  When foe uses a Revival Stone,
+- Lv 5: Block Recovery
+  Cost 1500|When foe uses a Revival Stone,
 they recover only 50% of their HP.
-- Lv 5: Poison Strike Cost 1000
-  If unit initiates combat, deals damage
+- Lv 5: Poison Strike
+  Cost 1000|If unit initiates combat, deals damage
 to foe equal to 20% of their max HP
 after combat.
-- Lv 5: Magic +1 Cost 300
-  Grants Mag+1.
-- Lv 10: Block Recovery+ Cost 2500
-  When foe uses a Revival Stone,
+- Lv 5: Magic +1
+  Cost 300|Grants Mag+1.
+- Lv 10: Block Recovery+
+  Cost 2500|When foe uses a Revival Stone,
 they recover only 20% of their HP.
-- Lv 10: Magic +2 Cost 600
-  Grants Mag+2.
-- Lv 20: Keen Insight+ Cost 1500
-  When unit has weapon advantage,
+- Lv 10: Magic +2
+  Cost 600|Grants Mag+2.
+- Lv 20: Keen Insight+
+  Cost 1500|When unit has weapon advantage,
 grants Atk+5.
-- Lv 20: Block Recovery++ Cost 3500
-  When foe uses a Revival Stone,
+- Lv 20: Block Recovery++
+  Cost 3500|When foe uses a Revival Stone,
 they recover only 1 HP.
 
 Proficiency

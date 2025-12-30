@@ -68,45 +68,45 @@ A stats+3, reduce 1/turn.
 Can heal at a distance.
 
 Inheritable Skills
-- Lv 1: Arms Shield Cost 500
-  When unit has weapon advantage,
+- Lv 1: Arms Shield
+  Cost 500|When unit has weapon advantage,
 unit takes 3 less damage.
-- Lv 1: Vantage Cost 750
-  If unit's HP is 25% or less and foe
+- Lv 1: Vantage
+  Cost 750|If unit's HP is 25% or less and foe
 initiates combat, unit can counter
 before foe's first attack.
-- Lv 1: Dagger Prowess Lv.1 Cost 100
-  Grants Atk+1
+- Lv 1: Dagger Prowess Lv.1
+  Cost 100|Grants Atk+1
 when using daggers,
 fails at weapon disadvantage.
-- Lv 1: Dagger Prowess Lv.2 Cost 300
-  Grants Atk+2
+- Lv 1: Dagger Prowess Lv.2
+  Cost 300|Grants Atk+2
 when using daggers,
 fails at weapon disadvantage.
-- Lv 5: Zeroing Weapons Cost 2500
-  Grants the unit "Rally" command,
+- Lv 5: Zeroing Weapons
+  Cost 2500|Grants the unit "Rally" command,
 use to grant allies in 2 radius
 Hit+20/Weapon's Mt+20%
-- Lv 5: Dagger Prowess Lv.3 Cost 750
-  Grants Atk+3
+- Lv 5: Dagger Prowess Lv.3
+  Cost 750|Grants Atk+3
 when using daggers,
 fails at weapon disadvantage.
-- Lv 10: Arms Shield+ Cost 750
-  When unit has weapon advantage,
+- Lv 10: Arms Shield+
+  Cost 750|When unit has weapon advantage,
 unit takes 4 less damage.
-- Lv 10: Vantage+ Cost 2250
-  If unit's HP is 50% or less and foe
+- Lv 10: Vantage+
+  Cost 2250|If unit's HP is 50% or less and foe
 initiates combat, unit can counter
 before foe's first attack.
-- Lv 10: Dagger Prowess Lv.4 Cost 1500
-  Grants Atk+4 and Hit+5
+- Lv 10: Dagger Prowess Lv.4
+  Cost 1500|Grants Atk+4 and Hit+5
 when using daggers,
 fails at weapon disadvantage.
-- Lv 20: Arms Shield++ Cost 1000
-  When unit has weapon advantage,
+- Lv 20: Arms Shield++
+  Cost 1000|When unit has weapon advantage,
 unit takes 5 less damage.
-- Lv 20: Dagger Prowess Lv.5 Cost 3500
-  Grants Atk+4 and Hit+5
+- Lv 20: Dagger Prowess Lv.5
+  Cost 3500|Grants Atk+4 and Hit+5
 when using daggers,
 fails at weapon disadvantage.
 [Daggerfaire]Grants Atk+5

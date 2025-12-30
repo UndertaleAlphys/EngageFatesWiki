@@ -69,32 +69,32 @@ Damage type varies by distance.
 
 ## Inheritable Skills
 
-- **Lv 1**：Underdog Cost 500
-  - If unit's Lvl < foe's Lvl,
+- **Lv 1**：Underdog
+  - Cost 500|If unit's Lvl < foe's Lvl,
 grants Hit/Avo+15.
-- **Lv 1**：Pavise Cost 1000
-  - When attacked by sword/lance/
+- **Lv 1**：Pavise
+  - Cost 1000|When attacked by sword/lance/
 axe/martial art, has a chance
 to reduce the damage by half.
 (=Dex%)
-- **Lv 1**：Aegis Cost 1000
-  - When attacked by tome/bow/
+- **Lv 1**：Aegis
+  - Cost 1000|When attacked by tome/bow/
 dagger/other weapon, has a chance
 to reduce the damage by half.
 (=Dex%)
-- **Lv 5**：Luck +2 Cost 150
-  - Grants Lck+2.
-- **Lv 10**：Dual Support Cost 2000
-  - When taken damage, and the unit
+- **Lv 5**：Luck +2
+  - Cost 150|Grants Lck+2.
+- **Lv 10**：Dual Support
+  - Cost 2000|When taken damage, and the unit
 has allies nearby, this unit take
 less damage.
 Each support level increase this value by 1.
-- **Lv 10**：Rally Luck Cost 250
-  - Grants the unit "Rally" command,
+- **Lv 10**：Rally Luck
+  - Cost 250|Grants the unit "Rally" command,
 use to +8 Luck to all allies in 2 radius,
 last for 1 turn.
-- **Lv 10**：Luck +4 Cost 300
-  - Grants Lck+4.
+- **Lv 10**：Luck +4
+  - Cost 300|Grants Lck+4.
 
 ## Proficiency
 

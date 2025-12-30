@@ -91,34 +91,34 @@ Armored.
 
 ## Inheritable Skills
 
-- **Lv 1**：Staff Prowess 1 Cost 50
-  - Staves heal an additional 1 HP.
-- **Lv 1**：Staff Prowess 2 Cost 100
-  - Grants Hit+5 when using a staff.
+- **Lv 1**：Staff Prowess 1
+  - Cost 50|Staves heal an additional 1 HP.
+- **Lv 1**：Staff Prowess 2
+  - Cost 100|Grants Hit+5 when using a staff.
 Staves also heal an additional 1 HP.
-- **Lv 5**：Healing Light Cost 750
-  - After unit heals an ally with a staff,
+- **Lv 5**：Healing Light
+  - Cost 750|After unit heals an ally with a staff,
 if the unit's HP is lower than the ally,
 unit's HP restore to the same value.
-- **Lv 5**：Staff Prowess 3 Cost 150
-  - Grants Hit+5 when using a staff.
+- **Lv 5**：Staff Prowess 3
+  - Cost 150|Grants Hit+5 when using a staff.
 Staves also heal an additional 2 HP.
-- **Lv 10**：Camaraderie Cost 1000
-  - When use a single target staff
+- **Lv 10**：Camaraderie
+  - Cost 1000|When use a single target staff
 to an ally, grant he/she +10 max
 HP, until he/she initiates a battle.
-- **Lv 10**：Staffbreaker Cost 1500
-  - Avo+50 if the enemy
+- **Lv 10**：Staffbreaker
+  - Cost 1500|Avo+50 if the enemy
 uses staves.
-- **Lv 10**：Rally Resistance Cost 250
-  - Grants the unit "Rally" command,
+- **Lv 10**：Rally Resistance
+  - Cost 250|Grants the unit "Rally" command,
 use to +4 Res to all allies in 2 radius,
 last for 1 turn.
-- **Lv 10**：Staff Prowess 4 Cost 250
-  - Grants Hit+10 when using a staff.
+- **Lv 10**：Staff Prowess 4
+  - Cost 250|Grants Hit+10 when using a staff.
 Staves also heal an additional 3 HP.
-- **Lv 20**：Staff Prowess 5 Cost 1000
-  - Grants Hit+30 when using a staff.
+- **Lv 20**：Staff Prowess 5
+  - Cost 1000|Grants Hit+30 when using a staff.
 Staves also heal an additional 3 HP.
 
 ## Proficiency

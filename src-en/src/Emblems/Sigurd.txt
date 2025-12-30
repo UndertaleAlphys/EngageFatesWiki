@@ -66,43 +66,43 @@ unit, grants Def +5.
 Grants Res+5.
 
 Inheritable Skills
-- Lv 1: Canter Cost 2000
-  Unit can move 2 spaces after acting.
-- Lv 1: Lance Prowess Lv.1 Cost 100
-  Grants Atk+1
+- Lv 1: Canter
+  Cost 2000|Unit can move 2 spaces after acting.
+- Lv 1: Lance Prowess Lv.1
+  Cost 100|Grants Atk+1
 when using lances,
 fails at weapon disadvantage.
-- Lv 1: Lance Prowess Lv.2 Cost 300
-  Grants Atk+1 and Hit+5
+- Lv 1: Lance Prowess Lv.2
+  Cost 300|Grants Atk+1 and Hit+5
 when using lances,
 fails at weapon disadvantage.
-- Lv 5: Momentum Cost 1500
-  Grants Atk+1 to first attack during
+- Lv 5: Momentum
+  Cost 1500|Grants Atk+1 to first attack during
 combat for each mov point unit cost
 before attacking(max 9).
-- Lv 5: Lance Prowess Lv.3 Cost 750
-  Grants Atk+2 and Hit+5
+- Lv 5: Lance Prowess Lv.3
+  Cost 750|Grants Atk+2 and Hit+5
 when using lances,
 fails at weapon disadvantage.
-- Lv 10: Headlong Rush Cost 250
-  Grants the unit "Rush" command,
+- Lv 10: Headlong Rush
+  Cost 250|Grants the unit "Rush" command,
 can pass through the foe after battle.
-- Lv 10: Anti-Mounted Cost 500
-  When fighting against a mounted unit,
+- Lv 10: Anti-Mounted
+  Cost 500|When fighting against a mounted unit,
 Hit+10, Dmg+2.
-- Lv 10: Lance Prowess Lv.4 Cost 1500
-  Grants Atk+3 and Hit+10
+- Lv 10: Lance Prowess Lv.4
+  Cost 1500|Grants Atk+3 and Hit+10
 when using lances,
 fails at weapon disadvantage.
-- Lv 10: Rally Movement Cost 1000
-  Grants the unit "Rally" command,
+- Lv 10: Rally Movement
+  Cost 1000|Grants the unit "Rally" command,
 use to +1 Mov to all allies in 2 radius,
 last for 1 turn.
-- Lv 20: Anti-Mounted+ Cost 1000
-  When fighting against a mounted unit,
+- Lv 20: Anti-Mounted+
+  Cost 1000|When fighting against a mounted unit,
 Hit+15, Dmg+3.
-- Lv 20: Lance Prowess Lv.5 Cost 3500
-  Grants Atk+3 and Hit+10
+- Lv 20: Lance Prowess Lv.5
+  Cost 3500|Grants Atk+3 and Hit+10
 when using lances,
 fails at weapon disadvantage.
 [Lancefaire]Grants Atk+5
