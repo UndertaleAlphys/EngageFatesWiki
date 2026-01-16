@@ -1,0 +1,8 @@
+# Panette
+
+## Personal Skill
+
+- **Fiery Blood**
+  - If HP isn't full, unit deals
++4 Dmg
+

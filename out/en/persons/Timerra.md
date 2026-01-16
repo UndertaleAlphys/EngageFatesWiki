@@ -1,0 +1,8 @@
+# Timerra
+
+## Personal Skill
+
+- **Rallying Cry**
+  - Allies within 2 spaces deal
++2 Dmg
+

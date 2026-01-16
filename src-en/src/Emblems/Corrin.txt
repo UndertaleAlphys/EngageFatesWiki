@@ -58,35 +58,35 @@ Corrin.
 
 Inheritable Skills
 - Lv 1: Heartseeker
-  Cost 500|Adjacent enemies lose 20 Avo.
+  Cost 500 | Adjacent enemies lose 20 Avo.
 - Lv 1: Heartseeker (Dragon)
   Adjacent enemies lose 20 Avo.
 [Dragon] Enemies lose 10 extra Avo.
 - Lv 5: Seal Strength
-  Cost 1800|Inflicts Str-6 on foe 
+  Cost 1800 | Inflicts Str-6 on foe 
 after combat. (Penalty
 shrinks by 1 each turn.)
 - Lv 5: Seal Magic
-  Cost 1800|Inflicts Mag-6 on foe 
+  Cost 1800 | Inflicts Mag-6 on foe 
 after combat. (Penalty
 shrinks by 1 each turn.)
 - Lv 5: Seal Defense
-  Cost 1800|Inflicts Def-6 on foe 
+  Cost 1800 | Inflicts Def-6 on foe 
 after combat. (Penalty
 shrinks by 1 each turn.)
 - Lv 5: Seal Speed
-  Cost 1800|Inflicts Spd-6 on foe 
+  Cost 1800 | Inflicts Spd-6 on foe 
 after combat. (Penalty
 shrinks by 1 each turn.)
 - Lv 5: Seal Resistance
-  Cost 900|Inflicts Res-6 on foe 
+  Cost 900 | Inflicts Res-6 on foe 
 after combat. (Penalty
 shrinks by 1 each turn.)
 - Lv 10: Pair Up
-  Cost 2000|Prevents damage from foes' chain
+  Cost 2000 | Prevents damage from foes' chain
 attacks and "Pair Up Attack" against unit.
 - Lv 20: Inevitable End
-  Cost 2000|If the user inflicts a stat debuff on 
+  Cost 2000 | If the user inflicts a stat debuff on 
 the target, stacks the stat debuffs 
 with those already applied on the target.
 

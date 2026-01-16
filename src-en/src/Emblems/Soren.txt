@@ -34,7 +34,7 @@ they recover only 1 HP.
 Engage Skills
 - Lv 1: Severance
   Adds damage equal to 30% of foe’s lost HP.
-This damage cannot be mitigated or countered.
+This damage cannot be mitigated.
 
 Engage Attack
 - Cataclysm
@@ -62,35 +62,35 @@ to follow up
 
 Inheritable Skills
 - Lv 1: Anima Focus
-  Cost 800|Grants Atk+4 if unit attacks with:
+  Cost 800 | Grants Atk+4 if unit attacks with:
 fire, and foe's style is Cavalry;
 thunder, and foe's style is Dragon;
 wind, and foe's style is Flying.
 - Lv 1: Tactical Advice
-  Cost 2000|Grants the ability to use
+  Cost 2000 | Grants the ability to use
 multiple positioning commands.
 - Lv 5: Keen Insight
-  Cost 750|When unit has weapon advantage,
+  Cost 750 | When unit has weapon advantage,
 grants Atk+3.
 - Lv 5: Block Recovery
-  Cost 1500|When foe uses a Revival Stone,
+  Cost 1500 | When foe uses a Revival Stone,
 they recover only 50% of their HP.
 - Lv 5: Poison Strike
-  Cost 1000|If unit initiates combat, deals damage
+  Cost 1000 | If unit initiates combat, deals damage
 to foe equal to 20% of their max HP
 after combat.
 - Lv 5: Magic +1
-  Cost 300|Grants Mag+1.
+  Cost 300 | Grants Mag+1.
 - Lv 10: Block Recovery+
-  Cost 2500|When foe uses a Revival Stone,
+  Cost 2500 | When foe uses a Revival Stone,
 they recover only 20% of their HP.
 - Lv 10: Magic +2
-  Cost 600|Grants Mag+2.
+  Cost 600 | Grants Mag+2.
 - Lv 20: Keen Insight+
-  Cost 1500|When unit has weapon advantage,
+  Cost 1500 | When unit has weapon advantage,
 grants Atk+5.
 - Lv 20: Block Recovery++
-  Cost 3500|When foe uses a Revival Stone,
+  Cost 3500 | When foe uses a Revival Stone,
 they recover only 1 HP.
 
 Proficiency

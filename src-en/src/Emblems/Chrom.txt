@@ -57,48 +57,48 @@ Emblem Chrom. Dex+20. Effective: Dragon.
 
 Inheritable Skills
 - Lv 5: Veteran
-  Cost 800|Allies within 3 spaces
+  Cost 800 | Allies within 3 spaces
 deal +3 Dmg, take -3 Dmg,
 if they equip weapons of
 the same color with unit.
 - Lv 5: Rightful King
-  Cost 800|+10% to unit's skill activation rates.
+  Cost 800 | +10% to unit's skill activation rates.
 - Lv 5: Rightful King (Dragon)
   +10% to unit's skill activation rates.
 [Dragon] +5% extra rates.
 - Lv 5: Quixotic
-  Cost 2500|Grants Hit+30 and +15% to skill-trigger
+  Cost 2500 | Grants Hit+30 and +15% to skill-trigger
 rate to unit and foe in combat.
 - Lv 10: Rally Strength
-  Cost 1000|Grants the unit "Rally" command,
+  Cost 1000 | Grants the unit "Rally" command,
 use to +4 Str to all allies in 2 radius,
 last for 1 turn.
 - Lv 10: Rally Magic
-  Cost 1000|Grants the unit "Rally" command,
+  Cost 1000 | Grants the unit "Rally" command,
 use to +4 Mag to all allies in 2 radius,
 last for 1 turn.
 - Lv 10: Rally Skill
-  Cost 250|Grants the unit "Rally" command,
+  Cost 250 | Grants the unit "Rally" command,
 use to +4 Dex to all allies in 2 radius,
 last for 1 turn.
 - Lv 10: Rally Speed
-  Cost 1000|Grants the unit "Rally" command,
+  Cost 1000 | Grants the unit "Rally" command,
 use to +4 Spd to all allies in 2 radius,
 last for 1 turn.
 - Lv 10: Rally Luck
-  Cost 250|Grants the unit "Rally" command,
+  Cost 250 | Grants the unit "Rally" command,
 use to +8 Luck to all allies in 2 radius,
 last for 1 turn.
 - Lv 10: Rally Defense
-  Cost 1000|Grants the unit "Rally" command,
+  Cost 1000 | Grants the unit "Rally" command,
 use to +4 Def to all allies in 2 radius,
 last for 1 turn.
 - Lv 10: Rally Resistance
-  Cost 250|Grants the unit "Rally" command,
+  Cost 250 | Grants the unit "Rally" command,
 use to +4 Res to all allies in 2 radius,
 last for 1 turn.
 - Lv 20: Veteran+
-  Cost 1200|Allies within 3 spaces
+  Cost 1200 | Allies within 3 spaces
 deal +3 Dmg, take -3 Dmg,
 if they equip weapons of
 the same color, or have

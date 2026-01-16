@@ -79,53 +79,53 @@ Dragon.
 
 Inheritable Skills
 - Lv 1: Alacrity
-  Cost 500|If unit initiates combat with an ability
+  Cost 500 | If unit initiates combat with an ability
 to follow up of 7 or more, unit's
 follow-up (if possible) occurs before
 foe can counterattack.
 - Lv 1: Bow Prowess Lv.1
-  Cost 100|Grants Atk+1
+  Cost 100 | Grants Atk+1
 when using bows,
 fails at weapon disadvantage.
 - Lv 1: Bow Prowess Lv.2
-  Cost 300|Grants Atk+1 and Hit+5
+  Cost 300 | Grants Atk+1 and Hit+5
 when using bows,
 fails at weapon disadvantage.
 - Lv 5: Curved Shot
-  Cost 1500|Grant this unit "Curved Shot",
+  Cost 1500 | Grant this unit "Curved Shot",
 cost 4 engage meter or 2 engage turns
 to increase the attack range
 of bow or shuriken by 1,
 but Hit is reduced by 
 20×(Distance of attack -2).
 - Lv 5: Quick Draw
-  Cost 1000|When user triggers the battle,
+  Cost 1000 | When user triggers the battle,
 Dmg+4.
 - Lv 5: Bow Prowess Lv.3
-  Cost 750|Grants Atk+2 and Hit+5
+  Cost 750 | Grants Atk+2 and Hit+5
 when using bows,
 fails at weapon disadvantage.
 - Lv 10: Alacrity+
-  Cost 1500|If unit initiates combat with an ability
+  Cost 1500 | If unit initiates combat with an ability
 to follow up of 6 or more, unit's
 follow-up (if possible) occurs before
 foe can counterattack.
 - Lv 10: Speedtaker
-  Cost 1500|Grants a stacking Spd+2 each time
+  Cost 1500 | Grants a stacking Spd+2 each time
 unit initiates combat and defeats a
 foe. (Max +10)
 If this unit didn't combat last turn,
 lose 2 Spd when phase starts.
 - Lv 10: Bow Prowess Lv.4
-  Cost 1500|Grants Atk+3 and Hit+10
+  Cost 1500 | Grants Atk+3 and Hit+10
 when using bows,
 fails at weapon disadvantage.
 - Lv 10: Rally Speed
-  Cost 1000|Grants the unit "Rally" command,
+  Cost 1000 | Grants the unit "Rally" command,
 use to +4 Spd to all allies in 2 radius,
 last for 1 turn.
 - Lv 20: Bow Prowess Lv.5
-  Cost 3500|Grants Atk+3 and Hit+10
+  Cost 3500 | Grants Atk+3 and Hit+10
 when using bows,
 fails at weapon disadvantage.
 [Bow Prowess]Grants Atk+5

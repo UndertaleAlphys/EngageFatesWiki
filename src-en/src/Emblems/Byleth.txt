@@ -109,43 +109,43 @@ Dragon, +10 Mt/Hit, +20 Crit
 
 Inheritable Skills
 - Lv 1: Martial Prowess Lv.1
-  Cost 100|Grants Hit+5
+  Cost 100 | Grants Hit+5
 when using martials,
 fails at weapon disadvantage.
 - Lv 1: Martial Prowess Lv.2
-  Cost 300|Grants Hit+10
+  Cost 300 | Grants Hit+10
 when using martials,
 fails at weapon disadvantage.
 - Lv 5: Divine Pulse
-  Cost 800|When miss an attack, use another
+  Cost 800 | When miss an attack, use another
 random number to decide the outcome.
 - Lv 5: Fierce Iron Fist
-  Cost 1000|Grant the unit "Fierce Iron Fist".
+  Cost 1000 | Grant the unit "Fierce Iron Fist".
 Cost 5 engage meter or 2 engage
 turns to strike 3 consecutive hits.
 - Lv 5: Martial Prowess Lv.3
-  Cost 750|Grants Atk+1 and Hit+10
+  Cost 750 | Grants Atk+1 and Hit+10
 when using martials,
 fails at weapon disadvantage.
 - Lv 10: Latter Hit Faster
-  Cost 2000|The non-first attacks
+  Cost 2000 | The non-first attacks
 during battle get Dmg+5.
 - Lv 10: Meditation
-  Cost 1000|Grants the unit "Meditaion"
+  Cost 1000 | Grants the unit "Meditaion"
 command, use to restore 50%
 max HP and 1 engage meter.
 - Lv 10: Martial Prowess Lv.4
-  Cost 1500|Grants Atk+2 and Hit+15
+  Cost 1500 | Grants Atk+2 and Hit+15
 when using martials,
 fails at weapon disadvantage.
 - Lv 20: Monster Crusher
-  Cost 2000|Grant the unit "Monster Crusher".
+  Cost 2000 | Grant the unit "Monster Crusher".
 Cost 4 engage meter or 2 engage
 turns to strike 2 consecutive hits,
 effective against corrupted, and 
 ignore half of their Def.
 - Lv 20: Martial Prowess Lv.5
-  Cost 3500|Grants Atk+2 and Hit+15
+  Cost 3500 | Grants Atk+2 and Hit+15
 when using martials,
 fails at weapon disadvantage.
 [Martialfaire]Grants Atk+5

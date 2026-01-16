@@ -1,0 +1,10 @@
+# Anna
+
+## Personal Skill
+
+- **Make a Killing**
+  - During the first 7 turns,
+if unit initiates combat and defeats foe,
+rewards unit with an iron weapon after combat.
+The weapon gained depends on the enemy defeated.
+

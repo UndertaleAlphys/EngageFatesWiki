@@ -1,0 +1,7 @@
+Merrin
+
+Personal Skill
+- Sisterhood
+  Unit takes -2 Dmg and deals +2 Dmg
+when adjacent to female allies.
+

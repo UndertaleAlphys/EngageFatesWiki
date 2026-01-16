@@ -1,0 +1,9 @@
+# Clanne
+
+## Personal Skill
+
+- **Verdant Faith**
+  - If adjacent to Alear, 
+grants Alear 
+Avo+15, Dmg Taken-3.
+

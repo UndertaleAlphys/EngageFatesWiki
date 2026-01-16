@@ -69,28 +69,28 @@ Effective: Corrupted.
 
 Inheritable Skills
 - Lv 1: Lunar Brace
-  Cost 2000|If unit initiates combat with
+  Cost 2000 | If unit initiates combat with
 a physical/magical weapon, 
 grants Atk+30% of foe's Def/Res
 for the first hit.
 - Lv 5: Gentility
-  Cost 1000|When an ally within 3 radius is attacked,
+  Cost 1000 | When an ally within 3 radius is attacked,
 grants +3 Def/Res for allies within 3 radius
 for 1 turn.
 - Lv 5: Demoiselle
-  Cost 400|Male allies within 2-radius
+  Cost 400 | Male allies within 2-radius
 tale -2 Dmg.
 - Lv 5: Resistance +1
-  Cost 150|Grants Res+1.
+  Cost 150 | Grants Res+1.
 - Lv 10: Lunar Brace+
-  Cost 3000|If unit initiates combat with
+  Cost 3000 | If unit initiates combat with
 a physical/magical weapon,
 grants Atk+50% of foe's Def/Res
 for the first hit.
 - Lv 10: Resistance +2
-  Cost 300|Grants Res+2.
+  Cost 300 | Grants Res+2.
 - Lv 20: Gentility+
-  Cost 2000|When an ally within 3 radius is attacked,
+  Cost 2000 | When an ally within 3 radius is attacked,
 grants +4 Def/Res for allies within 3 radius
 for 1 turn.
 

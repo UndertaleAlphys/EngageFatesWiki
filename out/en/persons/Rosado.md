@@ -1,0 +1,8 @@
+# Rosado
+
+## Personal Skill
+
+- **Stunning Smile**
+  - If foe is male, grants Dmg+4,
+Crit+20.
+

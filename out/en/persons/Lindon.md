@@ -1,0 +1,8 @@
+# Lindon
+
+## Personal Skill
+
+- **Well-Versed**
+  - Grants Crit+10 when unit is carrying
+three or more tomes/scrolls.
+

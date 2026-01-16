@@ -19,6 +19,15 @@ This page explains how to install the Engage Fates and covers common issues.
   - Recommended version: **v1.25.4 or later**
   - This mod is built on the Cobalt framework. Older versions may cause crashes or missing features.
 
+
+### Installing Cobalt
+
+1. Download the **Cobalt release package**.
+2. Extract the archive.
+3. **Drag all contents of the release package directly to the SD card root**.
+
+No additional configuration is required.
+
 ---
 
 ## 3. Mod Files and Installation Path

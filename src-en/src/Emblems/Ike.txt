@@ -57,53 +57,53 @@ Damage type varies by distance.
 
 Inheritable Skills
 - Lv 1: Resolve
-  Cost 1000|The unit's HP <= 75%,
+  Cost 1000 | The unit's HP <= 75%,
 Grants +6 Dex/Luck.
 - Lv 1: Gamble
-  Cost 250|-10 to Hit, +10 to Crit.
+  Cost 250 | -10 to Hit, +10 to Crit.
 - Lv 1: Axe Prowess Lv.1
-  Cost 100|Grants Hit+5
+  Cost 100 | Grants Hit+5
 when using axes,
 fails at weapon disadvantage.
 - Lv 1: Axe Prowess Lv.2
-  Cost 300|Grants Hit+10
+  Cost 300 | Grants Hit+10
 when using axes,
 fails at weapon disadvantage.
 - Lv 5: Seal Chain
-  Cost 2000|When hit by a chain attack,
+  Cost 2000 | When hit by a chain attack,
 the enemy who perform this
 chain attack cannot chain attack
 again in this chapter.
 - Lv 5: Backdrop
-  Cost 500|Grant this unit "Backdrop+",
+  Cost 500 | Grant this unit "Backdrop+",
 use to throw the enemy backward
 after battle.
 - Lv 5: Axe Prowess Lv.3
-  Cost 750|Grants Atk+1 and Hit+10
+  Cost 750 | Grants Atk+1 and Hit+10
 when using axes,
 fails at weapon disadvantage.
 - Lv 10: Wrath
-  Cost 1000|The unit's HP <= 50%,
+  Cost 1000 | The unit's HP <= 50%,
 Grants +20 Crit.
 - Lv 10: Resolve+
-  Cost 2000|The unit's HP <= 75%,
+  Cost 2000 | The unit's HP <= 75%,
 Grants +8 Dex/Luck.
 - Lv 10: Axe Prowess Lv.4
-  Cost 1500|Grants Atk+2 and Hit+15
+  Cost 1500 | Grants Atk+2 and Hit+15
 when using axes,
 fails at weapon disadvantage.
 - Lv 10: Rally Defense
-  Cost 1000|Grants the unit "Rally" command,
+  Cost 1000 | Grants the unit "Rally" command,
 use to +4 Def to all allies in 2 radius,
 last for 1 turn.
 - Lv 20: Backdrop+
-  Cost 1500|Grant this unit "Backdrop+",
+  Cost 1500 | Grant this unit "Backdrop+",
 cost 3 engage meter or 1 engage
 turn to throw the enemy backward.
 Deals 20% of max HP's damage
 and break the enemy.
 - Lv 20: Axe Prowess Lv.5
-  Cost 3500|Grants Atk+2 and Hit+15
+  Cost 3500 | Grants Atk+2 and Hit+15
 when using axes,
 fails at weapon disadvantage.
 [Axefaire]Grants Atk+5
