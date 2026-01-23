@@ -75,7 +75,7 @@ Cost 4 engage meter or 2 engage turn
 to attack with axes.
 Effective: Armored.
 - **Lv 10**：Charm
-  - Cost 1200 | If unit's attack triggers a chain
+  - Cost 1800 | If unit's attack triggers a chain
 attack, increases chain attack
 Dmg by 50%.
 - **Lv 10**：Defense +2

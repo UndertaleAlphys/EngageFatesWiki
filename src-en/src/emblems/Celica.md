@@ -45,7 +45,7 @@ the unit suffers Def/Res-1.
   - When an adjacent enemy hit 
 this unit, deals the same damage
 taken by this unit to the foe.
-- **Lv 20**：CounterMagic+
+- **Lv 20**：Counter Magic+
   - When hit by magical attacks,
 deals the same damage to the foe.
 

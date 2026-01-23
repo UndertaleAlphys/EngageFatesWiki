@@ -83,7 +83,7 @@ shrinks by 1 each turn.)
 after combat. (Penalty
 shrinks by 1 each turn.)
 - Lv 10: Pair Up
-  Cost 2000 | Prevents damage from foes' chain
+  Cost 700 | Prevents damage from foes' chain
 attacks and "Pair Up Attack" against unit.
 - Lv 20: Inevitable End
   Cost 2000 | If the user inflicts a stat debuff on 

@@ -89,7 +89,7 @@ Effective: Dragon
   - Cost 1800 | After unit ends their turn, 
 terrain within 2 radius get
 effect "Divine Domain"
-- **Lv 1**：OddShaped
+- **Lv 1**：Odd Shaped
   - Cost 1000 | During odd-numbered 
 Turns, damage+4.
 - **Lv 1**：Evenhanded

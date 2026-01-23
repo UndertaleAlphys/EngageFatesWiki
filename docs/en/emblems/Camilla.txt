@@ -42,6 +42,7 @@ within 3 tiles
 Engage Weapons
 - Lv 1: Bolt Axe: Range 1~2, Mt 14, Hit 65, Avo -20 / Magic axe wielded by Emblem
 Camilla. Can strike close or at range.
+Cannot Crit/Trigger Skills
 - Lv 10: Lightning: Range 1~2, Mt 1, Hit 75 / Magic wielded by Emblem Camilla.
 If user initiates combat, attacks
 twice.

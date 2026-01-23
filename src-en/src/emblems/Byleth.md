@@ -52,7 +52,7 @@ random number to decide the outcome.
 "Fierce Iron Fist"
 Cost 5 engage meter or 2 engage
 turns to strike 3 consecutive hits.
-- **Lv 10**：Latter Hit Faster
+- **Lv 10**：Latter Hits Faster
   - The non-first attacks
 during battle get Dmg+5.
 - **Lv 10**：Combat Arts
@@ -133,7 +133,7 @@ turns to strike 3 consecutive hits.
   - Cost 750 | Grants Atk+1 and Hit+10
 when using martials,
 fails at weapon disadvantage.
-- **Lv 10**：Latter Hit Faster
+- **Lv 10**：Latter Hits Faster
   - Cost 2000 | The non-first attacks
 during battle get Dmg+5.
 - **Lv 10**：Meditation

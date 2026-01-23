@@ -9,7 +9,7 @@
 
 ## Sync Skills
 
-- **Lv 1**：HoldOut
+- **Lv 1**：Hold Out
   - If unit had 30% HP or more at start
 of combat, unit would not take
 damage from the lethal attack.
@@ -22,7 +22,7 @@ any terrain.
 - **Lv 5**：Advance
   - Use to move up to 2 spaces toward a foe
 that is up to 3 spaces away and attack.
-- **Lv 5**：HoldOut+
+- **Lv 5**：Hold Out+
   - If unit had 20% HP or more at start
 of combat, unit would not take
 damage from the lethal attack.
@@ -31,7 +31,7 @@ After that, lose HoldOut in this turn.
   - When the enemy is in
 a negative effect terrain,
 Dmg+5.
-- **Lv 10**：HoldOut++
+- **Lv 10**：Hold Out++
   - If unit had 10% HP or more at start
 of combat, unit would not take
 damage from the lethal attack.
@@ -40,7 +40,7 @@ After that, lose HoldOut in this turn.
   - When the enemy is in
 a negative effect terrain,
 Dmg+7.
-- **Lv 20**：HoldOut+++
+- **Lv 20**：Hold Out+++
   - If unit had 2HP or more at start
 of combat, unit would not take
 damage from the lethal attack.

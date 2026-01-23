@@ -18,9 +18,8 @@ damage.
 and items.
 - **Lv 10**：Shieldbreaker
   - Grants the unit "Shieldbreaker" command,
-use 3 engage meter or 1 engage turn
-to get Seal Defense and Seal Resistance 
-for the next battle.
+use 2 engage meter to get Seal Defense 
+and Seal Resistance for the next battle.
 If the foe is defeated, apply the effect
 to the enemies in 2 radius of the foe.
 - **Lv 10**：Unyielding
@@ -105,9 +104,8 @@ use to +4 Dex to all allies in 2 radius,
 last for 1 turn.
 - **Lv 10**：Shieldbreaker
   - Cost 1500 | Grants the unit "Shieldbreaker" command,
-use 3 engage meter or 1 engage turn
-to get Seal Defense and Seal Resistance 
-for the next battle.
+use 2 engage meter to get Seal Defense 
+and Seal Resistance for the next battle.
 If the foe is defeated, apply the effect
 to the enemies in 2 radius of the foe.
 - **Lv 10**：Speed +2
