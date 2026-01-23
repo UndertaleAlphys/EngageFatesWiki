@@ -9,7 +9,7 @@ Stat Bonuses
 Sync Skills
 - Lv 1: Resolve
   The unit's HP <= 75%,
-Grants +6 Dex/Luck.
+Grants +2 Str/Dex/Spd.
 - Lv 5: Seal Chain
   When hit by a chain attack,
 the enemy who perform this
@@ -24,7 +24,7 @@ after battle.
 Grants +20 Crit.
 - Lv 10: Resolve+
   The unit's HP <= 75%,
-Grants +8 Dex/Luck.
+Grants +3 Str/Dex/Spd.
 - Lv 20: Backdrop+
   Grant this unit "Backdrop+",
 cost 3 engage meter or 1 engage
@@ -51,14 +51,13 @@ foes. Cannot follow up, or strike first
 if initiating combat. Eff: Armored.
 - Lv 10: Urvan: Range 1, Mt 16, Hit 90, Crit 5 / Heirloom axe wielded by Emblem
 Ike.
-- Lv 20: Ragnell: Range 1~2, Mt 11, Hit 80, Crit 5 / Sacred sword wielded by Emblem
-Ike. Grants Def+2/
-Damage type varies by distance.
+- Lv 20: Ragnell: Range 1~2, Mt 12, Hit 105, Crit 15 / Sacred sword wielded by Emblem
+Ike. Grants Def+2.
 
 Inheritable Skills
 - Lv 1: Resolve
   Cost 1000 | The unit's HP <= 75%,
-Grants +6 Dex/Luck.
+Grants +2 Str/Dex/Spd.
 - Lv 1: Gamble
   Cost 250 | -10 to Hit, +10 to Crit.
 - Lv 1: Axe Prowess Lv.1
@@ -87,7 +86,7 @@ fails at weapon disadvantage.
 Grants +20 Crit.
 - Lv 10: Resolve+
   Cost 2000 | The unit's HP <= 75%,
-Grants +8 Dex/Luck.
+Grants +3 Str/Dex/Spd.
 - Lv 10: Axe Prowess Lv.4
   Cost 1500 | Grants Atk+2 and Hit+15
 when using axes,

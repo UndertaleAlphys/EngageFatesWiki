@@ -26,7 +26,7 @@ wielding the same weapon type.
 - **Lv 10**：Charm
   - If unit's attack triggers a chain
 attack, increases chain attack
-Dmg by 20%.
+Dmg by 50%.
 - **Lv 20**：Weapon Sync+
   - Grants Atk +5 when synced with an Emblem 
 wielding the same weapon type.
@@ -43,24 +43,22 @@ equipped weapons.
 ## Engage Attack
 
 - **Houses Unite**
-  - Use to restore unit's and foe's HP to full,
-then attack with Aymr, Areadbhar,
-and Failnaught at 50% damage.
+  - Use to attack with Aymr(Freeze), Areadbhar(Break),
+and Failnaught(Silence) at 50% damage.
 - **Houses Unite (Dragon)**
-  - Use to restore unit's and foe's HP to full,
-then attack with Aymr, Areadbhar,
-and Failnaught at 50% damage.
+  - Use to attack with Aymr(Freeze), Areadbhar(Break),
+and Failnaught(Silence) at 50% damage.
 [Dragon] +10% damage.
 
 ## Engage Weapons
 
-- **Lv 1**：Aymr: Range 1, Mt 24, Hit 60, Crit 20 / Axe of Emblem Edelgard. Smashes
+- **Lv 1**：Aymr: Range 1, Mt 36, Hit 60, Crit 20 / Axe of Emblem Edelgard. Smashes
 foes. Cannot follow up, or strike first
 if initiating combat. Eff: Dragon.
-- **Lv 10**：Areadbhar: Range 1, Mt 15, Hit 75, Crit 10 / Lance wielded by Emblem Dimitri.
+- **Lv 10**：Areadbhar: Range 1, Mt 19, Hit 75, Crit 10 / Lance wielded by Emblem Dimitri.
 If user initiates combat, grants
 Mt+20%.
-- **Lv 20**：Failnaught: Range 2, Mt 14, Hit 75, Crit 20 / Bow wielded by Emblem Claude.
+- **Lv 20**：Failnaught: Range 2, Mt 18, Hit 75, Crit 20 / Bow wielded by Emblem Claude.
 If user initiates combat, grants
 Avo+15. Effective: Dragon, Flying.
 
@@ -79,7 +77,7 @@ Effective: Armored.
 - **Lv 10**：Charm
   - Cost 1200 | If unit's attack triggers a chain
 attack, increases chain attack
-Dmg by 20%.
+Dmg by 50%.
 - **Lv 10**：Defense +2
   - Cost 600 | Grants Def+2.
 - **Lv 10**：Knightkneeler

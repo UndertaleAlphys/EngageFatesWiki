@@ -13,18 +13,18 @@ within 2 spaces with Effective:
 Dragon gain Effective: Fell Dragon.
 - Lv 1: Bond Forger
   At the start of each turn, 
-grants +1 to the Engage meter 
-of all adjacent allies.
+grants +2 to the Engage meter 
+of all allies within 2 radius.
 - Lv 5: Holy Shield
   Halves stat-reduction effects, poison damage, 
 and reduces damage from effectiveness.
 - Lv 10: Bond Forger+
   At the start of each turn, 
-grants +1 to the Engage meter 
-of all allies within 2 radius.
+grants +3 to the Engage meter 
+of all allies within 3 radius.
 - Lv 20: Boon of Elyos
   Grants the unit "Rally" command,
-use to -1 Debuff to all allies in 2 radius.
+use to -4 Debuff to all allies in 2 radius.
 
 Engage Skills
 - Lv 1: Attuned

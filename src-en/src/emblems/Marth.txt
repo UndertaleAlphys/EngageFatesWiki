@@ -22,19 +22,17 @@ for the next battle.
 If the foe is defeated, apply the effect
 to the enemies in 2 radius of the foe.
 - Lv 10: Unyielding
-  If the unit is attacked, and their
-HP is lower than 50% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+5. At the end of each
-player's phase, if the unit has not
-initiate any combat, lose the effect.
+  When attacked, if unit's HP≤50% 
+after combat, grants +1 Mov, 
+and +5 Dmg when unit initiates combat.
+Unit would lose the effect if they 
+didn't initiates any combat each turn.
 - Lv 20: Unyielding+
-  If the unit is attacked, and their
-HP is lower than 70% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+7. At the end of each
-player's phase, if the unit has not
-initiate any combat, lose the effect.
+  When attacked, if unit's HP≤70% 
+after combat, grants +1 Mov, 
+and +7 Dmg when unit initiates combat.
+Unit would lose the effect if they 
+didn't initiates any combat each turn.
 
 Engage Skills
 - Lv 1: Divine Speed
@@ -90,12 +88,11 @@ unit's Spd+2.
   Cost 2000 | Unit deals +10 damage and takes
 +10 damage during combat.
 - Lv 10: Unyielding
-  Cost 500 | If the unit is attacked, and their
-HP is lower than 50% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+5. At the end of each
-player's phase, if the unit has not
-initiate any combat, lose the effect.
+  Cost 500 | When attacked, if unit's HP≤50% 
+after combat, grants +1 Mov, 
+and +5 Dmg when unit initiates combat.
+Unit would lose the effect if they 
+didn't initiates any combat each turn.
 - Lv 10: Rally Skill
   Cost 250 | Grants the unit "Rally" command,
 use to +4 Dex to all allies in 2 radius,
@@ -110,12 +107,11 @@ to the enemies in 2 radius of the foe.
 - Lv 10: Speed +2
   Cost 1200 | Grants Spd+2.
 - Lv 20: Unyielding+
-  Cost 1500 | If the unit is attacked, and their
-HP is lower than 70% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+7. At the end of each
-player's phase, if the unit has not
-initiate any combat, lose the effect.
+  Cost 1500 | When attacked, if unit's HP≤70% 
+after combat, grants +1 Mov, 
+and +7 Dmg when unit initiates combat.
+Unit would lose the effect if they 
+didn't initiates any combat each turn.
 - Lv 20: Perceptive+
   Cost 500 | If unit has triangle advantage,
 unit's Spd+3.

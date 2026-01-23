@@ -36,7 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "dark";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-01d3847a.js";
+            window.path_to_searchindex_js = "searchindex-c0a107db.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc-f74c8155.js"></script>
@@ -441,22 +441,20 @@ to the enemies in 2 radius of the foe.</li>
 </li>
 <li><strong>Lv 10</strong>：Unyielding
 <ul>
-<li>If the unit is attacked, and their
-HP is lower than 50% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+5. At the end of each
-player’s phase, if the unit has not
-initiate any combat, lose the effect.</li>
+<li>When attacked, if unit’s HP≤50%
+after combat, grants +1 Mov,
+and +5 Dmg when unit initiates combat.
+Unit would lose the effect if they
+didn’t initiates any combat each turn.</li>
 </ul>
 </li>
 <li><strong>Lv 20</strong>：Unyielding+
 <ul>
-<li>If the unit is attacked, and their
-HP is lower than 70% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+7. At the end of each
-player’s phase, if the unit has not
-initiate any combat, lose the effect.</li>
+<li>When attacked, if unit’s HP≤70%
+after combat, grants +1 Mov,
+and +7 Dmg when unit initiates combat.
+Unit would lose the effect if they
+didn’t initiates any combat each turn.</li>
 </ul>
 </li>
 </ul>
@@ -546,12 +544,11 @@ unit’s Spd+2.</li>
 </li>
 <li><strong>Lv 10</strong>：Unyielding
 <ul>
-<li>Cost 500 | If the unit is attacked, and their
-HP is lower than 50% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+5. At the end of each
-player’s phase, if the unit has not
-initiate any combat, lose the effect.</li>
+<li>Cost 500 | When attacked, if unit’s HP≤50%
+after combat, grants +1 Mov,
+and +5 Dmg when unit initiates combat.
+Unit would lose the effect if they
+didn’t initiates any combat each turn.</li>
 </ul>
 </li>
 <li><strong>Lv 10</strong>：Rally Skill
@@ -578,12 +575,11 @@ to the enemies in 2 radius of the foe.</li>
 </li>
 <li><strong>Lv 20</strong>：Unyielding+
 <ul>
-<li>Cost 1500 | If the unit is attacked, and their
-HP is lower than 70% after battle,
-grant +1 Mov, and when initiate
-combat, Dmg+7. At the end of each
-player’s phase, if the unit has not
-initiate any combat, lose the effect.</li>
+<li>Cost 1500 | When attacked, if unit’s HP≤70%
+after combat, grants +1 Mov,
+and +7 Dmg when unit initiates combat.
+Unit would lose the effect if they
+didn’t initiates any combat each turn.</li>
 </ul>
 </li>
 <li><strong>Lv 20</strong>：Perceptive+
@@ -1619,10 +1615,9 @@ attack, join the chain attack.</li>
 </li>
 <li><strong>Lv 10</strong>：Dual Support
 <ul>
-<li>When taken damage, and the unit
-has allies nearby, this unit take
-less damage.
-Each support level increase this value by 1.</li>
+<li>If unit is adjacent to allies,
+they take less Dmg. Value determined
+by the sum of support levels.</li>
 </ul>
 </li>
 <li><strong>Lv 10</strong>：Shuttle
@@ -1716,10 +1711,9 @@ to reduce the damage by half.
 </li>
 <li><strong>Lv 10</strong>：Dual Support
 <ul>
-<li>Cost 2000 | When taken damage, and the unit
-has allies nearby, this unit take
-less damage.
-Each support level increase this value by 1.</li>
+<li>Cost 2000 | If unit is adjacent to allies,
+they take less Dmg. Value determined
+by the sum of support levels.</li>
 </ul>
 </li>
 <li><strong>Lv 10</strong>：Rally Luck
@@ -2298,7 +2292,7 @@ follow up (if weapon allows).</li>
 <li><strong>Lv 1</strong>：Resolve
 <ul>
 <li>The unit’s HP &lt;= 75%,
-Grants +6 Dex/Luck.</li>
+Grants +2 Str/Dex/Spd.</li>
 </ul>
 </li>
 <li><strong>Lv 5</strong>：Seal Chain
@@ -2325,7 +2319,7 @@ Grants +20 Crit.</li>
 <li><strong>Lv 10</strong>：Resolve+
 <ul>
 <li>The unit’s HP &lt;= 75%,
-Grants +8 Dex/Luck.</li>
+Grants +3 Str/Dex/Spd.</li>
 </ul>
 </li>
 <li><strong>Lv 20</strong>：Backdrop+
@@ -2366,16 +2360,15 @@ foes. Cannot follow up, or strike first
 if initiating combat. Eff: Armored.</li>
 <li><strong>Lv 10</strong>：Urvan: Range 1, Mt 16, Hit 90, Crit 5 / Heirloom axe wielded by Emblem
 Ike.</li>
-<li><strong>Lv 20</strong>：Ragnell: Range 1~2, Mt 11, Hit 80, Crit 5 / Sacred sword wielded by Emblem
-Ike. Grants Def+2/
-Damage type varies by distance.</li>
+<li><strong>Lv 20</strong>：Ragnell: Range 1~2, Mt 12, Hit 105, Crit 15 / Sacred sword wielded by Emblem
+Ike. Grants Def+2.</li>
 </ul>
 <h2 id="inheritable-skills-10"><a class="header" href="#inheritable-skills-10">Inheritable Skills</a></h2>
 <ul>
 <li><strong>Lv 1</strong>：Resolve
 <ul>
 <li>Cost 1000 | The unit’s HP &lt;= 75%,
-Grants +6 Dex/Luck.</li>
+Grants +2 Str/Dex/Spd.</li>
 </ul>
 </li>
 <li><strong>Lv 1</strong>：Gamble
@@ -2428,7 +2421,7 @@ Grants +20 Crit.</li>
 <li><strong>Lv 10</strong>：Resolve+
 <ul>
 <li>Cost 2000 | The unit’s HP &lt;= 75%,
-Grants +8 Dex/Luck.</li>
+Grants +3 Str/Dex/Spd.</li>
 </ul>
 </li>
 <li><strong>Lv 10</strong>：Axe Prowess Lv.4
@@ -3529,7 +3522,7 @@ wielding the same weapon type.</li>
 <ul>
 <li>If unit’s attack triggers a chain
 attack, increases chain attack
-Dmg by 20%.</li>
+Dmg by 50%.</li>
 </ul>
 </li>
 <li><strong>Lv 20</strong>：Weapon Sync+
@@ -3555,29 +3548,27 @@ equipped weapons.</li>
 <ul>
 <li><strong>Houses Unite</strong>
 <ul>
-<li>Use to restore unit’s and foe’s HP to full,
-then attack with Aymr, Areadbhar,
-and Failnaught at 50% damage.</li>
+<li>Use to attack with Aymr(Freeze), Areadbhar(Break),
+and Failnaught(Silence) at 50% damage.</li>
 </ul>
 </li>
 <li><strong>Houses Unite (Dragon)</strong>
 <ul>
-<li>Use to restore unit’s and foe’s HP to full,
-then attack with Aymr, Areadbhar,
-and Failnaught at 50% damage.
+<li>Use to attack with Aymr(Freeze), Areadbhar(Break),
+and Failnaught(Silence) at 50% damage.
 [Dragon] +10% damage.</li>
 </ul>
 </li>
 </ul>
 <h2 id="engage-weapons-17"><a class="header" href="#engage-weapons-17">Engage Weapons</a></h2>
 <ul>
-<li><strong>Lv 1</strong>：Aymr: Range 1, Mt 24, Hit 60, Crit 20 / Axe of Emblem Edelgard. Smashes
+<li><strong>Lv 1</strong>：Aymr: Range 1, Mt 36, Hit 60, Crit 20 / Axe of Emblem Edelgard. Smashes
 foes. Cannot follow up, or strike first
 if initiating combat. Eff: Dragon.</li>
-<li><strong>Lv 10</strong>：Areadbhar: Range 1, Mt 15, Hit 75, Crit 10 / Lance wielded by Emblem Dimitri.
+<li><strong>Lv 10</strong>：Areadbhar: Range 1, Mt 19, Hit 75, Crit 10 / Lance wielded by Emblem Dimitri.
 If user initiates combat, grants
 Mt+20%.</li>
-<li><strong>Lv 20</strong>：Failnaught: Range 2, Mt 14, Hit 75, Crit 20 / Bow wielded by Emblem Claude.
+<li><strong>Lv 20</strong>：Failnaught: Range 2, Mt 18, Hit 75, Crit 20 / Bow wielded by Emblem Claude.
 If user initiates combat, grants
 Avo+15. Effective: Dragon, Flying.</li>
 </ul>
@@ -3606,7 +3597,7 @@ Effective: Armored.</li>
 <ul>
 <li>Cost 1200 | If unit’s attack triggers a chain
 attack, increases chain attack
-Dmg by 20%.</li>
+Dmg by 50%.</li>
 </ul>
 </li>
 <li><strong>Lv 10</strong>：Defense +2
@@ -3661,8 +3652,8 @@ Dragon gain Effective: Fell Dragon.</li>
 <li><strong>Lv 1</strong>：Bond Forger
 <ul>
 <li>At the start of each turn,
-grants +1 to the Engage meter
-of all adjacent allies.</li>
+grants +2 to the Engage meter
+of all allies within 2 radius.</li>
 </ul>
 </li>
 <li><strong>Lv 5</strong>：Holy Shield
@@ -3674,14 +3665,14 @@ and reduces damage from effectiveness.</li>
 <li><strong>Lv 10</strong>：Bond Forger+
 <ul>
 <li>At the start of each turn,
-grants +1 to the Engage meter
-of all allies within 2 radius.</li>
+grants +3 to the Engage meter
+of all allies within 3 radius.</li>
 </ul>
 </li>
 <li><strong>Lv 20</strong>：Boon of Elyos
 <ul>
 <li>Grants the unit “Rally” command,
-use to -1 Debuff to all allies in 2 radius.</li>
+use to -4 Debuff to all allies in 2 radius.</li>
 </ul>
 </li>
 </ul>
